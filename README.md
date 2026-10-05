@@ -1,190 +1,182 @@
 # PROJECT CONSCIOUSNESS
 
-Laboratorio experimental para investigar propiedades funcionales asociadas con la conciencia: continuidad autobiográfica, modelos de sí mismo, metacognición, regulación interna, agencia, predicción, imaginación y aprendizaje continuo.
+[Español](README.md) | [English](README.en.md)
 
-**Estado:** MVP v0.4 con una skill para Codex y una identidad funcional persistente: prioridades aleatorias que aprenden de resultados, aversiones recuperables, recuerdos con procedencia, preguntas y simulación. Incluye los laboratorios anteriores de persistencia, memoria, asociaciones y estimación de capacidades. La identidad v0.4 usa una base separada, sin convertir las historias antiguas. El objetivo es establecer qué mecanismos producen qué capacidades y bajo qué condiciones; la presencia de esas capacidades no se tratará como prueba de experiencia subjetiva.
+**Un laboratorio experimental de código abierto para investigar propiedades funcionales asociadas con la conciencia.**
 
-## Empezar con la skill v0.4
+El proyecto construye sistemas con memoria persistente, modelos de capacidades propias, preferencias aprendidas, preguntas y simulación. Su pregunta central es cómo los estados internos modifican causalmente las decisiones posteriores y qué ocurre al intervenir esos estados.
 
-Desde la terminal de VS Code en la raíz del proyecto, con Python >=3.12:
+El proyecto nace de una iniciativa de investigación sin fines de lucro, dedicada a la exploración científica, computacional y filosófica. Su objetivo es producir experimentos reproducibles sobre esas propiedades. Los resultados no se interpretan como demostraciones de experiencia subjetiva.
 
-```powershell
-python -m project_consciousness life init --out runs/aeon-v04 --name Aeon --budget 40
-python -m project_consciousness life ingest --life runs/aeon-v04 --file docs/decisions/0005-persistent-functional-identity.md --domain understand
-python -m project_consciousness life run --life runs/aeon-v04 --cycles 6
-python -m project_consciousness life context --life runs/aeon-v04
-python -m project_consciousness life export --life runs/aeon-v04 --out runs/aeon-v04-diary
-```
+**Versión actual: MVP v0.4.** Núcleo en Python, persistencia SQLite, experimentos controlados y una skill para conectar un agente LLM como Codex. Se agradecen aportaciones de programación, metodología, ciencia cognitiva, filosofía, documentación y reproducción independiente de resultados.
 
-Sin `--seed` obtiene una semilla nueva; `--seed 17` permite reproducir predisposiciones. Empieza sin recuerdos ficticios. Abre `runs/aeon-v04-diary/diary.md` para ver experiencias y preguntas. Las carpetas de salida deben ser nuevas.
+[Inicio rápido](#inicio-rápido) · [Cómo contribuir](#cómo-contribuir) · [Experimentos](#experimentos-y-resultados) · [Documentación](#estructura-y-documentación) · [Licencia](#licencia)
 
-La [skill versionada](skills/project-consciousness/SKILL.md) conecta un anfitrión LLM con el núcleo. Cuando Codex la muestre disponible, puedes pedir:
+## Qué está implementado
 
-> Usa $project-consciousness con el proyecto F:\PC y la vida runs/aeon-v04. Consulta su historia, propone dos investigaciones y realiza una elección. Registra fuentes, resultado y una pregunta nueva.
-
-La [guía Codex/VS Code](docs/codex-identity-quickstart.md) incluye instalación/localización, pausa, ejecución espaciada, ejemplos JSON y feedback. `watch` permite actividad local finita sin mensajes humanos mientras el proceso esté ejecutándose. Leer fuentes externas y formular reflexiones libres requiere al anfitrión LLM activo. Los sueños locales son escenarios acotados etiquetados SIMULATED; no se convierten en recuerdos de hechos. El aprendizaje modifica parámetros del núcleo, no los pesos del LLM. Las preguntas abiertas todavía no tienen una operación de cierre.
-
-Probar los controles de esta versión:
-
-```powershell
-python -m unittest discover -s tests -v
-python -m project_consciousness life experiment --seeds 400:403 --out runs/mi-identidad-i1
-```
-
-I1 compara seis ramas del mismo estado: actualización, congelación, preferencias neutralizadas, aversión oculta, sueños desactivados y reinicios. Su feedback es sintético y se declara como tal. [Contrato v0.4](docs/mvp-v0.4.md), [decisión arquitectónica](docs/decisions/0005-persistent-functional-identity.md).
-
-Entrega verificada: **163 pruebas**, **140 bases**, **1.200 elecciones de seguimiento** y **401/401 comprobaciones válidas**. Neutralizar preferencias cambió la primera elección en 9/20 historias; reiniciar preservó exactamente los estados y eventos funcionales. [Informe I1](reports/i1-v0.4/report.md), [demostración con Codex](reports/codex-v0.4/report.md) y [diario de ejemplo](reports/codex-v0.4/diary.md).
-
-## Propuesta central
-
-Un núcleo cognitivo persistente con estado explícito, módulos sustituibles, historial de eventos y un laboratorio que permite restaurar el mismo estado, intervenir una variable y comparar consecuencias. Un modelo lingüístico puede incorporarse como adaptador, mientras la memoria, las metas y el control mantienen contratos propios.
-
-Ejemplo de pregunta experimental: con la misma observación y el mismo recurso disponible, ¿bloquear la recuperación de una experiencia cambia una decisión? ¿Cambiar solo un regulador interno modifica el riesgo elegido? Después de comprobar que la ruta causal existe, ¿mejora algo en tareas nuevas frente a alternativas comparables?
-
-## Lectura del diseño
-
-| Documento | Contenido |
+| Componente | Capacidad actual |
 |---|---|
-| [Mapa de capacidades](CAPABILITY-MAP.md) | Límites de paquetes, dependencias y orden de construcción |
-| [Arquitectura conceptual](docs/architecture.md) | Componentes, ciclos, memoria, estados y mecanismos causales |
-| [Interfaces y estado](docs/interfaces-and-state.md) | Contratos, esquema persistente, recuperación, snapshots y errores |
-| [Fundamentos científicos](docs/scientific-foundations.md) | Fuentes primarias, teorías, evidencia y límites filosóficos |
-| [Análisis Gateway](docs/gateway-analysis.md) | Documento de 1983, evidencia independiente y especulación |
-| [Protocolos E0–E9](docs/experiments.md) | Hipótesis, intervenciones, controles, métricas y falsación |
-| [MVP propuesto](docs/mvp.md) | Mundo mínimo, implementación futura, comandos previstos y aceptación |
-| [Alcance ejecutable v0.1](docs/mvp-v0.1.md) | Tarea concreta, contratos y diferencias frente a la arquitectura ampliada |
-| [Alcance ejecutable v0.2](docs/mvp-v0.2.md) | Aprendizaje persistente, configuración privada, controles y protocolo L1 |
-| [Alcance ejecutable v0.3](docs/mvp-v0.3.md) | Estimación de capacidades, degradación privada, controles y sondas comunes E2 |
-| [Alcance ejecutable v0.4](docs/mvp-v0.4.md) | Identidad, aprendizaje de preferencias, procedencia, autonomía finita y skill para Codex |
-| [Guía de la skill](docs/codex-identity-quickstart.md) | Primera historia, investigación del anfitrión, pausa y diario |
-| [Resultados de v0.1](reports/README.md) | E0/E1 ejecutados, controles, incertidumbre y archivos reproducibles |
-| [Informe de aprendizaje v0.2](reports/l1-v0.2/report.md) | Piloto L1 ejecutado, 20 semillas, 5.600 episodios y 340 comprobaciones |
-| [Informe de capacidades v0.3](reports/e2-v0.3/report.md) | Piloto E2 ejecutado, 20 semillas, 6.400 episodios y 32.000 ensayos de sonda |
-| [Decisión arquitectónica](docs/decisions/0001-functional-research-laboratory.md) | Elecciones, alternativas y consecuencias |
+| Memoria y persistencia | Estados y eventos en SQLite, recuerdos con procedencia, reinicios, ramas y reproducción verificable. |
+| Identidad funcional | Cinco prioridades iniciales aleatorias y reproducibles: comprender, crear, explorar, terminar y conectar. |
+| Aprendizaje | Actualización de preferencias, estimaciones de éxito y aversiones recuperables a partir de resultados registrados. |
+| Preguntas y reflexión | Preguntas sobre identidad o mundo; las preguntas abiertas pueden influir en la selección de actividades. |
+| Simulación | Escenarios locales acotados, denominados «sueños», con referencias y un flujo aleatorio independiente. |
+| Agencia limitada | Elección numérica de actividades, presupuesto, pausa persistente y ciclos locales finitos. |
+| Integración LLM | Una skill permite al anfitrión proponer actividades, usar sus herramientas y registrar resultados. |
+| Laboratorio | Controles para bloquear memoria, congelar aprendizaje, neutralizar preferencias y comparar historias. |
 
-Especificaciones por paquete: [runtime](SPEC-runtime.md), [memory](SPEC-memory.md), [cognition](SPEC-cognition.md), [experiment-lab](SPEC-experiment-lab.md) y [language-adapter](SPEC-language-adapter.md).
+La arquitectura ampliada también propone metacognición, regulación afectiva, modelos del mundo y planificación. Esas propuestas no están implementadas en su totalidad: consulta el [mapa de capacidades](CAPABILITY-MAP.md) y el [contrato v0.4](docs/mvp-v0.4.md) para distinguir el alcance actual del trabajo futuro.
 
-## Convención epistemológica
+## Inicio rápido
 
-| Etiqueta | Significado |
+Necesitas **Git y Python 3.12 o posterior con `sqlite3` disponible**. El núcleo utiliza exclusivamente la biblioteca estándar; puedes ejecutar el ejemplo sin instalar dependencias, disponer de una API key ni conectar un LLM.
+
+Clona el repositorio y entra en su raíz:
+
+```sh
+git clone https://github.com/AeonMuller/PROJECT-CONSCIOUSNESS.git
+cd PROJECT-CONSCIOUSNESS
+python --version
+```
+
+Los ejemplos usan `python`; sustitúyelo por `python3` si ese es el ejecutable de Python 3.12+ en tu sistema. En PowerShell, puedes activar UTF-8 para conservar acentos al redirigir JSON: `$env:PYTHONUTF8 = "1"`.
+
+Crea una identidad, importa un documento del proyecto y ejecuta seis ciclos:
+
+```sh
+python -m project_consciousness life init --out runs/aeon --name Aeon --budget 40
+python -m project_consciousness life ingest --life runs/aeon --file docs/decisions/0005-persistent-functional-identity.md --domain understand
+python -m project_consciousness life run --life runs/aeon --cycles 6
+python -m project_consciousness life context --life runs/aeon
+python -m project_consciousness life verify --life runs/aeon --mode recompute
+python -m project_consciousness life export --life runs/aeon --out runs/aeon-diary
+```
+
+La identidad empieza sin recuerdos ficticios. Sin `--seed` se genera una semilla nueva y se registra; añade `--seed 17` a `init` para reproducir unas predisposiciones iniciales. El documento importado se conserva como información reportada. Los ciclos pueden leerlo, formular una pregunta y generar una simulación.
+
+Abre `runs/aeon-diary/diary.md` para examinar el resultado. También se exportan estado, contexto, manifiesto y eventos. Los directorios de creación y exportación deben ser **nuevos**: cambia sus nombres para repetir el ejemplo. Los datos que generes bajo `runs/` están excluidos de Git.
+
+Para actividad local espaciada y finita:
+
+```sh
+python -m project_consciousness life watch --life runs/aeon --cycles 10 --interval 5 --stop-file runs/aeon.stop
+```
+
+Puedes detenerla con `Ctrl+C`, creando el archivo `runs/aeon.stop` o usando `python -m project_consciousness life pause --life runs/aeon` desde otra terminal. Consulta todos los comandos con `python -m project_consciousness life --help`.
+
+## Conectar un agente LLM
+
+El núcleo funciona por separado del modelo lingüístico. La [skill PROJECT CONSCIOUSNESS](skills/project-consciousness/SKILL.md) establece el flujo para que un anfitrión consulte el estado, proponga candidatos, respete la elección del núcleo y devuelva un resultado con su fuente.
+
+El wrapper versionado puede ejecutarse directamente desde la raíz del repositorio:
+
+```sh
+python skills/project-consciousness/scripts/consciousness.py --project . context --life runs/aeon
+```
+
+Si la skill ya está instalada en Codex, una solicitud de ejemplo es:
+
+> Usa $project-consciousness con este repositorio y la vida runs/aeon. Consulta su historia, propone dos investigaciones y deja que el núcleo elija una. Realiza la elegida, registra las fuentes y el resultado, y formula una pregunta nueva.
+
+El [protocolo de la skill](skills/project-consciousness/references/protocol.md) describe los contratos JSON, las decisiones pendientes y los reintentos. La [guía de Codex y VS Code](docs/codex-identity-quickstart.md) contiene un recorrido más detallado; sus rutas absolutas corresponden al entorno original y deben sustituirse por las de tu equipo.
+
+La investigación externa y las reflexiones libres requieren un anfitrión LLM activo y sus herramientas disponibles. `watch` ejecuta actividad local mientras su proceso está abierto; instalar la skill no inicia un servicio permanente.
+
+## Experimentos y resultados
+
+Los experimentos distinguen tres preguntas: si el banco funciona correctamente, si un estado modifica causalmente una decisión y si ese mecanismo aporta un beneficio en una tarea concreta.
+
+| Protocolo | Qué investiga | Evidencia y alcance |
+|---|---|---|
+| E0 | Persistencia y reproducción tras reinicios | [Resultados v0.1](reports/README.md) |
+| E1 | Uso causal de memoria mediante bloqueos e intervenciones | [Alcance v0.1](docs/mvp-v0.1.md) |
+| L1 | Adquisición y reversión de asociaciones binarias | [Informe v0.2](reports/l1-v0.2/report.md) |
+| E2 | Estimación de fiabilidad de herramientas y adaptación | [Informe v0.3](reports/e2-v0.3/report.md) |
+| I1 | Preferencias, aversión, aprendizaje, simulación y continuidad | [Informe v0.4](reports/i1-v0.4/report.md) |
+
+Para ejecutar la suite y un piloto corto de identidad:
+
+```sh
+python -m unittest discover -s tests -v
+python -m project_consciousness life experiment --seeds 400:403 --out runs/i1-demo
+```
+
+`400:403` incluye las semillas 400, 401 y 402. Para reproducir el piloto completo de I1 utiliza `400:420` y una carpeta de salida nueva. El informe se guarda en `runs/i1-demo/report.md`.
+
+La entrega **v0.4** registró **163 pruebas aprobadas**, **140 bases**, **1.200 elecciones de seguimiento** y **401/401 comprobaciones válidas**. Neutralizar preferencias cambió la primera elección en 9 de 20 historias; reiniciar conservó los estados y eventos funcionales. I1 usa feedback sintético predefinido. Su control de sueños verifica la supresión de simulaciones, sin evaluar una mejora de decisiones posteriores por soñar.
+
+Los [informes y datos resumidos](reports/README.md) incluyen protocolos, métricas, comprobaciones y límites de interpretación. Las bases completas del piloto I1 no están incluidas en Git; pueden regenerarse ejecutando el protocolo. La [demostración con Codex](reports/codex-v0.4/report.md) sí conserva una base pequeña y un [diario de ejemplo](reports/codex-v0.4/diary.md).
+
+Cada ejecución registra versiones, semilla y huella del código. Continuar o recomputar una historia exige sus fuentes y versiones originales de Python/SQLite. Tras modificar el motor, crea una ejecución nueva o utiliza el [archivo v0.4](releases/project-consciousness-v0.4.zip) y su [manifiesto](releases/project-consciousness-v0.4.json). Para una vida creada con `life`, `life verify --life runs/aeon --mode reconstruct` permite comprobar integridad sin exigir igualdad de fuentes.
+
+## Cómo contribuir
+
+Las contribuciones pueden empezar por una reproducción independiente, una corrección pequeña o una pregunta metodológica. No necesitas trabajar en todos los módulos ni compartir una teoría particular de la conciencia.
+
+- **Errores y reproducibilidad:** informa del comando, versión o commit, Python/SQLite, semilla, resultado esperado y resultado observado.
+- **Código y pruebas:** mejora contratos, persistencia, controles causales, adaptadores y casos de fallo reproducibles.
+- **Diseño experimental:** propone tareas, comparadores, intervenciones y criterios que permitan refutar una hipótesis.
+- **Revisión interdisciplinaria:** aporta fuentes primarias, objeciones y límites al trasladar conceptos científicos o filosóficos al software.
+- **Documentación y accesibilidad:** corrige ejemplos, explica resultados o contribuye traducciones. Se reciben propuestas en español e inglés.
+
+Para colaborar:
+
+1. Revisa los [issues existentes](https://github.com/AeonMuller/PROJECT-CONSCIOUSNESS/issues) o [abre uno](https://github.com/AeonMuller/PROJECT-CONSCIOUSNESS/issues/new) con el problema o propuesta. Para cambios amplios, describe primero su objetivo y cómo se evaluará.
+2. Haz un fork y crea una rama para un cambio concreto. Usa el inicio rápido para familiarizarte con el proyecto.
+3. Mantén el cambio acotado. Si modifica el comportamiento, añade pruebas pertinentes; si modifica contratos o hipótesis, actualiza su especificación y documenta la decisión antes de comparar resultados.
+4. Ejecuta las comprobaciones pertinentes. Para cambios de código, utiliza la suite indicada arriba; para documentación, comprueba enlaces y ejemplos.
+5. Abre un [pull request](https://github.com/AeonMuller/PROJECT-CONSCIOUSNESS/pulls) que explique el problema, el cambio, cómo se verificó y sus límites. Enlaza el issue cuando exista.
+
+Conserva las semillas, configuraciones y procedencias de los experimentos. Las simulaciones deben seguir identificadas como tales; los resultados nulos, los costes y los fallos también forman parte de la evidencia. Evita incluir credenciales o datos personales en los ejemplos compartidos.
+
+### Áreas de investigación propuestas
+
+- Recuperación y consolidación de memoria más allá del buffer actual.
+- Seguimiento de preguntas: evidencia a favor o en contra, revisión y cierre.
+- Curiosidad basada en ganancia de información y evaluación de fuentes.
+- Metacognición y calibración de incertidumbre.
+- Evaluación del efecto de las simulaciones sobre decisiones posteriores.
+- Aprendizaje conjunto del mundo y las capacidades, retención y transferencia.
+- Adaptadores para otros agentes LLM y comparaciones reproducibles entre anfitriones.
+
+Estas son líneas de trabajo abiertas, no capacidades ya entregadas ni compromisos de calendario.
+
+## Estructura y documentación
+
+Este README está disponible en español e inglés. La mayor parte de la documentación técnica enlazada está actualmente en español; las traducciones también son bienvenidas.
+
+| Ruta | Contenido |
 |---|---|
-| **E** | Resultado empírico limitado a un método, población y tarea |
-| **T** | Teoría científica o modelo formal con supuestos explícitos |
-| **I** | Hipótesis o decisión de ingeniería que requiere pruebas propias |
-| **F** | Posición o pregunta filosófica |
-| **U** | Afirmación sin respaldo suficiente en las fuentes examinadas |
+| [`project_consciousness/`](project_consciousness/) | Núcleo, persistencia, CLI y laboratorios. |
+| [`skills/project-consciousness/`](skills/project-consciousness/) | Instrucciones, wrapper y protocolo del anfitrión LLM. |
+| [`tests/`](tests/) | Pruebas de comportamiento, recuperación, procedencia y experimentos. |
+| [`configs/`](configs/) | Configuraciones y condiciones de los laboratorios E0/E1/L1/E2. |
+| [`docs/`](docs/) | Arquitectura, fundamentos, contratos y decisiones. |
+| [`reports/`](reports/) | Resultados registrados y límites de interpretación. |
+| [`releases/`](releases/) | Motores archivados para reproducir ejecuciones anteriores. |
 
-La arquitectura propuesta es **I**, aunque se inspire en **E/T**. Una prueba positiva podría establecer un hecho empírico sobre este artefacto; no eliminaría automáticamente las preguntas **F**. Un archivo desclasificado es una fuente documental, no un aval científico de sus afirmaciones.
+El corte v0.4 separa las transiciones puras (`identity_state`), la persistencia (`identity_runtime`), la interfaz (`identity_cli`), el experimento I1 (`identity_experiment`) y la skill. Las bases de identidad son independientes de los laboratorios anteriores.
 
-## Primera ejecución de v0.3 en VS Code
+Lecturas principales:
 
-Abre `F:\PC` en VS Code y una terminal PowerShell. Se necesita Python >=3.12 con SQLite; el proyecto usa exclusivamente la biblioteca estándar. Desde la raíz:
+- [Mapa de capacidades](CAPABILITY-MAP.md), [arquitectura conceptual](docs/architecture.md) e [interfaces y estado](docs/interfaces-and-state.md).
+- [Fundamentos científicos](docs/scientific-foundations.md), [análisis crítico de Gateway](docs/gateway-analysis.md) y [protocolos propuestos](docs/experiments.md).
+- [Especificación v0.4](docs/mvp-v0.4.md) y [decisión sobre identidad persistente](docs/decisions/0005-persistent-functional-identity.md).
+- Especificaciones de [runtime](SPEC-runtime.md), [memoria](SPEC-memory.md), [cognición](SPEC-cognition.md), [laboratorio](SPEC-experiment-lab.md) y [adaptador lingüístico](SPEC-language-adapter.md).
+- [Historial de cambios](CHANGELOG.md) y [resultados de las distintas versiones](reports/README.md).
 
-```powershell
-python -m unittest discover -s tests -v
-python -m project_consciousness experiment --protocol configs/e2-capabilities.toml --seeds 300:303 --out runs/mis-capacidades
-```
+## Criterio científico y límites
 
-Abre `runs/mis-capacidades/report.md` y pulsa `Ctrl+Shift+V`. Este piloto corto ejecuta 960 episodios en 21 bases y 4.800 ensayos de sonda. El protocolo completo usa 20 semillas: 6.400 episodios, 140 bases y 32.000 ensayos de sonda. Las sondas evalúan las dos predicciones almacenadas con los mismos resultados por semilla y fase, sin entrenar al agente.
+La documentación distingue resultados empíricos (**E**), teorías o modelos (**T**), decisiones de ingeniería (**I**), cuestiones filosóficas (**F**) y afirmaciones sin respaldo suficiente (**U**). Una implementación inspirada en una teoría sigue necesitando sus propias pruebas. El análisis del Gateway Process separa el contenido documental de su respaldo científico; la desclasificación no se considera un aval de sus afirmaciones.
 
-La herramienta `fast` cuesta 0,05 y pasa de una fiabilidad de 0,95 a 0,20 después de 40 episodios. `safe` cuesta 0,20 y mantiene una fiabilidad de 0,85. El agente conoce los costes; estima la fiabilidad a partir de sus resultados, sin recibir las tasas reales ni un aviso del cambio. La tarea informa por separado si eligió el lado correcto y si la herramienta ejecutó la intención. Ese feedback identificable es un supuesto del experimento.
+Los recuerdos distinguen `OBSERVED`, `REPORTED`, `INFERRED` y `SIMULATED`. El aprendizaje actual modifica parámetros del núcleo, no los pesos del LLM. Las cinco dimensiones de preferencia son fijas; los sueños locales usan plantillas; las preguntas aún no tienen una operación de cierre. Los conceptos de personalidad, miedo o trauma humano no se consideran demostrados por estos estados numéricos.
 
-Para observar y congelar manualmente una historia:
+No se propone una puntuación agregada que certifique conciencia. El valor del proyecto está en hacer explícitos sus mecanismos, probarlos y permitir que otras personas cuestionen y reproduzcan sus resultados.
 
-```powershell
-python -m project_consciousness run --config configs/mvp-v03.toml --seed 17 --ticks 120 --out runs/capacidad
-python -m project_consciousness status --run runs/capacidad
-python -m project_consciousness fork --run runs/capacidad --condition configs/capability-frozen.toml --out runs/capacidad-congelada
-python -m project_consciousness resume --run runs/capacidad --ticks 120
-python -m project_consciousness resume --run runs/capacidad-congelada --ticks 120
-python -m project_consciousness replay --run runs/capacidad --mode recompute --verify
-```
+## Licencia
 
-120 ticks completan los 40 episodios iniciales. `status` muestra `capability.probabilities` y `updates`; la rama congelada conserva el modelo completo mientras sigue registrando experiencia. `configs/capability-blocked.toml` permite otra intervención: aprender pero ocultar las estimaciones al selector. Para comparar exclusivamente las fases usa E2: la salida manual del run original agrega adquisición y seguimiento, mientras el fork contiene solo seguimiento.
+PROJECT CONSCIOUSNESS se distribuye bajo la [licencia MIT](LICENSE). Permite usar, copiar, modificar, distribuir y comercializar el software, incluidas las modificaciones privadas, siempre que se conserven el aviso de copyright y el aviso de permiso en todas las copias o porciones sustanciales del software. No exige publicar las modificaciones.
 
-El control `generic` tiene los mismos dos parámetros, información y algoritmo con una representación plana. Se espera igualdad funcional por construcción. E2 investiga el uso causal y la adaptación de un predictor; nombrarlo self-model no demuestra una capacidad adicional. Las carpetas de salida deben ser nuevas; cambia sus nombres para repetir.
+El propósito de investigación sin fines de lucro de este proyecto no limita esos permisos. El texto completo de `LICENSE` establece las condiciones y la exclusión de garantías.
 
-Entrega verificada: **121 pruebas aprobadas**, 140/140 bases, 6.400 episodios, 32.000 ensayos de sonda y 580/580 comprobaciones sin fallos. Tras degradar fast, updated obtuvo 71,125 % de éxitos frente a 22,25 % de frozen; la mejora de utilidad media fue 0,3793, IC bootstrap descriptivo 95 % [0,3319; 0,4298]. Generic y sham conservaron equivalencia funcional; los reinicios reprodujeron trazas exactas. [Resultados y límites](reports/README.md), [informe E2](reports/e2-v0.3/report.md).
-
-## Ejecución del aprendizaje de asociaciones (v0.2)
-
-Abre `F:\PC` en VS Code y abre una terminal PowerShell. Se necesita Python >=3.12 y su SQLite; no hay paquetes externos, API ni modelos que instalar. Ejecuta desde la raíz del repositorio:
-
-```powershell
-python -m unittest discover -s tests -v
-python -m project_consciousness experiment --protocol configs/l1-learning.toml --seeds 200:203 --out runs/mi-aprendizaje
-```
-
-Abre `runs/mi-aprendizaje/report.md` y usa `Ctrl+Shift+V` para la vista previa. El piloto corto ejecuta 840 episodios en 18 bases: tres historias independientes, cada una con adquisición, cuatro ramas y un control sin aprendizaje desde el inicio. La configuración completa usa 20 semillas (5.600 episodios, 120 bases). Los CSV conservan las predicciones antes del feedback y los resultados por episodio. Los intervalos de este piloto son descriptivos.
-
-Validación de esta entrega: **83 pruebas aprobadas** y piloto completo sin fallos. Tras invertir la regla, adaptive obtuvo 85 % de aciertos y 100 % en los últimos diez episodios por semilla; frozen conservó la asociación anterior y obtuvo 0 %. Sham y resumed reprodujeron exactamente las trazas adaptativas. Véanse [resultados y límites](reports/README.md); esto no establece generalización ni conciencia.
-
-También puedes observar la persistencia y congelar una copia manualmente:
-
-```powershell
-python -m project_consciousness run --config configs/mvp-v02.toml --seed 17 --ticks 200 --out runs/aprendizaje
-python -m project_consciousness status --run runs/aprendizaje
-python -m project_consciousness fork --run runs/aprendizaje --condition configs/learning-frozen.toml --out runs/aprendizaje-congelado
-python -m project_consciousness resume --run runs/aprendizaje --ticks 200
-python -m project_consciousness resume --run runs/aprendizaje-congelado --ticks 200
-python -m project_consciousness replay --run runs/aprendizaje --mode recompute --verify
-```
-
-Los primeros 200 ticks completan 40 episodios de adquisición. En el episodio 40 (contado desde cero) la regla se invierte sin avisar al agente. `status` muestra `learner.q_left` (predicciones condicionadas a cada pista) y `updates`. En la copia congelada los parámetros siguen iguales mientras continúa la experiencia. `success_rate` de la CLI resume solo episodios propios de esa base: el run original incluye adquisición y seguimiento; el fork incluye seguimiento. Para comparar fases usa el informe L1.
-
-`probability_left` es probabilidad de elegir izquierda; `predicted_target_left` es la creencia aprendida sobre cuál lado será correcto. L1 calcula Brier con la segunda. No interpreta ninguna como autoconciencia o metacognición.
-
-Los directorios de salida deben ser nuevos. Para repetir una prueba cambia el nombre en todos sus comandos. Las configuraciones y condiciones de v0.1 siguen disponibles.
-
-## Ejecución de la tarea de regla fija (v0.1)
-
-Requiere Python 3.12 o posterior, biblioteca estándar y SQLite incluido en Python. No necesita instalar dependencias, servicios o modelos. Ejecutar desde la raíz del repositorio:
-
-```powershell
-python -m unittest discover -s tests -v
-python -m project_consciousness run --config configs/mvp-v01.toml --seed 17 --ticks 4 --out runs/demo
-python -m project_consciousness resume --run runs/demo --ticks 46
-python -m project_consciousness replay --run runs/demo --mode recompute --verify
-python -m project_consciousness fork --run runs/demo --tick 4 --condition configs/memory-blocked.toml --out runs/demo-blocked
-python -m project_consciousness resume --run runs/demo-blocked --ticks 1
-```
-
-Los directorios de salida deben ser nuevos; usa otro nombre para repetir una creación. `resume` añade ticks. El primer run se detiene justo antes de elegir: tras reabrir debe usar la pista almacenada. El fork del tick 4 conserva mundo, memoria y RNG, y bloquea la lectura. `decisions.jsonl` muestra decisiones y predicciones anteriores al resultado.
-
-```powershell
-python -m project_consciousness experiment --protocol configs/e0-persistence.toml --out runs/e0
-python -m project_consciousness experiment --protocol configs/e1-memory.toml --out runs/e1
-python -m project_consciousness report --experiment runs/e1
-```
-
-E0 compara 1.000 ticks continuos con cierres/reaperturas y recomputa las transiciones. E1 ejecuta 20 semillas × 40 episodios × 8 condiciones, más 100 ramas desde snapshots. Produce `report.md`, manifiestos, métricas, contrastes y bases SQLite bajo `runs/` (excluidas de Git). Los intervalos son descriptivos de un piloto; la tarea y la regla pista–acción están diseñadas explícitamente.
-
-La primera ejecución pasó 46 pruebas; E0 reprodujo todas las trazas y E1 completó 6.400 episodios y 100 ramas sin fallos. Memoria intacta e historial plano acertaron 800/800; lectura bloqueada, 399/800. Véanse [resultados e interpretación](reports/README.md). El historial plano igualó al agente episódico en esta tarea.
-
-`status --run <directorio>` muestra metadatos. `replay --mode reconstruct` comprueba hashes y reconstruye las fronteras guardadas sin recalcular decisiones; `recompute` también recalcula. Continuar/recomputar requiere las mismas fuentes Python y versiones registradas del intérprete y SQLite; editar el código obliga a crear una ejecución nueva. Los archivos `manifest.json` son exportaciones, el manifiesto autoritativo está en SQLite.
-
-Tras actualizar el motor, tus runs anteriores conservan sus datos pero `resume`/`recompute` con fuentes distintas devolverán `SOURCE_MISMATCH`. Puedes verificar su integridad con `replay --mode reconstruct`. Para continuarlos o recomputarlos, extrae el motor registrado en otra carpeta y usa las mismas versiones de Python/SQLite: [archivo v0.1](releases/project-consciousness-v0.1.zip), [hashes v0.1](releases/project-consciousness-v0.1.json), [archivo v0.2](releases/project-consciousness-v0.2.zip), [hashes v0.2](releases/project-consciousness-v0.2.json), [archivo v0.3](releases/project-consciousness-v0.3.zip), [hashes v0.3](releases/project-consciousness-v0.3.json). No se alteran ni migran historias anteriores.
-
-El modelo de rutas, actuador y regulación de la [propuesta ampliada](docs/mvp.md) sigue siendo trabajo posterior. La procedencia y las vistas públicas son contratos dentro del proceso, no aislamiento contra un módulo malicioso con acceso al sistema de archivos.
-
-## Protocolos y alcance
-
-| Protocolo | Propiedad |
-|---|---|
-| E0 | Implementado: persistencia, frontera de observación y reproducción |
-| E1 | Implementación acotada: memoria de episodios, máscaras y procedencia; otras variantes siguen propuestas |
-| L1 | Implementado en v0.2: adquisición y reversión de asociaciones binarias, controles y persistencia; subconjunto de E5/E8 |
-| E2 | Implementación acotada v0.3: predictor de ejecución, degradación, lector/escritor intervenidos y comparador genérico |
-| E3 | Metacognición y metacontrol |
-| E4 | Afecto computacional como control recurrente |
-| E5 | Predicción y revisión del modelo del mundo |
-| E6 | Imaginación y planificación |
-| E7 | Metas y agencia |
-| E8 | Aprendizaje continuo, retención y transferencia |
-| E9 | Coordinación entre módulos y reportes |
-
-Se distinguirá la corrección del banco, el uso causal de un estado y el beneficio funcional en tareas retenidas. Resultados nulos y costes forman parte del resultado. No se propone un índice agregado de conciencia.
-
-## Desarrollo posterior
-
-La ampliación seguirá el mapa y las especificaciones. L1 aprende asociaciones; E2 aprende fiabilidad de ejecución con la regla pista–lado suministrada. Todavía son políticas separadas, no un agente que aprenda simultáneamente el mundo y sus capacidades. Quedan por investigar contextos nuevos, retención A→B→A, incertidumbre sobre las estimaciones y metacontrol. Los cambios de hipótesis, protocolo o significado de un estado se documentarán antes de comparar resultados. Cada ejecución conserva versiones, semillas, configuración y trazas; las sondas de evaluación no entrenan al agente.
+Si utilizas el proyecto en una investigación, producto o trabajo derivado, se agradece que menciones **PROJECT CONSCIOUSNESS, por AeonMuller**, y enlaces al [repositorio original](https://github.com/AeonMuller/PROJECT-CONSCIOUSNESS). Esta mención pública es una solicitud voluntaria, adicional a la obligación de conservar los avisos de MIT.
