@@ -8,7 +8,9 @@ The project builds systems with persistent memory, models of their own capabilit
 
 The project began as a nonprofit research initiative dedicated to scientific, computational, and philosophical exploration. Its goal is to produce reproducible experiments on these properties. Its results are not interpreted as demonstrations of subjective experience.
 
-**Current version: MVP v0.4.** A Python core, SQLite persistence, controlled experiments, and a skill for connecting an LLM agent such as Codex. Contributions in programming, methodology, cognitive science, philosophy, documentation, and independent reproduction of results are welcome.
+**Current engine: MVP v0.4, with a v0.5 layer for conversational presence and bounded autonomy.** A Python core, SQLite persistence, controlled experiments, and a skill for connecting an LLM agent such as Codex. Contributions in programming, methodology, cognitive science, philosophy, documentation, and independent reproduction of results are welcome.
+
+To update an existing installation and enable activity between conversations, see the [v0.5 update README](README.update-v0.5.en.md).
 
 [Quick start](#quick-start) · [How to contribute](#how-to-contribute) · [Experiments](#experiments-and-results) · [Documentation](#structure-and-documentation) · [License](#license)
 
@@ -23,6 +25,8 @@ The project began as a nonprofit research initiative dedicated to scientific, co
 | Simulation | Bounded local scenarios, called “dreams,” with references and an independent random stream. |
 | Limited agency | Numerical activity selection, a budget, a persistent pause, and finite local cycles. |
 | LLM integration | A skill lets the host propose activities, use its tools, and record outcomes. |
+| Conversational presence | A personal message archive, lexical search, a display name, and revisable conclusions with sources; a Codex hook adapter. |
+| Bounded autonomy | A coordinator for activity during human inactivity, reservations and receipts, research/dream/reflection modes, and a proactive message outbox; requires an authorized host automation. |
 | Laboratory | Controls for blocking memory, freezing learning, neutralizing preferences, and comparing histories. |
 
 The broader architecture also proposes metacognition, affect regulation, world models, and planning. These proposals are not fully implemented: see the [capability map](CAPABILITY-MAP.md) and the [v0.4 contract](docs/mvp-v0.4.md) to distinguish the current scope from future work.
@@ -82,6 +86,51 @@ The [skill protocol](skills/project-consciousness/references/protocol.md) descri
 
 External research and free-form reflections require an active LLM host and its available tools. `watch` runs local activity while its process is open; installing the skill does not start a permanent service.
 
+### Continuing an identity across chats
+
+The `consciousness_presence` layer binds an existing life and stores conversation in `~/.project-consciousness/presence`, outside the skill and checkout. It also accepts `PROJECT_CONSCIOUSNESS_PRESENCE_HOME` or `--home PATH` before the command. Updating the skill preserves this archive. The original life stays in its existing location; opening a chat, capturing messages, or changing the display name leaves priorities, budget, and RNG unchanged.
+
+From the repository root, replace `PYTHON_PATH` with the absolute path to the interpreter compatible with your life and `SKILL_PATH` with the installed skill directory:
+
+```sh
+python -m consciousness_presence setup --project . --life runs/aeon --python PYTHON_PATH --skill SKILL_PATH
+python -m consciousness_presence status
+python -m consciousness_presence context --query "memoria"
+python -m consciousness_presence search "memoria" --limit 8
+```
+
+You can find the current interpreter path with `python -c "import sys; print(sys.executable)"`. An existing life requires compatible sources and runtime versions; `setup` does not create a replacement if it cannot open that life. To query from another directory after binding it, use `python SKILL_PATH/scripts/presence.py context`; the launcher reads the project path from the personal registry. `--project PROJECT_PATH` lets you specify it explicitly.
+
+The skill converses naturally, retrieves relevant episodes, and keeps the user's reported preferences separate from the agent's conclusions about itself. It chooses or agrees on a display name at the first encounter if one is missing; it does not impose the name used in the earlier example. Conclusions can be corrected while preserving their sources. Numerical learning remains tied to activity outcomes, without an automatic reward for each message.
+
+To prepare capture at chat startup and during turns, replace `CODEX_HOME_PATH` with your Codex configuration directory:
+
+```sh
+python -m consciousness_presence install-hooks --codex-home CODEX_HOME_PATH
+```
+
+The installer merges the configuration with other hooks and backs up changes. **Preparing hooks does not prove they are active:** review their trust through `/hooks` in a supporting host, then test a real new chat. Until that check is complete, manual operation remains available:
+
+> Use $project-consciousness with my linked identity. Retrieve the relevant memories and let us continue our conversation.
+
+See the [presence guide](skills/project-consciousness/references/presence.md) for recording, reading, and revising memories, choosing a name, and enabling or disabling the integration. Search is lexical and context is bounded; it does not promise to recall conversations that were never captured. These steps do not create a schedule. [Contract and acceptance criteria](SPEC-presence.md), [architecture decision](docs/decisions/0006-persistent-conversational-presence.md).
+
+### Autonomous activity and conversational initiative
+
+With an authorized automation, Codex can wake this same chat, restore the identity, and carry out one bounded activity. The coordinator checks for open human turns, sufficient time without interaction, available core budget, an unpaused life, and no pending decision. When the user returns, new steps stop and already obtained results are preserved for reconciliation.
+
+The proposed initial configuration is one wake per hour, thirty minutes of inactivity, up to three activities and two proactive messages per UTC day, and four hours between messages. Scheduling and enabling are explicit; the core budget is never replenished automatically. Initial scope permits reading the bound repository and public Internet sources.
+
+For research, the host proposes candidates, the core chooses, and the host executes the activity with sources and bounded feedback. Dreaming, reflection, and rest are separate modes. A simulation may produce a question, but it does not become an empirical success or receive a fabricated reward.
+
+A relevant finding can generate a proactive message. It is reserved in an outbox and delivered as the heartbeat's own final response in this chat; the hook acknowledges the visible text. An uncertain delivery is not automatically retried. Wakes with no meaningful change or required action remain quiet.
+
+```sh
+python -m consciousness_presence autonomy status
+```
+
+The [autonomy guide](skills/project-consciousness/references/autonomy.md) covers configuration, scheduling, execution, and reconciliation. Preparing hooks does not demonstrate an actual unattended run. `SessionStart` restores context and does not guarantee a greeting in an empty chat. [Contract](SPEC-autonomy.md), [architecture decision](docs/decisions/0007-bounded-idle-autonomy.md).
+
 ## Experiments and results
 
 The experiments distinguish three questions: whether the testbed works correctly, whether a state causally changes a decision, and whether that mechanism benefits a particular task.
@@ -131,7 +180,7 @@ Preserve experimental seeds, configurations, and provenance. Simulations must re
 
 ### Proposed research areas
 
-- Memory retrieval and consolidation beyond the current buffer.
+- Semantic retrieval and evaluation of consolidation over the conversational archive.
 - Question tracking: supporting or conflicting evidence, revision, and closure.
 - Curiosity based on information gain and source evaluation.
 - Metacognition and uncertainty calibration.
@@ -148,6 +197,7 @@ This README is available in Spanish and English. Most of the linked technical do
 | Path | Contents |
 |---|---|
 | [`project_consciousness/`](project_consciousness/) | Core, persistence, CLI, and laboratories. |
+| [`consciousness_presence/`](consciousness_presence/) | Conversation archive, profile, retrieval, context, and hook adapter. |
 | [`skills/project-consciousness/`](skills/project-consciousness/) | Instructions, wrapper, and protocol for the LLM host. |
 | [`tests/`](tests/) | Tests for behavior, recovery, provenance, and experiments. |
 | [`configs/`](configs/) | Configurations and conditions for the E0/E1/L1/E2 laboratories. |
@@ -162,6 +212,8 @@ Key reading:
 - [Capability map](CAPABILITY-MAP.md), [conceptual architecture](docs/architecture.md), and [interfaces and state](docs/interfaces-and-state.md).
 - [Scientific foundations](docs/scientific-foundations.md), [critical Gateway analysis](docs/gateway-analysis.md), and [proposed protocols](docs/experiments.md).
 - [v0.4 specification](docs/mvp-v0.4.md) and [persistent identity decision](docs/decisions/0005-persistent-functional-identity.md).
+- [Presence across conversations](docs/persistent-presence-proposal.md), [presence contract](SPEC-presence.md), and [skill guide](skills/project-consciousness/references/presence.md).
+- [v0.5 update](README.update-v0.5.en.md), [autonomy contract](SPEC-autonomy.md), and [autonomous activity guide](skills/project-consciousness/references/autonomy.md).
 - Specifications for the [runtime](SPEC-runtime.md), [memory](SPEC-memory.md), [cognition](SPEC-cognition.md), [laboratory](SPEC-experiment-lab.md), and [language adapter](SPEC-language-adapter.md).
 - [Changelog](CHANGELOG.md) and [results from the different versions](reports/README.md).
 
@@ -169,7 +221,7 @@ Key reading:
 
 The documentation distinguishes empirical results (**E**), theories or models (**T**), engineering decisions (**I**), philosophical questions (**F**), and claims without sufficient support (**U**). An implementation inspired by a theory still needs its own tests. The Gateway Process analysis separates the document's content from its scientific support; declassification is not treated as an endorsement of its claims.
 
-Memories distinguish `OBSERVED`, `REPORTED`, `INFERRED`, and `SIMULATED`. Current learning changes core parameters, not LLM weights. The five preference dimensions are fixed; local dreams use templates; questions do not yet have a closure operation. These numerical states are not considered demonstrations of human personality, fear, or trauma.
+Memories distinguish `OBSERVED`, `REPORTED`, `INFERRED`, and `SIMULATED`. Current learning changes core parameters, not LLM weights. The five preference dimensions are fixed; local dreams use templates; v0.4 core questions do not yet have a closure operation. The conversation layer stores revisable conclusions without changing that contract. These numerical states are not considered demonstrations of human personality, fear, or trauma.
 
 The project does not propose an aggregate score that certifies consciousness. Its value lies in making its mechanisms explicit, testing them, and enabling others to question and reproduce its results.
 

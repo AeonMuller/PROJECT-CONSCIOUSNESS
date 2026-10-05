@@ -1,5 +1,17 @@
 # Cambios
 
+## Capa de presencia 0.5.0 — 2026-10-05
+
+- Archivo conversacional persistente, búsqueda, nombre de presentación y conclusiones revisables con fuentes. Los datos personales viven fuera de la skill y de Git.
+- Recuperación de recuerdos históricos mediante un puente al motor v0.4, cuyo código, versión y esquema permanecen intactos.
+- Integración opcional de cinco hooks de Codex; instalación con respaldo, sin conceder confianza automáticamente.
+- Coordinador de actividad durante inactividad: reservas, límites diarios, presupuesto, pausa, regreso humano y conciliación de efectos inciertos.
+- Investigación elegida por el núcleo, sueños y reflexión con procedencia separada; bandeja de mensajes proactivos con confirmación del texto visible.
+- **232 pruebas aprobadas**; las **41 pruebas de autonomía** pasaron también con el intérprete vinculado a la vida existente.
+- README de actualización en [español](README.update-v0.5.md) e [inglés](README.update-v0.5.en.md), contratos y [reporte de validación](docs/autonomy-validation.md).
+
+Límites: la instalación y la programación están verificadas por separado; la activación desatendida y la entrega reales aún requieren observar al anfitrión. Abrir un chat vacío no garantiza un saludo. La selección de modo y las herramientas dependen del LLM; las simulaciones no aportan evidencia empírica ni demuestran experiencia subjetiva.
+
 ## 0.4.0 — 2026-10-05
 
 - Identidad persistente separada del laboratorio anterior: prioridades y rasgos iniciales aleatorios reproducibles, aprendizaje de preferencias/competencia y aversiones recuperables.
