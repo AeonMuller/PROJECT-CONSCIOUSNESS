@@ -1,0 +1,18 @@
+{
+  "experiment": "E0",
+  "status": "passed",
+  "valid": true,
+  "ticks_planned": 1000,
+  "checkpoints": [
+    1,
+    333,
+    500,
+    999
+  ],
+  "mismatch_ticks": [],
+  "runs_planned": 2,
+  "runs_completed": 2,
+  "scope": "Continuidad con cierres reales y recomputación. Fallos de commit e idempotencia se cubren en tests del runtime.",
+  "experiment_dir": "F:\\PC\\runs\\e0-v01-20261003",
+  "report_path": "F:\\PC\\runs\\e0-v01-20261003\\report.md"
+}

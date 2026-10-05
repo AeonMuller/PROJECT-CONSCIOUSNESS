@@ -1,0 +1,15 @@
+{
+  "experiment": "L1",
+  "status": "completed",
+  "valid": true,
+  "runs_planned": 120,
+  "runs_completed": 120,
+  "failed_runs": [],
+  "checks_planned": 340,
+  "checks_passed": 340,
+  "episodes_planned": 5600,
+  "episodes_completed": 5600,
+  "episodes_valid": 5600,
+  "experiment_dir": "C:\\Users\\Sistemas\\AppData\\Local\\Temp\\project-consciousness-l1-a59da4ccc44542d19c3c0f83bbda0cd6",
+  "report_path": "C:\\Users\\Sistemas\\AppData\\Local\\Temp\\project-consciousness-l1-a59da4ccc44542d19c3c0f83bbda0cd6\\report.md"
+}

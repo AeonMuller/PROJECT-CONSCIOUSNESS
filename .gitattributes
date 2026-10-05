@@ -1,0 +1,4 @@
+# Preserve exact executable/evidence bytes for recorded source fingerprints.
+project_consciousness/*.py -text
+releases/* -text
+reports/** -text

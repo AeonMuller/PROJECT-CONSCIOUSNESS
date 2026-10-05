@@ -1,0 +1,3 @@
+condition,status,error,ticks_planned,ticks_completed,verify_valid,run_path
+continuous,ok,,1000,1000,True,runs\continuous
+resumed,ok,,1000,1000,True,runs\resumed

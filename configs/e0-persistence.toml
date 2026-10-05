@@ -1,0 +1,8 @@
+[experiment]
+protocol = "E0"
+seed = 17
+ticks = 1000
+
+[agent]
+delay = 3
+capacity = 64

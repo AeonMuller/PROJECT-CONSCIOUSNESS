@@ -1,0 +1,16 @@
+{
+  "experiment": "E1",
+  "status": "completed",
+  "runs_planned": 160,
+  "runs_completed": 160,
+  "failed_runs": [],
+  "branches_planned": 100,
+  "branches_completed": 100,
+  "failed_branches": [],
+  "episodes_planned": 6400,
+  "episodes_completed": 6400,
+  "experiment_dir": "C:\\Users\\Sistemas\\AppData\\Local\\Temp\\project-consciousness-e1-8e018e6c181b49ec97f8432aa8582bba",
+  "report_path": "C:\\Users\\Sistemas\\AppData\\Local\\Temp\\project-consciousness-e1-8e018e6c181b49ec97f8432aa8582bba\\report.md",
+  "comparisons_path": "C:\\Users\\Sistemas\\AppData\\Local\\Temp\\project-consciousness-e1-8e018e6c181b49ec97f8432aa8582bba\\comparisons.csv",
+  "causal_path": "C:\\Users\\Sistemas\\AppData\\Local\\Temp\\project-consciousness-e1-8e018e6c181b49ec97f8432aa8582bba\\causal_contrasts.csv"
+}

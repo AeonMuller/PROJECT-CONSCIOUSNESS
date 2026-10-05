@@ -1,0 +1,5 @@
+delay = 3
+capacity = 64
+agent_mode = "episodic"
+read_mode = "intact"
+write_enabled = true

@@ -1,0 +1,6 @@
+{
+  "source_fingerprint": "2cd503f48a730e38e810673883df8a73b4570149c6091a16071df1df6dea7f43",
+  "archive_sha256": "97694be0d0d42dbd293afcd6b05e0054d287352e66fc284bc424ee3d249ba06c",
+  "files": 30,
+  "reason": "Executable v0.2 engine used for the L1 pilot"
+}

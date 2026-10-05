@@ -1,0 +1,14 @@
+[agent]
+delay = 3
+capacity = 64
+agent_mode = "episodic"
+read_mode = "intact"
+write_enabled = true
+policy_mode = "learned"
+learning_enabled = true
+learning_rate = 0.25
+
+[task]
+kind = "reversal-v1"
+reversal_episode = 40
+# initial_mapping omitted: sampled privately when the run is created.

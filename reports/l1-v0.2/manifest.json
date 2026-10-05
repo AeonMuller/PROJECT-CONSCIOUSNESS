@@ -1,0 +1,83 @@
+{
+  "experiment": "L1",
+  "protocol_version": "mvp-0.2-l1-1",
+  "package_version": "0.2.0",
+  "created_utc": "2026-10-03T18:42:21.582036+00:00",
+  "python": "3.12.12",
+  "sqlite": "3.51.1",
+  "source_files": {
+    "__init__.py": "3ad5fefe31912c4de431505a78eefe0cc4d851dfd005a7796d7eef5f51cbb387",
+    "__main__.py": "26255998a4a7771ad1985c4aa98c597fba907995f983f28065ff10b4b2200403",
+    "agent.py": "3ad7b84bfdd9450fabf6fe8226506e92a667c9a5b5c956a3869dda0cefb6b123",
+    "contracts.py": "a4be3506a33b0be53c988dff0c7075051f5f730c6a5dc606a08611f3e7345fde",
+    "environment.py": "1d364a00799dfbb315c1b4b8fb6eb68721e8a2fe42bd2de2be1558b160a676f4",
+    "experiments.py": "3943215f7df8a4ac4e2462c35fc01df5434c76c7f164144692e6bacd25d0d8d5",
+    "learning.py": "211be764d52c1f01e14f136ea89484686314b34d689b353775fa0ba50aac17ef",
+    "learning_experiment.py": "17e4bbccae03daf56784d8a58fd897baabcf7ab6741efde53355108b8a0058ac",
+    "memory.py": "d4197106a88d96b3da0836b430c520966637f877cc0432b8b330f1bf3e033632",
+    "runtime.py": "4aad5ff3bbeea35ab83e04379666b3b55f26c2dadf3ac9203ff6b86b233fb689"
+  },
+  "source_fingerprint": "2cd503f48a730e38e810673883df8a73b4570149c6091a16071df1df6dea7f43",
+  "config": {
+    "delay": 3,
+    "capacity": 64,
+    "agent_mode": "episodic",
+    "read_mode": "intact",
+    "write_enabled": true,
+    "policy_mode": "learned",
+    "learning_enabled": true,
+    "learning_rate": 0.25
+  },
+  "parameters": {
+    "seeds": [
+      200,
+      201,
+      202,
+      203,
+      204,
+      205,
+      206,
+      207,
+      208,
+      209,
+      210,
+      211,
+      212,
+      213,
+      214,
+      215,
+      216,
+      217,
+      218,
+      219
+    ],
+    "acquisition_episodes": 40,
+    "adaptation_episodes": 40,
+    "task": {
+      "kind": "reversal-v1",
+      "reversal_episode": 40,
+      "initial_mapping": null
+    },
+    "conditions": [
+      "training",
+      "adaptive",
+      "frozen",
+      "sham",
+      "resumed",
+      "untrained_frozen"
+    ],
+    "bootstrap_samples": 2000,
+    "statistical_seed": 20261003,
+    "resumed_checkpoints_relative": [
+      4,
+      100
+    ],
+    "curve_block_episodes": 10,
+    "recovery": "First ending episode of a moving ten-episode postchange window with at least eight successes; otherwise censored",
+    "estimand": "Primary: adaptive minus trained frozen postchange success rate, paired by seed",
+    "brier_definition": "One-component mean (predicted_target_left - observed target-left label)^2, prediction locked before feedback",
+    "inferential_limit": "Descriptive pilot; learned association within a programmed binary task and learning rule, no generalization or consciousness inference"
+  },
+  "status": "completed",
+  "interpretation": "Hipótesis de ingeniería; asociación aprendida dentro de una tarea y algoritmo programados. No mide conciencia."
+}

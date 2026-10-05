@@ -1,0 +1,9 @@
+[experiment]
+protocol = "E1"
+seeds = "100:120"
+episodes = 40
+bootstrap_samples = 2000
+
+[agent]
+delay = 3
+capacity = 64

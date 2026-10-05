@@ -1,0 +1,6 @@
+{
+  "source_fingerprint": "d4cb0bc15de5f207efb47b111adc3be555aed31b8195074cf9423587cd5a8655",
+  "archive_sha256": "3bb09f8ecf6ca162d93853c3f045870275d094b7722257797d348ad67e0d447b",
+  "files": 19,
+  "reason": "Preserve executable v0.1 engine before v0.2 source changes"
+}
