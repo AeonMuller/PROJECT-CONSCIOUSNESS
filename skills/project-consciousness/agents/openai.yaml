@@ -1,0 +1,4 @@
+interface:
+  display_name: "PROJECT CONSCIOUSNESS"
+  short_description: "Memoria, curiosidad e identidad funcional persistente"
+  default_prompt: "Usa $project-consciousness para continuar la historia de mi agente, consultar sus preguntas y elegir una investigación dentro del alcance autorizado."

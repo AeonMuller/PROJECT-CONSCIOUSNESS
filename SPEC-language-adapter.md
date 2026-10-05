@@ -2,6 +2,8 @@
 
 Estado: propuesta posterior al MVP base · 2026-10-03 · ID: `language-adapter` · depende de `runtime`, `cognition`.
 
+Actualización v0.4: existe un primer puente mediante [skill para Codex](skills/project-consciousness/SKILL.md), CLI `life` y contexto persistente. Sus contratos ejecutables están en [MVP v0.4](docs/mvp-v0.4.md). El anfitrión propone candidatos y usa sus propias herramientas; el núcleo elige y conserva recibos con procedencia. El adaptador de proveedor parse/render descrito abajo sigue siendo una extensión propuesta, sin llamadas API ni configuración de credenciales en este corte.
+
 ## Objetivo
 
 Permitir interacción lingüística sin convertir la narración del modelo en autoridad sobre memoria, self-model, permisos o estados internos. Evaluar qué aporta lenguaje manteniendo constante el núcleo.

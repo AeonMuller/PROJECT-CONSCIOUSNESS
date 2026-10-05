@@ -56,8 +56,9 @@ def export_run(run):
 
 
 def parser():
-    root = argparse.ArgumentParser(description="PROJECT CONSCIOUSNESS v0.3: memory, learning and capability laboratory")
+    root = argparse.ArgumentParser(description="PROJECT CONSCIOUSNESS v0.4: persistent cognition and identity laboratory")
     commands = root.add_subparsers(dest="command", required=True)
+    commands.add_parser("life", help="persistent identity, preferences and LLM host integration; life --help for commands")
     run = commands.add_parser("run", help="create a run; output must not exist")
     run.add_argument("--config", type=Path)
     run.add_argument("--seed", type=int, default=17)
@@ -164,7 +165,11 @@ def dispatch(args):
 
 
 def main(argv=None):
-    args = parser().parse_args(argv)
+    arguments = sys.argv[1:] if argv is None else list(argv)
+    if arguments and arguments[0] == "life":
+        from .identity_cli import main as identity_main
+        return identity_main(arguments[1:])
+    args = parser().parse_args(arguments)
     try:
         result = dispatch(args)
         print(json.dumps(result, ensure_ascii=False, indent=2, allow_nan=False))

@@ -1,5 +1,19 @@
 # Cambios
 
+## 0.4.0 — 2026-10-05
+
+- Identidad persistente separada del laboratorio anterior: prioridades y rasgos iniciales aleatorios reproducibles, aprendizaje de preferencias/competencia y aversiones recuperables.
+- Selector numérico con términos auditables, preguntas causales por dominio, recibos externos y reconciliación de resultados desconocidos.
+- Memorias OBSERVED/REPORTED/INFERRED/SIMULATED, referencias, biblioteca acotada, reflexión y sueños locales sin promoción a evidencia empírica.
+- LifeRuntime transaccional: idempotencia, control de revisión, recuperación, dos escritores, ramas, verificación y exportación atómica.
+- CLI `life`, ciclos locales finitos, watch interrumpible, pausa persistente, créditos y señal de parada.
+- Skill para Codex con wrapper portátil, metadatos y guía; instalada y comprobada en este entorno. La investigación externa usa al anfitrión activo.
+- Protocolo I1 predefinido con seis ramas emparejadas y feedback sintético. Los experimentos v0.1–v0.3 permanecen disponibles.
+- **163 pruebas aprobadas**, incluyendo las 121 anteriores; revisión independiente y demostración real de Codex → elección → fuente primaria → feedback → reflexión/sueño → diario/recompute.
+- Piloto I1: 20 semillas, 140 bases, 3.540 eventos, 1.200 elecciones de seguimiento, 6.000 filas de puntuación y 401/401 comprobaciones. Neutralizar preferencias cambió 9/20 primeras elecciones; freeze conservó sus parámetros y reiniciar reprodujo estados/eventos funcionales.
+
+Límites: cinco dimensiones fijas; aprendizaje por reglas, sin modificar pesos del LLM; sueños por plantillas locales; preguntas sin operación de cierre; investigación externa dependiente del anfitrión. No demuestra personalidad humana ni experiencia subjetiva. [Contrato](docs/mvp-v0.4.md), [guía](docs/codex-identity-quickstart.md).
+
 ## 0.3.0 — 2026-10-05
 
 - Política `capability`: dos estimaciones persistentes de fiabilidad de ejecución que modifican la elección de herramienta según utilidad y coste.

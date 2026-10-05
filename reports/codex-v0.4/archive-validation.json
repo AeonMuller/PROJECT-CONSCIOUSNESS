@@ -1,0 +1,50 @@
+{
+  "source_fingerprint": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+  "files": [
+    {
+      "path": "context.json",
+      "sha256": "b7b8e8c7331c5c97dc372ef667621a182425502e1310eb931bb3f8841a0e82ab",
+      "bytes": 14474
+    },
+    {
+      "path": "diary.md",
+      "sha256": "1c2524c2289d3f9a5e6c170f3ff3c1a0b95695f81e96a70f99038b97a832d215",
+      "bytes": 15944
+    },
+    {
+      "path": "events.jsonl",
+      "sha256": "08eb0d39da7d0819b2c7533ba379ff0e3069f07cd3d82f81266054dcd802a5fe",
+      "bytes": 18072
+    },
+    {
+      "path": "identity.sqlite",
+      "sha256": "a2b9e72f2e3ac2f32eea717c4bf4e46a00d03630e75d5a739284b8b7ec8b9806",
+      "bytes": 192512
+    },
+    {
+      "path": "manifest.json",
+      "sha256": "cbcf2191189707c096b563563990952aadfd3d7e4a64c487187afff5bdf0e2f5",
+      "bytes": 487
+    },
+    {
+      "path": "report.md",
+      "sha256": "8a1e2ef70568e3e3b0390b540a74c865cc5fb03cc2749cd75fc8df16b906fc2d",
+      "bytes": 3249
+    },
+    {
+      "path": "state.json",
+      "sha256": "f42ff20e7d7a42482c28fef3e25405cd7133b230cf18bd351e2a2fc57e1a21e5",
+      "bytes": 58031
+    },
+    {
+      "path": "verification-recompute.json",
+      "sha256": "7db5eabd930e6857a0b3503dc2a413adf936718ba08d3c4df538dcf75b7b3394",
+      "bytes": 81
+    },
+    {
+      "path": "verification.json",
+      "sha256": "a42260413445a8503644eddcb00b82296a611f23f41351c49d59d68f4962bd42",
+      "bytes": 83
+    }
+  ]
+}

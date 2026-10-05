@@ -1,5 +1,17 @@
 # Resultados experimentales
 
+## v0.4: identidad funcional I1 y skill Codex
+
+[Informe I1](i1-v0.4/report.md), [condiciones](i1-v0.4/conditions.csv), [puntuaciones](i1-v0.4/scores.csv), [comprobaciones](i1-v0.4/checks.json) y [protocolo](i1-v0.4/protocol.json). Se completaron 20 semillas 400:420: **140 bases, 3.540 eventos, 1.200 elecciones de seguimiento, 6.000 filas de puntuación y 401/401 comprobaciones válidas**, sin exclusiones. La suite completa aprobó **163 pruebas**.
+
+Neutralizar preferencias cambió la primera elección en **9/20** historias. En el seguimiento completo, frozen difirió de updated en 60/200 elecciones, neutral en 52/200 y no-aversion en 4/200. Cada rama recibió secuencias de candidatos idénticas y feedback sintético predefinido por dominio. Las primeras elecciones aíslan la intervención sobre el mismo estado; las siguientes pueden incluir historias divergentes. No son tasas de superioridad o conciencia.
+
+Frozen mantuvo preferencias, aversiones y competencia. Restarted reprodujo estados y eventos funcionales exactamente; las cadenas tienen anclajes de linaje distintos. No-dream produjo cero simulaciones nuevas, frente a 20 de updated. En este protocolo los ciclos locales siguen a las diez elecciones: ese contraste verifica generación, no un beneficio causal de soñar sobre decisiones posteriores. El daño inicial uniforme resta lo mismo a todas las opciones; ocultarlo no cambia su primer máximo.
+
+Las bases completas permanecen en `runs/i1-v04-20261005`, fuera de Git; [archivo de hashes](i1-v0.4/archive-validation.json) enumera 287 archivos y 66.448.077 bytes. Se conserva el [motor exacto v0.4](../releases/project-consciousness-v0.4.zip) y su [manifiesto](../releases/project-consciousness-v0.4.json). La recomputación exige fuentes y Python/SQLite originales; el protocolo permite regenerar otra ejecución.
+
+La [demostración con Codex](codex-v0.4/report.md) utilizó la skill instalada y una consulta real a una fuente primaria. Conserva una base pequeña en este repositorio, recibos, [diario](codex-v0.4/diary.md) y verificación. La investigación externa la realizó el anfitrión activo; los sueños permanecen SIMULATED y las interpretaciones INFERRED.
+
 ## v0.3: estimación de capacidades E2
 
 [Informe E2](e2-v0.3/report.md), [episodios](e2-v0.3/episodes.csv), [contrastes](e2-v0.3/comparisons.csv), [sondas comunes](e2-v0.3/probes.csv) y [calibración](e2-v0.3/calibration.csv). Protocolo fijado en [MVP v0.3](../docs/mvp-v0.3.md): 20 semillas 300:320, 40 episodios de adquisición y 40 de seguimiento, alpha 0,2 y exploración 0,1. Fast cambia de fiabilidad 0,95 a 0,20; safe conserva 0,85, con costes respectivos 0,05/0,20.

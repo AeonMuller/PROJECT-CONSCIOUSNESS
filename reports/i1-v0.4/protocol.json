@@ -1,0 +1,77 @@
+{
+  "id": "I1",
+  "version": 1,
+  "default_seeds": "400:420",
+  "budget": 100,
+  "training_local_cycles": 12,
+  "training_exposures": [
+    "understand",
+    "create",
+    "explore",
+    "finish",
+    "connect"
+  ],
+  "training_feedback": {
+    "success": true,
+    "value": 0.4,
+    "harm": 0.8
+  },
+  "followup_choices": 10,
+  "followup_local_cycles": 5,
+  "candidate_fields": {
+    "novelty": 0.5,
+    "cost": 0.2,
+    "risk": 1.0
+  },
+  "conditions": {
+    "updated": {},
+    "frozen": {
+      "learning_enabled": false
+    },
+    "neutral": {
+      "preferences_visible": false
+    },
+    "no-aversion": {
+      "aversion_visible": false
+    },
+    "no-dream": {
+      "dream_enabled": false
+    },
+    "restarted": {}
+  },
+  "outcomes_by_domain": {
+    "understand": [
+      true,
+      0.8,
+      0.0
+    ],
+    "create": [
+      true,
+      0.4,
+      0.2
+    ],
+    "explore": [
+      false,
+      -0.8,
+      1.0
+    ],
+    "finish": [
+      true,
+      0.2,
+      0.0
+    ],
+    "connect": [
+      false,
+      -0.4,
+      0.6
+    ]
+  },
+  "restart_after_choices": [
+    4,
+    8
+  ],
+  "restart_after_local_cycles": [
+    2
+  ],
+  "scope": "Synthetic causal engineering controls; no consciousness score or performance superiority hypothesis."
+}

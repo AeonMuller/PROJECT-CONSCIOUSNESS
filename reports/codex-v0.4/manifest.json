@@ -1,0 +1,14 @@
+{
+  "created_at_utc": "2026-10-05T17:54:41.837047+00:00",
+  "initial_hash": "417e78879b6f26a57e574bc506ec37d0d392f65a94fad86b39095a7f7cb3347d",
+  "initial_revision": 0,
+  "life_id": "4ec349a6-6378-4372-b006-65f6182d7234",
+  "name": "Aeon",
+  "package_version": "0.4.0",
+  "parent": null,
+  "python": "3.12.12",
+  "schema_version": 1,
+  "seed": 3014558496432903127,
+  "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+  "sqlite": "3.51.1"
+}

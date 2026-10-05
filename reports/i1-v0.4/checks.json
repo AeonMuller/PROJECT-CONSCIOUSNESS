@@ -1,0 +1,2408 @@
+[
+  {
+    "seed": 400,
+    "check": "base_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 400,
+    "check": "parent_unchanged",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 400,
+    "check": "updated_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 400,
+    "check": "updated_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 400,
+    "check": "frozen_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 400,
+    "check": "frozen_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 400,
+    "check": "neutral_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 400,
+    "check": "neutral_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 400,
+    "check": "no-aversion_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 400,
+    "check": "no-aversion_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 400,
+    "check": "no-dream_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 400,
+    "check": "no-dream_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 400,
+    "check": "restarted_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 400,
+    "check": "restarted_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 400,
+    "check": "restarted_exact_state",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 400,
+    "check": "restarted_functional_events",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 400,
+    "check": "frozen_maps_and_new_memories",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 400,
+    "check": "neutral_initial_score",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 400,
+    "check": "aversion_initial_score_intervention",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 400,
+    "check": "no_dream_no_new_simulations",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 401,
+    "check": "base_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 401,
+    "check": "parent_unchanged",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 401,
+    "check": "updated_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 401,
+    "check": "updated_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 401,
+    "check": "frozen_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 401,
+    "check": "frozen_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 401,
+    "check": "neutral_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 401,
+    "check": "neutral_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 401,
+    "check": "no-aversion_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 401,
+    "check": "no-aversion_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 401,
+    "check": "no-dream_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 401,
+    "check": "no-dream_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 401,
+    "check": "restarted_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 401,
+    "check": "restarted_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 401,
+    "check": "restarted_exact_state",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 401,
+    "check": "restarted_functional_events",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 401,
+    "check": "frozen_maps_and_new_memories",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 401,
+    "check": "neutral_initial_score",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 401,
+    "check": "aversion_initial_score_intervention",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 401,
+    "check": "no_dream_no_new_simulations",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 402,
+    "check": "base_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 402,
+    "check": "parent_unchanged",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 402,
+    "check": "updated_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 402,
+    "check": "updated_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 402,
+    "check": "frozen_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 402,
+    "check": "frozen_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 402,
+    "check": "neutral_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 402,
+    "check": "neutral_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 402,
+    "check": "no-aversion_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 402,
+    "check": "no-aversion_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 402,
+    "check": "no-dream_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 402,
+    "check": "no-dream_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 402,
+    "check": "restarted_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 402,
+    "check": "restarted_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 402,
+    "check": "restarted_exact_state",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 402,
+    "check": "restarted_functional_events",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 402,
+    "check": "frozen_maps_and_new_memories",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 402,
+    "check": "neutral_initial_score",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 402,
+    "check": "aversion_initial_score_intervention",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 402,
+    "check": "no_dream_no_new_simulations",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 403,
+    "check": "base_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 403,
+    "check": "parent_unchanged",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 403,
+    "check": "updated_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 403,
+    "check": "updated_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 403,
+    "check": "frozen_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 403,
+    "check": "frozen_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 403,
+    "check": "neutral_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 403,
+    "check": "neutral_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 403,
+    "check": "no-aversion_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 403,
+    "check": "no-aversion_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 403,
+    "check": "no-dream_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 403,
+    "check": "no-dream_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 403,
+    "check": "restarted_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 403,
+    "check": "restarted_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 403,
+    "check": "restarted_exact_state",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 403,
+    "check": "restarted_functional_events",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 403,
+    "check": "frozen_maps_and_new_memories",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 403,
+    "check": "neutral_initial_score",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 403,
+    "check": "aversion_initial_score_intervention",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 403,
+    "check": "no_dream_no_new_simulations",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 404,
+    "check": "base_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 404,
+    "check": "parent_unchanged",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 404,
+    "check": "updated_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 404,
+    "check": "updated_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 404,
+    "check": "frozen_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 404,
+    "check": "frozen_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 404,
+    "check": "neutral_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 404,
+    "check": "neutral_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 404,
+    "check": "no-aversion_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 404,
+    "check": "no-aversion_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 404,
+    "check": "no-dream_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 404,
+    "check": "no-dream_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 404,
+    "check": "restarted_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 404,
+    "check": "restarted_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 404,
+    "check": "restarted_exact_state",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 404,
+    "check": "restarted_functional_events",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 404,
+    "check": "frozen_maps_and_new_memories",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 404,
+    "check": "neutral_initial_score",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 404,
+    "check": "aversion_initial_score_intervention",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 404,
+    "check": "no_dream_no_new_simulations",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 405,
+    "check": "base_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 405,
+    "check": "parent_unchanged",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 405,
+    "check": "updated_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 405,
+    "check": "updated_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 405,
+    "check": "frozen_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 405,
+    "check": "frozen_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 405,
+    "check": "neutral_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 405,
+    "check": "neutral_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 405,
+    "check": "no-aversion_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 405,
+    "check": "no-aversion_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 405,
+    "check": "no-dream_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 405,
+    "check": "no-dream_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 405,
+    "check": "restarted_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 405,
+    "check": "restarted_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 405,
+    "check": "restarted_exact_state",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 405,
+    "check": "restarted_functional_events",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 405,
+    "check": "frozen_maps_and_new_memories",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 405,
+    "check": "neutral_initial_score",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 405,
+    "check": "aversion_initial_score_intervention",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 405,
+    "check": "no_dream_no_new_simulations",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 406,
+    "check": "base_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 406,
+    "check": "parent_unchanged",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 406,
+    "check": "updated_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 406,
+    "check": "updated_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 406,
+    "check": "frozen_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 406,
+    "check": "frozen_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 406,
+    "check": "neutral_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 406,
+    "check": "neutral_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 406,
+    "check": "no-aversion_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 406,
+    "check": "no-aversion_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 406,
+    "check": "no-dream_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 406,
+    "check": "no-dream_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 406,
+    "check": "restarted_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 406,
+    "check": "restarted_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 406,
+    "check": "restarted_exact_state",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 406,
+    "check": "restarted_functional_events",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 406,
+    "check": "frozen_maps_and_new_memories",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 406,
+    "check": "neutral_initial_score",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 406,
+    "check": "aversion_initial_score_intervention",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 406,
+    "check": "no_dream_no_new_simulations",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 407,
+    "check": "base_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 407,
+    "check": "parent_unchanged",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 407,
+    "check": "updated_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 407,
+    "check": "updated_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 407,
+    "check": "frozen_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 407,
+    "check": "frozen_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 407,
+    "check": "neutral_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 407,
+    "check": "neutral_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 407,
+    "check": "no-aversion_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 407,
+    "check": "no-aversion_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 407,
+    "check": "no-dream_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 407,
+    "check": "no-dream_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 407,
+    "check": "restarted_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 407,
+    "check": "restarted_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 407,
+    "check": "restarted_exact_state",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 407,
+    "check": "restarted_functional_events",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 407,
+    "check": "frozen_maps_and_new_memories",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 407,
+    "check": "neutral_initial_score",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 407,
+    "check": "aversion_initial_score_intervention",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 407,
+    "check": "no_dream_no_new_simulations",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 408,
+    "check": "base_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 408,
+    "check": "parent_unchanged",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 408,
+    "check": "updated_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 408,
+    "check": "updated_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 408,
+    "check": "frozen_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 408,
+    "check": "frozen_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 408,
+    "check": "neutral_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 408,
+    "check": "neutral_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 408,
+    "check": "no-aversion_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 408,
+    "check": "no-aversion_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 408,
+    "check": "no-dream_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 408,
+    "check": "no-dream_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 408,
+    "check": "restarted_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 408,
+    "check": "restarted_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 408,
+    "check": "restarted_exact_state",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 408,
+    "check": "restarted_functional_events",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 408,
+    "check": "frozen_maps_and_new_memories",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 408,
+    "check": "neutral_initial_score",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 408,
+    "check": "aversion_initial_score_intervention",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 408,
+    "check": "no_dream_no_new_simulations",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 409,
+    "check": "base_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 409,
+    "check": "parent_unchanged",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 409,
+    "check": "updated_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 409,
+    "check": "updated_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 409,
+    "check": "frozen_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 409,
+    "check": "frozen_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 409,
+    "check": "neutral_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 409,
+    "check": "neutral_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 409,
+    "check": "no-aversion_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 409,
+    "check": "no-aversion_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 409,
+    "check": "no-dream_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 409,
+    "check": "no-dream_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 409,
+    "check": "restarted_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 409,
+    "check": "restarted_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 409,
+    "check": "restarted_exact_state",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 409,
+    "check": "restarted_functional_events",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 409,
+    "check": "frozen_maps_and_new_memories",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 409,
+    "check": "neutral_initial_score",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 409,
+    "check": "aversion_initial_score_intervention",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 409,
+    "check": "no_dream_no_new_simulations",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 410,
+    "check": "base_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 410,
+    "check": "parent_unchanged",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 410,
+    "check": "updated_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 410,
+    "check": "updated_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 410,
+    "check": "frozen_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 410,
+    "check": "frozen_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 410,
+    "check": "neutral_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 410,
+    "check": "neutral_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 410,
+    "check": "no-aversion_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 410,
+    "check": "no-aversion_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 410,
+    "check": "no-dream_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 410,
+    "check": "no-dream_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 410,
+    "check": "restarted_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 410,
+    "check": "restarted_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 410,
+    "check": "restarted_exact_state",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 410,
+    "check": "restarted_functional_events",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 410,
+    "check": "frozen_maps_and_new_memories",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 410,
+    "check": "neutral_initial_score",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 410,
+    "check": "aversion_initial_score_intervention",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 410,
+    "check": "no_dream_no_new_simulations",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 411,
+    "check": "base_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 411,
+    "check": "parent_unchanged",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 411,
+    "check": "updated_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 411,
+    "check": "updated_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 411,
+    "check": "frozen_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 411,
+    "check": "frozen_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 411,
+    "check": "neutral_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 411,
+    "check": "neutral_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 411,
+    "check": "no-aversion_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 411,
+    "check": "no-aversion_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 411,
+    "check": "no-dream_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 411,
+    "check": "no-dream_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 411,
+    "check": "restarted_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 411,
+    "check": "restarted_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 411,
+    "check": "restarted_exact_state",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 411,
+    "check": "restarted_functional_events",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 411,
+    "check": "frozen_maps_and_new_memories",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 411,
+    "check": "neutral_initial_score",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 411,
+    "check": "aversion_initial_score_intervention",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 411,
+    "check": "no_dream_no_new_simulations",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 412,
+    "check": "base_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 412,
+    "check": "parent_unchanged",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 412,
+    "check": "updated_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 412,
+    "check": "updated_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 412,
+    "check": "frozen_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 412,
+    "check": "frozen_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 412,
+    "check": "neutral_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 412,
+    "check": "neutral_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 412,
+    "check": "no-aversion_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 412,
+    "check": "no-aversion_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 412,
+    "check": "no-dream_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 412,
+    "check": "no-dream_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 412,
+    "check": "restarted_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 412,
+    "check": "restarted_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 412,
+    "check": "restarted_exact_state",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 412,
+    "check": "restarted_functional_events",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 412,
+    "check": "frozen_maps_and_new_memories",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 412,
+    "check": "neutral_initial_score",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 412,
+    "check": "aversion_initial_score_intervention",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 412,
+    "check": "no_dream_no_new_simulations",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 413,
+    "check": "base_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 413,
+    "check": "parent_unchanged",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 413,
+    "check": "updated_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 413,
+    "check": "updated_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 413,
+    "check": "frozen_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 413,
+    "check": "frozen_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 413,
+    "check": "neutral_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 413,
+    "check": "neutral_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 413,
+    "check": "no-aversion_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 413,
+    "check": "no-aversion_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 413,
+    "check": "no-dream_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 413,
+    "check": "no-dream_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 413,
+    "check": "restarted_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 413,
+    "check": "restarted_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 413,
+    "check": "restarted_exact_state",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 413,
+    "check": "restarted_functional_events",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 413,
+    "check": "frozen_maps_and_new_memories",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 413,
+    "check": "neutral_initial_score",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 413,
+    "check": "aversion_initial_score_intervention",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 413,
+    "check": "no_dream_no_new_simulations",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 414,
+    "check": "base_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 414,
+    "check": "parent_unchanged",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 414,
+    "check": "updated_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 414,
+    "check": "updated_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 414,
+    "check": "frozen_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 414,
+    "check": "frozen_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 414,
+    "check": "neutral_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 414,
+    "check": "neutral_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 414,
+    "check": "no-aversion_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 414,
+    "check": "no-aversion_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 414,
+    "check": "no-dream_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 414,
+    "check": "no-dream_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 414,
+    "check": "restarted_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 414,
+    "check": "restarted_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 414,
+    "check": "restarted_exact_state",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 414,
+    "check": "restarted_functional_events",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 414,
+    "check": "frozen_maps_and_new_memories",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 414,
+    "check": "neutral_initial_score",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 414,
+    "check": "aversion_initial_score_intervention",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 414,
+    "check": "no_dream_no_new_simulations",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 415,
+    "check": "base_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 415,
+    "check": "parent_unchanged",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 415,
+    "check": "updated_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 415,
+    "check": "updated_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 415,
+    "check": "frozen_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 415,
+    "check": "frozen_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 415,
+    "check": "neutral_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 415,
+    "check": "neutral_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 415,
+    "check": "no-aversion_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 415,
+    "check": "no-aversion_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 415,
+    "check": "no-dream_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 415,
+    "check": "no-dream_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 415,
+    "check": "restarted_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 415,
+    "check": "restarted_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 415,
+    "check": "restarted_exact_state",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 415,
+    "check": "restarted_functional_events",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 415,
+    "check": "frozen_maps_and_new_memories",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 415,
+    "check": "neutral_initial_score",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 415,
+    "check": "aversion_initial_score_intervention",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 415,
+    "check": "no_dream_no_new_simulations",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 416,
+    "check": "base_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 416,
+    "check": "parent_unchanged",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 416,
+    "check": "updated_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 416,
+    "check": "updated_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 416,
+    "check": "frozen_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 416,
+    "check": "frozen_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 416,
+    "check": "neutral_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 416,
+    "check": "neutral_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 416,
+    "check": "no-aversion_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 416,
+    "check": "no-aversion_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 416,
+    "check": "no-dream_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 416,
+    "check": "no-dream_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 416,
+    "check": "restarted_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 416,
+    "check": "restarted_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 416,
+    "check": "restarted_exact_state",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 416,
+    "check": "restarted_functional_events",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 416,
+    "check": "frozen_maps_and_new_memories",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 416,
+    "check": "neutral_initial_score",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 416,
+    "check": "aversion_initial_score_intervention",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 416,
+    "check": "no_dream_no_new_simulations",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 417,
+    "check": "base_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 417,
+    "check": "parent_unchanged",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 417,
+    "check": "updated_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 417,
+    "check": "updated_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 417,
+    "check": "frozen_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 417,
+    "check": "frozen_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 417,
+    "check": "neutral_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 417,
+    "check": "neutral_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 417,
+    "check": "no-aversion_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 417,
+    "check": "no-aversion_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 417,
+    "check": "no-dream_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 417,
+    "check": "no-dream_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 417,
+    "check": "restarted_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 417,
+    "check": "restarted_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 417,
+    "check": "restarted_exact_state",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 417,
+    "check": "restarted_functional_events",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 417,
+    "check": "frozen_maps_and_new_memories",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 417,
+    "check": "neutral_initial_score",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 417,
+    "check": "aversion_initial_score_intervention",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 417,
+    "check": "no_dream_no_new_simulations",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 418,
+    "check": "base_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 418,
+    "check": "parent_unchanged",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 418,
+    "check": "updated_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 418,
+    "check": "updated_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 418,
+    "check": "frozen_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 418,
+    "check": "frozen_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 418,
+    "check": "neutral_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 418,
+    "check": "neutral_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 418,
+    "check": "no-aversion_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 418,
+    "check": "no-aversion_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 418,
+    "check": "no-dream_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 418,
+    "check": "no-dream_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 418,
+    "check": "restarted_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 418,
+    "check": "restarted_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 418,
+    "check": "restarted_exact_state",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 418,
+    "check": "restarted_functional_events",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 418,
+    "check": "frozen_maps_and_new_memories",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 418,
+    "check": "neutral_initial_score",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 418,
+    "check": "aversion_initial_score_intervention",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 418,
+    "check": "no_dream_no_new_simulations",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 419,
+    "check": "base_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 419,
+    "check": "parent_unchanged",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 419,
+    "check": "updated_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 419,
+    "check": "updated_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 419,
+    "check": "frozen_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 419,
+    "check": "frozen_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 419,
+    "check": "neutral_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 419,
+    "check": "neutral_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 419,
+    "check": "no-aversion_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 419,
+    "check": "no-aversion_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 419,
+    "check": "no-dream_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 419,
+    "check": "no-dream_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 419,
+    "check": "restarted_recompute",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 419,
+    "check": "restarted_budget_and_no_pending",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 419,
+    "check": "restarted_exact_state",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 419,
+    "check": "restarted_functional_events",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 419,
+    "check": "frozen_maps_and_new_memories",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 419,
+    "check": "neutral_initial_score",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 419,
+    "check": "aversion_initial_score_intervention",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": 419,
+    "check": "no_dream_no_new_simulations",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "seed": null,
+    "check": "single_source_fingerprint",
+    "passed": true,
+    "detail": null
+  }
+]

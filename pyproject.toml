@@ -1,6 +1,6 @@
 [project]
 name = "project-consciousness"
-version = "0.3.0"
+version = "0.4.0"
 description = "A reproducible laboratory for persistent functional cognition"
 requires-python = ">=3.12"
 dependencies = []

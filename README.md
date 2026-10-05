@@ -2,7 +2,38 @@
 
 Laboratorio experimental para investigar propiedades funcionales asociadas con la conciencia: continuidad autobiográfica, modelos de sí mismo, metacognición, regulación interna, agencia, predicción, imaginación y aprendizaje continuo.
 
-**Estado:** MVP v0.3 con persistencia, memoria causal, aprendizaje de asociaciones y un predictor operativo de capacidades. E2 estima la fiabilidad de dos herramientas, usa esas estimaciones para elegir y permite intervenir su lectura o actualización. Es un corte limitado del self-model propuesto; identidad, afecto, imaginación y metacognición siguen pendientes. El objetivo es establecer qué mecanismos producen qué capacidades y bajo qué condiciones. La presencia de esas capacidades no se tratará como prueba de experiencia subjetiva.
+**Estado:** MVP v0.4 con una skill para Codex y una identidad funcional persistente: prioridades aleatorias que aprenden de resultados, aversiones recuperables, recuerdos con procedencia, preguntas y simulación. Incluye los laboratorios anteriores de persistencia, memoria, asociaciones y estimación de capacidades. La identidad v0.4 usa una base separada, sin convertir las historias antiguas. El objetivo es establecer qué mecanismos producen qué capacidades y bajo qué condiciones; la presencia de esas capacidades no se tratará como prueba de experiencia subjetiva.
+
+## Empezar con la skill v0.4
+
+Desde la terminal de VS Code en la raíz del proyecto, con Python >=3.12:
+
+```powershell
+python -m project_consciousness life init --out runs/aeon-v04 --name Aeon --budget 40
+python -m project_consciousness life ingest --life runs/aeon-v04 --file docs/decisions/0005-persistent-functional-identity.md --domain understand
+python -m project_consciousness life run --life runs/aeon-v04 --cycles 6
+python -m project_consciousness life context --life runs/aeon-v04
+python -m project_consciousness life export --life runs/aeon-v04 --out runs/aeon-v04-diary
+```
+
+Sin `--seed` obtiene una semilla nueva; `--seed 17` permite reproducir predisposiciones. Empieza sin recuerdos ficticios. Abre `runs/aeon-v04-diary/diary.md` para ver experiencias y preguntas. Las carpetas de salida deben ser nuevas.
+
+La [skill versionada](skills/project-consciousness/SKILL.md) conecta un anfitrión LLM con el núcleo. Cuando Codex la muestre disponible, puedes pedir:
+
+> Usa $project-consciousness con el proyecto F:\PC y la vida runs/aeon-v04. Consulta su historia, propone dos investigaciones y realiza una elección. Registra fuentes, resultado y una pregunta nueva.
+
+La [guía Codex/VS Code](docs/codex-identity-quickstart.md) incluye instalación/localización, pausa, ejecución espaciada, ejemplos JSON y feedback. `watch` permite actividad local finita sin mensajes humanos mientras el proceso esté ejecutándose. Leer fuentes externas y formular reflexiones libres requiere al anfitrión LLM activo. Los sueños locales son escenarios acotados etiquetados SIMULATED; no se convierten en recuerdos de hechos. El aprendizaje modifica parámetros del núcleo, no los pesos del LLM. Las preguntas abiertas todavía no tienen una operación de cierre.
+
+Probar los controles de esta versión:
+
+```powershell
+python -m unittest discover -s tests -v
+python -m project_consciousness life experiment --seeds 400:403 --out runs/mi-identidad-i1
+```
+
+I1 compara seis ramas del mismo estado: actualización, congelación, preferencias neutralizadas, aversión oculta, sueños desactivados y reinicios. Su feedback es sintético y se declara como tal. [Contrato v0.4](docs/mvp-v0.4.md), [decisión arquitectónica](docs/decisions/0005-persistent-functional-identity.md).
+
+Entrega verificada: **163 pruebas**, **140 bases**, **1.200 elecciones de seguimiento** y **401/401 comprobaciones válidas**. Neutralizar preferencias cambió la primera elección en 9/20 historias; reiniciar preservó exactamente los estados y eventos funcionales. [Informe I1](reports/i1-v0.4/report.md), [demostración con Codex](reports/codex-v0.4/report.md) y [diario de ejemplo](reports/codex-v0.4/diary.md).
 
 ## Propuesta central
 
@@ -24,6 +55,8 @@ Ejemplo de pregunta experimental: con la misma observación y el mismo recurso d
 | [Alcance ejecutable v0.1](docs/mvp-v0.1.md) | Tarea concreta, contratos y diferencias frente a la arquitectura ampliada |
 | [Alcance ejecutable v0.2](docs/mvp-v0.2.md) | Aprendizaje persistente, configuración privada, controles y protocolo L1 |
 | [Alcance ejecutable v0.3](docs/mvp-v0.3.md) | Estimación de capacidades, degradación privada, controles y sondas comunes E2 |
+| [Alcance ejecutable v0.4](docs/mvp-v0.4.md) | Identidad, aprendizaje de preferencias, procedencia, autonomía finita y skill para Codex |
+| [Guía de la skill](docs/codex-identity-quickstart.md) | Primera historia, investigación del anfitrión, pausa y diario |
 | [Resultados de v0.1](reports/README.md) | E0/E1 ejecutados, controles, incertidumbre y archivos reproducibles |
 | [Informe de aprendizaje v0.2](reports/l1-v0.2/report.md) | Piloto L1 ejecutado, 20 semillas, 5.600 episodios y 340 comprobaciones |
 | [Informe de capacidades v0.3](reports/e2-v0.3/report.md) | Piloto E2 ejecutado, 20 semillas, 6.400 episodios y 32.000 ensayos de sonda |

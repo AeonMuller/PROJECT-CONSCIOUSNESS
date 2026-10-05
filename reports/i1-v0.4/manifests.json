@@ -1,0 +1,3682 @@
+[
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "8d565074-e30e-47e9-b58e-17b23ec73523",
+    "created_at_utc": "2026-10-05T17:52:01.027491+00:00",
+    "seed": 400,
+    "name": "Aeon",
+    "initial_revision": 0,
+    "initial_hash": "2632991da260a9ec20a82e1a16152e3f5f6c9649ec976df0e1ca53ae419dcc25",
+    "parent": null
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "10a65bf1-96c0-4626-be05-31b93bc772f0",
+    "created_at_utc": "2026-10-05T17:52:05.578831+00:00",
+    "seed": 400,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "5f79b840a9d8bb5a9cc5177200d0a91a44965e04b139e61fb4b95ac5edc93f99",
+    "parent": {
+      "life_id": "8d565074-e30e-47e9-b58e-17b23ec73523",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\400\\base",
+      "revision": 27,
+      "state_hash": "5f79b840a9d8bb5a9cc5177200d0a91a44965e04b139e61fb4b95ac5edc93f99",
+      "intervention": {},
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "dc54d766-98f0-4fe7-b5e2-619bd7d5fc1b",
+    "created_at_utc": "2026-10-05T17:52:06.179281+00:00",
+    "seed": 400,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "acc8da8949563b1c1b04d7959f4eb085c3ca09fa666036841b2eeb938d5cd68f",
+    "parent": {
+      "life_id": "8d565074-e30e-47e9-b58e-17b23ec73523",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\400\\base",
+      "revision": 27,
+      "state_hash": "5f79b840a9d8bb5a9cc5177200d0a91a44965e04b139e61fb4b95ac5edc93f99",
+      "intervention": {
+        "learning_enabled": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "409be599-f937-4693-8a55-e35086394869",
+    "created_at_utc": "2026-10-05T17:52:06.813480+00:00",
+    "seed": 400,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "52e99ef004e5f5fb46779a4e4cc31f3ced823fc1dba1f60ce980a2eec1a720a5",
+    "parent": {
+      "life_id": "8d565074-e30e-47e9-b58e-17b23ec73523",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\400\\base",
+      "revision": 27,
+      "state_hash": "5f79b840a9d8bb5a9cc5177200d0a91a44965e04b139e61fb4b95ac5edc93f99",
+      "intervention": {
+        "preferences_visible": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "55b080f1-012b-4ca7-b675-b9ccbc43231c",
+    "created_at_utc": "2026-10-05T17:52:07.478586+00:00",
+    "seed": 400,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "59956ea60e222ebbad829ece907ad54b9eebad4f694c9ca6f16dc26bcaafbe68",
+    "parent": {
+      "life_id": "8d565074-e30e-47e9-b58e-17b23ec73523",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\400\\base",
+      "revision": 27,
+      "state_hash": "5f79b840a9d8bb5a9cc5177200d0a91a44965e04b139e61fb4b95ac5edc93f99",
+      "intervention": {
+        "aversion_visible": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "5fa1aa57-97ae-42cf-b177-5e63a5fc9b25",
+    "created_at_utc": "2026-10-05T17:52:08.070374+00:00",
+    "seed": 400,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "b8a9273cc31cf62ae968a288e4b2603647b2f11fe4c4a821475c448333a4fcf9",
+    "parent": {
+      "life_id": "8d565074-e30e-47e9-b58e-17b23ec73523",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\400\\base",
+      "revision": 27,
+      "state_hash": "5f79b840a9d8bb5a9cc5177200d0a91a44965e04b139e61fb4b95ac5edc93f99",
+      "intervention": {
+        "dream_enabled": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "ff8793a3-4af7-46d5-bbd8-bf180dad86c6",
+    "created_at_utc": "2026-10-05T17:52:08.681822+00:00",
+    "seed": 400,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "5f79b840a9d8bb5a9cc5177200d0a91a44965e04b139e61fb4b95ac5edc93f99",
+    "parent": {
+      "life_id": "8d565074-e30e-47e9-b58e-17b23ec73523",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\400\\base",
+      "revision": 27,
+      "state_hash": "5f79b840a9d8bb5a9cc5177200d0a91a44965e04b139e61fb4b95ac5edc93f99",
+      "intervention": {},
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "ff27c7fa-e868-49da-8860-a6bb812213b8",
+    "created_at_utc": "2026-10-05T17:52:32.956199+00:00",
+    "seed": 401,
+    "name": "Aeon",
+    "initial_revision": 0,
+    "initial_hash": "d86f6d8cb470eda5624d77e78b025db02f7e26db9b1f0ae145d53152bafadbbe",
+    "parent": null
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "2be0caa2-6266-4ddb-87b0-078d5f89bb6a",
+    "created_at_utc": "2026-10-05T17:52:37.361420+00:00",
+    "seed": 401,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "39a8502314169849f2b3362992e306d44020161adab6bc16b6b6a57b71dc7baa",
+    "parent": {
+      "life_id": "ff27c7fa-e868-49da-8860-a6bb812213b8",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\401\\base",
+      "revision": 27,
+      "state_hash": "39a8502314169849f2b3362992e306d44020161adab6bc16b6b6a57b71dc7baa",
+      "intervention": {},
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "43acefac-32a0-4e0c-be0e-0f379805b101",
+    "created_at_utc": "2026-10-05T17:52:37.897831+00:00",
+    "seed": 401,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "b51474df19f1b3893b00a24eba3d1cc9c344a36a3664874b94e7e95795781a65",
+    "parent": {
+      "life_id": "ff27c7fa-e868-49da-8860-a6bb812213b8",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\401\\base",
+      "revision": 27,
+      "state_hash": "39a8502314169849f2b3362992e306d44020161adab6bc16b6b6a57b71dc7baa",
+      "intervention": {
+        "learning_enabled": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "79af7095-c07f-4670-adec-487d6a94403e",
+    "created_at_utc": "2026-10-05T17:52:38.612502+00:00",
+    "seed": 401,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "a2daff4e0a87c1d73bea798d181e6a13e6666551deb634417828dc6e6dc7c411",
+    "parent": {
+      "life_id": "ff27c7fa-e868-49da-8860-a6bb812213b8",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\401\\base",
+      "revision": 27,
+      "state_hash": "39a8502314169849f2b3362992e306d44020161adab6bc16b6b6a57b71dc7baa",
+      "intervention": {
+        "preferences_visible": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "caeb6c60-6249-4511-8f72-761c3971268c",
+    "created_at_utc": "2026-10-05T17:52:39.246528+00:00",
+    "seed": 401,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "c8cb8cd10cc65fdee794a097c206650680c1f50929f90dd91b5c8f157f4819ab",
+    "parent": {
+      "life_id": "ff27c7fa-e868-49da-8860-a6bb812213b8",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\401\\base",
+      "revision": 27,
+      "state_hash": "39a8502314169849f2b3362992e306d44020161adab6bc16b6b6a57b71dc7baa",
+      "intervention": {
+        "aversion_visible": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "84becf69-3758-4bd4-8669-7a27f906da69",
+    "created_at_utc": "2026-10-05T17:52:39.846134+00:00",
+    "seed": 401,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "a0a2e76362fb10ec9caac42ad6047e04b99ac547d98de13f57a00346588c36fe",
+    "parent": {
+      "life_id": "ff27c7fa-e868-49da-8860-a6bb812213b8",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\401\\base",
+      "revision": 27,
+      "state_hash": "39a8502314169849f2b3362992e306d44020161adab6bc16b6b6a57b71dc7baa",
+      "intervention": {
+        "dream_enabled": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "a5d4fa70-b530-448d-920c-09fdaf408002",
+    "created_at_utc": "2026-10-05T17:52:40.466169+00:00",
+    "seed": 401,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "39a8502314169849f2b3362992e306d44020161adab6bc16b6b6a57b71dc7baa",
+    "parent": {
+      "life_id": "ff27c7fa-e868-49da-8860-a6bb812213b8",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\401\\base",
+      "revision": 27,
+      "state_hash": "39a8502314169849f2b3362992e306d44020161adab6bc16b6b6a57b71dc7baa",
+      "intervention": {},
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "3feb9fc9-c508-4f0b-bfac-8c1c2e9269ac",
+    "created_at_utc": "2026-10-05T17:53:07.841994+00:00",
+    "seed": 402,
+    "name": "Aeon",
+    "initial_revision": 0,
+    "initial_hash": "d3cced1bbc539991fcbe81e0e8facf802d3f18a2d4ff56a27865dc26966dc45d",
+    "parent": null
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "fbfc20d7-725f-4ccb-a3d6-0e1255874e01",
+    "created_at_utc": "2026-10-05T17:53:12.808756+00:00",
+    "seed": 402,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "b1bdc0ffc58f1c1cce2896856baa9abd33fbcb0665d1eaa1ea682bbe24e820c0",
+    "parent": {
+      "life_id": "3feb9fc9-c508-4f0b-bfac-8c1c2e9269ac",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\402\\base",
+      "revision": 27,
+      "state_hash": "b1bdc0ffc58f1c1cce2896856baa9abd33fbcb0665d1eaa1ea682bbe24e820c0",
+      "intervention": {},
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "8edcdfc6-b811-49bd-b99a-e4298d6b7e4f",
+    "created_at_utc": "2026-10-05T17:53:13.401960+00:00",
+    "seed": 402,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "be8018f60cf5ed8314d3667987c73f4e2022f6a050919ca74513f19f006a71f4",
+    "parent": {
+      "life_id": "3feb9fc9-c508-4f0b-bfac-8c1c2e9269ac",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\402\\base",
+      "revision": 27,
+      "state_hash": "b1bdc0ffc58f1c1cce2896856baa9abd33fbcb0665d1eaa1ea682bbe24e820c0",
+      "intervention": {
+        "learning_enabled": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "b67c0507-9272-4455-8e05-2a31ee331ff7",
+    "created_at_utc": "2026-10-05T17:53:13.975741+00:00",
+    "seed": 402,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "88398c592edc4e8ad8c74d5d91a759a94e507778614edc16676084a120fb0735",
+    "parent": {
+      "life_id": "3feb9fc9-c508-4f0b-bfac-8c1c2e9269ac",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\402\\base",
+      "revision": 27,
+      "state_hash": "b1bdc0ffc58f1c1cce2896856baa9abd33fbcb0665d1eaa1ea682bbe24e820c0",
+      "intervention": {
+        "preferences_visible": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "451adaeb-cc26-4f19-a52e-837d7fa7574f",
+    "created_at_utc": "2026-10-05T17:53:14.520748+00:00",
+    "seed": 402,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "132042fb4c796f3e0c87b231745ab0e41004494a5c15314f201abb41386c3391",
+    "parent": {
+      "life_id": "3feb9fc9-c508-4f0b-bfac-8c1c2e9269ac",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\402\\base",
+      "revision": 27,
+      "state_hash": "b1bdc0ffc58f1c1cce2896856baa9abd33fbcb0665d1eaa1ea682bbe24e820c0",
+      "intervention": {
+        "aversion_visible": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "08a13c8d-7a4f-4f0b-8e6b-b4d21ec2ce54",
+    "created_at_utc": "2026-10-05T17:53:15.012374+00:00",
+    "seed": 402,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "e6746b58069afa86ed866f80d6df80bcaf0a76be76df84b28e1e97a7e5850482",
+    "parent": {
+      "life_id": "3feb9fc9-c508-4f0b-bfac-8c1c2e9269ac",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\402\\base",
+      "revision": 27,
+      "state_hash": "b1bdc0ffc58f1c1cce2896856baa9abd33fbcb0665d1eaa1ea682bbe24e820c0",
+      "intervention": {
+        "dream_enabled": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "d7fe5c31-60cf-4fdc-9e9b-a456e52e91f8",
+    "created_at_utc": "2026-10-05T17:53:15.644499+00:00",
+    "seed": 402,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "b1bdc0ffc58f1c1cce2896856baa9abd33fbcb0665d1eaa1ea682bbe24e820c0",
+    "parent": {
+      "life_id": "3feb9fc9-c508-4f0b-bfac-8c1c2e9269ac",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\402\\base",
+      "revision": 27,
+      "state_hash": "b1bdc0ffc58f1c1cce2896856baa9abd33fbcb0665d1eaa1ea682bbe24e820c0",
+      "intervention": {},
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "2435c441-4f34-43b3-8070-ce61dfcc08ab",
+    "created_at_utc": "2026-10-05T17:53:42.592949+00:00",
+    "seed": 403,
+    "name": "Aeon",
+    "initial_revision": 0,
+    "initial_hash": "cf303d69b8e8e8d792001375e7da25e2377c3c04354309a3a3c37e51a7806048",
+    "parent": null
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "4b8a2a55-c028-4719-8a16-dca9964318f3",
+    "created_at_utc": "2026-10-05T17:53:48.332114+00:00",
+    "seed": 403,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "90844540dd4dfe19d14b5f5281c6e626bf7a8e1a1dd0866656f75065d7bae2f8",
+    "parent": {
+      "life_id": "2435c441-4f34-43b3-8070-ce61dfcc08ab",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\403\\base",
+      "revision": 27,
+      "state_hash": "90844540dd4dfe19d14b5f5281c6e626bf7a8e1a1dd0866656f75065d7bae2f8",
+      "intervention": {},
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "016152c0-edbe-4d6a-b29c-55ff57a6a8be",
+    "created_at_utc": "2026-10-05T17:53:48.859438+00:00",
+    "seed": 403,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "7ad4f0f3ae95a3d11e20d4037efd8394147cb267a8954818f71fb00f74fa6f18",
+    "parent": {
+      "life_id": "2435c441-4f34-43b3-8070-ce61dfcc08ab",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\403\\base",
+      "revision": 27,
+      "state_hash": "90844540dd4dfe19d14b5f5281c6e626bf7a8e1a1dd0866656f75065d7bae2f8",
+      "intervention": {
+        "learning_enabled": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "19fe45eb-3f6b-44dc-b9ac-a5c7a6495e12",
+    "created_at_utc": "2026-10-05T17:53:49.273012+00:00",
+    "seed": 403,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "57f078e1303d94157a8ddded49c19b935b4244dc883c3ff4a1e8349403e43848",
+    "parent": {
+      "life_id": "2435c441-4f34-43b3-8070-ce61dfcc08ab",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\403\\base",
+      "revision": 27,
+      "state_hash": "90844540dd4dfe19d14b5f5281c6e626bf7a8e1a1dd0866656f75065d7bae2f8",
+      "intervention": {
+        "preferences_visible": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "f731c833-2321-4da7-99e2-7ae3b7f1ead7",
+    "created_at_utc": "2026-10-05T17:53:50.008055+00:00",
+    "seed": 403,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "8efa747ff87396ae5337791cff17ec0cd24f8f4cc30ac69cf7d6950f926cf35f",
+    "parent": {
+      "life_id": "2435c441-4f34-43b3-8070-ce61dfcc08ab",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\403\\base",
+      "revision": 27,
+      "state_hash": "90844540dd4dfe19d14b5f5281c6e626bf7a8e1a1dd0866656f75065d7bae2f8",
+      "intervention": {
+        "aversion_visible": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "3497e73f-f12b-43f6-81b9-8f7f9c30b94f",
+    "created_at_utc": "2026-10-05T17:53:50.567977+00:00",
+    "seed": 403,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "19babd9841c8621c82daa2b3f18e09a88cfa666ec3ce59f441c702f5414dad3b",
+    "parent": {
+      "life_id": "2435c441-4f34-43b3-8070-ce61dfcc08ab",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\403\\base",
+      "revision": 27,
+      "state_hash": "90844540dd4dfe19d14b5f5281c6e626bf7a8e1a1dd0866656f75065d7bae2f8",
+      "intervention": {
+        "dream_enabled": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "35db30d2-bb63-482d-8d40-b77f781ace5d",
+    "created_at_utc": "2026-10-05T17:53:51.370595+00:00",
+    "seed": 403,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "90844540dd4dfe19d14b5f5281c6e626bf7a8e1a1dd0866656f75065d7bae2f8",
+    "parent": {
+      "life_id": "2435c441-4f34-43b3-8070-ce61dfcc08ab",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\403\\base",
+      "revision": 27,
+      "state_hash": "90844540dd4dfe19d14b5f5281c6e626bf7a8e1a1dd0866656f75065d7bae2f8",
+      "intervention": {},
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "a2757648-cd9e-4132-b0b3-9aec2268413f",
+    "created_at_utc": "2026-10-05T17:54:19.215850+00:00",
+    "seed": 404,
+    "name": "Aeon",
+    "initial_revision": 0,
+    "initial_hash": "08c87f0fccad9756c8ef4ce387e26327eb0e4753216635bfeb6b941a2350fb00",
+    "parent": null
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "666338e1-f689-4762-aa70-76797ddd5c47",
+    "created_at_utc": "2026-10-05T17:54:24.187048+00:00",
+    "seed": 404,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "c147e2c62a7d8ae07fdfbba30e4428b055bee5eec213be7df3c66a5a4ced4995",
+    "parent": {
+      "life_id": "a2757648-cd9e-4132-b0b3-9aec2268413f",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\404\\base",
+      "revision": 27,
+      "state_hash": "c147e2c62a7d8ae07fdfbba30e4428b055bee5eec213be7df3c66a5a4ced4995",
+      "intervention": {},
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "348182ef-26ee-4dc5-98fe-fe115690d783",
+    "created_at_utc": "2026-10-05T17:54:24.945763+00:00",
+    "seed": 404,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "b89ad771d38ccc90d9293df6240b4426e17801538fd70500697d1398d9e14ccb",
+    "parent": {
+      "life_id": "a2757648-cd9e-4132-b0b3-9aec2268413f",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\404\\base",
+      "revision": 27,
+      "state_hash": "c147e2c62a7d8ae07fdfbba30e4428b055bee5eec213be7df3c66a5a4ced4995",
+      "intervention": {
+        "learning_enabled": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "3ed08cbb-3061-4fe9-8001-f4e3b3da0de4",
+    "created_at_utc": "2026-10-05T17:54:25.499674+00:00",
+    "seed": 404,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "d3d09fc4c852fa7baa33965c2803db4a292d540c9dcf96cf822f987964f29027",
+    "parent": {
+      "life_id": "a2757648-cd9e-4132-b0b3-9aec2268413f",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\404\\base",
+      "revision": 27,
+      "state_hash": "c147e2c62a7d8ae07fdfbba30e4428b055bee5eec213be7df3c66a5a4ced4995",
+      "intervention": {
+        "preferences_visible": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "625e9bd8-b2f4-4cfe-b215-01c422700a68",
+    "created_at_utc": "2026-10-05T17:54:26.038853+00:00",
+    "seed": 404,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "eb3469558e97e2bdb6c9ffff9f5671165e9f31327afab6b68b82ff305acae219",
+    "parent": {
+      "life_id": "a2757648-cd9e-4132-b0b3-9aec2268413f",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\404\\base",
+      "revision": 27,
+      "state_hash": "c147e2c62a7d8ae07fdfbba30e4428b055bee5eec213be7df3c66a5a4ced4995",
+      "intervention": {
+        "aversion_visible": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "b7f95ad0-4143-444f-ad00-3eca16d2b7bd",
+    "created_at_utc": "2026-10-05T17:54:26.892064+00:00",
+    "seed": 404,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "de37381eee277c914091cdad3ba48b7017d01a8da8f1f5dceefa95a6cfe5c8e6",
+    "parent": {
+      "life_id": "a2757648-cd9e-4132-b0b3-9aec2268413f",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\404\\base",
+      "revision": 27,
+      "state_hash": "c147e2c62a7d8ae07fdfbba30e4428b055bee5eec213be7df3c66a5a4ced4995",
+      "intervention": {
+        "dream_enabled": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "d690f536-4271-4cdb-9cfc-d89c0619add8",
+    "created_at_utc": "2026-10-05T17:54:27.474258+00:00",
+    "seed": 404,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "c147e2c62a7d8ae07fdfbba30e4428b055bee5eec213be7df3c66a5a4ced4995",
+    "parent": {
+      "life_id": "a2757648-cd9e-4132-b0b3-9aec2268413f",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\404\\base",
+      "revision": 27,
+      "state_hash": "c147e2c62a7d8ae07fdfbba30e4428b055bee5eec213be7df3c66a5a4ced4995",
+      "intervention": {},
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "ab3856f7-5adf-4a48-9543-ba81a1c4be09",
+    "created_at_utc": "2026-10-05T17:54:56.809210+00:00",
+    "seed": 405,
+    "name": "Aeon",
+    "initial_revision": 0,
+    "initial_hash": "bfb939998dcb1b6fb7442f8f4e37e39134cd75cbca40ebd8b507afe59155320d",
+    "parent": null
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "eea255a9-45e7-4e7f-a777-ea0035209da3",
+    "created_at_utc": "2026-10-05T17:55:02.274611+00:00",
+    "seed": 405,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "a5493cd428d502a634908e7598e2d6f048ec30a49436109f0989be29bb8bb4b7",
+    "parent": {
+      "life_id": "ab3856f7-5adf-4a48-9543-ba81a1c4be09",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\405\\base",
+      "revision": 27,
+      "state_hash": "a5493cd428d502a634908e7598e2d6f048ec30a49436109f0989be29bb8bb4b7",
+      "intervention": {},
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "b587046f-85df-4e41-a025-d077b1c7a264",
+    "created_at_utc": "2026-10-05T17:55:02.843998+00:00",
+    "seed": 405,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "cee9869c71e74969bc33d8b2931319121e95af93077e6ec3d221a7f4c4a33ff2",
+    "parent": {
+      "life_id": "ab3856f7-5adf-4a48-9543-ba81a1c4be09",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\405\\base",
+      "revision": 27,
+      "state_hash": "a5493cd428d502a634908e7598e2d6f048ec30a49436109f0989be29bb8bb4b7",
+      "intervention": {
+        "learning_enabled": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "7ac92c8b-431d-4465-a388-741d7acf2105",
+    "created_at_utc": "2026-10-05T17:55:03.592997+00:00",
+    "seed": 405,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "e7aba4cbd0b334dbd501c9cf5a12963e6e35c1a301045b07fc2ed2e195f7ec9c",
+    "parent": {
+      "life_id": "ab3856f7-5adf-4a48-9543-ba81a1c4be09",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\405\\base",
+      "revision": 27,
+      "state_hash": "a5493cd428d502a634908e7598e2d6f048ec30a49436109f0989be29bb8bb4b7",
+      "intervention": {
+        "preferences_visible": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "b1336620-8048-4167-b5f5-b0b7031f4809",
+    "created_at_utc": "2026-10-05T17:55:04.298483+00:00",
+    "seed": 405,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "32ee5072015bc374e5d6ca7ba4a8e1e4c6fe5b73421fbb45e195b346a13a96c9",
+    "parent": {
+      "life_id": "ab3856f7-5adf-4a48-9543-ba81a1c4be09",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\405\\base",
+      "revision": 27,
+      "state_hash": "a5493cd428d502a634908e7598e2d6f048ec30a49436109f0989be29bb8bb4b7",
+      "intervention": {
+        "aversion_visible": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "52829476-54b3-4130-81f5-1a6fdccdedd5",
+    "created_at_utc": "2026-10-05T17:55:05.030637+00:00",
+    "seed": 405,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "a049e9ea410c76de34fe4fd413d00586370b286348c2d722f9402543b44c5280",
+    "parent": {
+      "life_id": "ab3856f7-5adf-4a48-9543-ba81a1c4be09",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\405\\base",
+      "revision": 27,
+      "state_hash": "a5493cd428d502a634908e7598e2d6f048ec30a49436109f0989be29bb8bb4b7",
+      "intervention": {
+        "dream_enabled": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "c63aafc4-138d-4df3-ab54-0f690b2ad328",
+    "created_at_utc": "2026-10-05T17:55:05.600108+00:00",
+    "seed": 405,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "a5493cd428d502a634908e7598e2d6f048ec30a49436109f0989be29bb8bb4b7",
+    "parent": {
+      "life_id": "ab3856f7-5adf-4a48-9543-ba81a1c4be09",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\405\\base",
+      "revision": 27,
+      "state_hash": "a5493cd428d502a634908e7598e2d6f048ec30a49436109f0989be29bb8bb4b7",
+      "intervention": {},
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "34a7f328-11c3-4442-a0f2-2626fb775998",
+    "created_at_utc": "2026-10-05T17:55:35.640655+00:00",
+    "seed": 406,
+    "name": "Aeon",
+    "initial_revision": 0,
+    "initial_hash": "bef8a80bb0bba48e05541a26bc892d0dab20d38682ae8d0ff56203d52bc708e6",
+    "parent": null
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "9accf1ca-2d3a-4892-b921-741f2c354670",
+    "created_at_utc": "2026-10-05T17:55:41.315256+00:00",
+    "seed": 406,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "21eca78a89cfed6edae4997622e07d13e233e08f4461f39bb330512b0e3c5001",
+    "parent": {
+      "life_id": "34a7f328-11c3-4442-a0f2-2626fb775998",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\406\\base",
+      "revision": 27,
+      "state_hash": "21eca78a89cfed6edae4997622e07d13e233e08f4461f39bb330512b0e3c5001",
+      "intervention": {},
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "804bcff7-f342-4deb-ad8c-9992a270bde1",
+    "created_at_utc": "2026-10-05T17:55:41.857041+00:00",
+    "seed": 406,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "259ad84f3f8ffb50c5396a212873ea4fee4ebe7f851e8e38c5712a39fcf846d8",
+    "parent": {
+      "life_id": "34a7f328-11c3-4442-a0f2-2626fb775998",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\406\\base",
+      "revision": 27,
+      "state_hash": "21eca78a89cfed6edae4997622e07d13e233e08f4461f39bb330512b0e3c5001",
+      "intervention": {
+        "learning_enabled": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "741d983d-928d-4af3-a631-59dd93ceec76",
+    "created_at_utc": "2026-10-05T17:55:42.484645+00:00",
+    "seed": 406,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "d1b727dd9ac867697a2c0389ec038229a33a1e7d06d2177cd92fbb0444e000b4",
+    "parent": {
+      "life_id": "34a7f328-11c3-4442-a0f2-2626fb775998",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\406\\base",
+      "revision": 27,
+      "state_hash": "21eca78a89cfed6edae4997622e07d13e233e08f4461f39bb330512b0e3c5001",
+      "intervention": {
+        "preferences_visible": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "68c44b09-1b46-4168-af1a-672226ec280f",
+    "created_at_utc": "2026-10-05T17:55:43.014190+00:00",
+    "seed": 406,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "5902974b1964b1260e70c1a72d5692087a3f569a4b77a2e372c99000a197ad16",
+    "parent": {
+      "life_id": "34a7f328-11c3-4442-a0f2-2626fb775998",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\406\\base",
+      "revision": 27,
+      "state_hash": "21eca78a89cfed6edae4997622e07d13e233e08f4461f39bb330512b0e3c5001",
+      "intervention": {
+        "aversion_visible": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "48675b65-57a7-469c-83b8-a3484118caf4",
+    "created_at_utc": "2026-10-05T17:55:43.774901+00:00",
+    "seed": 406,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "4d15ce1c2bf1a872cdb1f214c7cd1e5d94bb3c1592d535bb159003e2a182e836",
+    "parent": {
+      "life_id": "34a7f328-11c3-4442-a0f2-2626fb775998",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\406\\base",
+      "revision": 27,
+      "state_hash": "21eca78a89cfed6edae4997622e07d13e233e08f4461f39bb330512b0e3c5001",
+      "intervention": {
+        "dream_enabled": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "52c548ed-ef3e-4425-af2b-5c16e5eb67c6",
+    "created_at_utc": "2026-10-05T17:55:44.536637+00:00",
+    "seed": 406,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "21eca78a89cfed6edae4997622e07d13e233e08f4461f39bb330512b0e3c5001",
+    "parent": {
+      "life_id": "34a7f328-11c3-4442-a0f2-2626fb775998",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\406\\base",
+      "revision": 27,
+      "state_hash": "21eca78a89cfed6edae4997622e07d13e233e08f4461f39bb330512b0e3c5001",
+      "intervention": {},
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "c6ef7d1b-db28-4727-b681-1f9f704a108f",
+    "created_at_utc": "2026-10-05T17:56:14.732885+00:00",
+    "seed": 407,
+    "name": "Aeon",
+    "initial_revision": 0,
+    "initial_hash": "08a01b661aeb9175899898ad6cba4625cd7eb3c6148aa68196c0422fa1642cbe",
+    "parent": null
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "b5bcffff-c339-4b59-a179-4c3d7bb219a6",
+    "created_at_utc": "2026-10-05T17:56:21.013691+00:00",
+    "seed": 407,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "27f914ce89193d9406327fe9d49c2518ae777701b13e62d5d5f63d995fd2728d",
+    "parent": {
+      "life_id": "c6ef7d1b-db28-4727-b681-1f9f704a108f",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\407\\base",
+      "revision": 27,
+      "state_hash": "27f914ce89193d9406327fe9d49c2518ae777701b13e62d5d5f63d995fd2728d",
+      "intervention": {},
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "679addcc-4648-4ebe-a917-b29d7168f1a8",
+    "created_at_utc": "2026-10-05T17:56:21.674912+00:00",
+    "seed": 407,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "f99a5fce2b386ad64a2eba66755abaa6fa8278bc88c1d8f456930e21c4b7f0dd",
+    "parent": {
+      "life_id": "c6ef7d1b-db28-4727-b681-1f9f704a108f",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\407\\base",
+      "revision": 27,
+      "state_hash": "27f914ce89193d9406327fe9d49c2518ae777701b13e62d5d5f63d995fd2728d",
+      "intervention": {
+        "learning_enabled": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "afaa54ef-2071-4753-9af3-538d345e75c5",
+    "created_at_utc": "2026-10-05T17:56:22.375608+00:00",
+    "seed": 407,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "9c427bf13837892e259db1439614a84ba84999fc481fa288c9c8de2c3e202dcf",
+    "parent": {
+      "life_id": "c6ef7d1b-db28-4727-b681-1f9f704a108f",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\407\\base",
+      "revision": 27,
+      "state_hash": "27f914ce89193d9406327fe9d49c2518ae777701b13e62d5d5f63d995fd2728d",
+      "intervention": {
+        "preferences_visible": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "b7401845-b398-4ae5-81c0-c861775a721e",
+    "created_at_utc": "2026-10-05T17:56:23.031095+00:00",
+    "seed": 407,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "3b52b5a3e0a29b2e9b0901ad10b0cdd850144f27cb4d19e8c1e40ff8a8ce865e",
+    "parent": {
+      "life_id": "c6ef7d1b-db28-4727-b681-1f9f704a108f",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\407\\base",
+      "revision": 27,
+      "state_hash": "27f914ce89193d9406327fe9d49c2518ae777701b13e62d5d5f63d995fd2728d",
+      "intervention": {
+        "aversion_visible": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "c46c8ac6-4569-46fa-a873-74e58e7230cf",
+    "created_at_utc": "2026-10-05T17:56:23.795331+00:00",
+    "seed": 407,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "0f5678a26dea914a1d386e281e9b09d2ca65c2f173aaf91ce183ff6940e1b9cc",
+    "parent": {
+      "life_id": "c6ef7d1b-db28-4727-b681-1f9f704a108f",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\407\\base",
+      "revision": 27,
+      "state_hash": "27f914ce89193d9406327fe9d49c2518ae777701b13e62d5d5f63d995fd2728d",
+      "intervention": {
+        "dream_enabled": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "d595c14f-4470-4548-8b36-3f298a1cfbb9",
+    "created_at_utc": "2026-10-05T17:56:24.433348+00:00",
+    "seed": 407,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "27f914ce89193d9406327fe9d49c2518ae777701b13e62d5d5f63d995fd2728d",
+    "parent": {
+      "life_id": "c6ef7d1b-db28-4727-b681-1f9f704a108f",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\407\\base",
+      "revision": 27,
+      "state_hash": "27f914ce89193d9406327fe9d49c2518ae777701b13e62d5d5f63d995fd2728d",
+      "intervention": {},
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "d0be22d9-7021-4c39-8410-48eeb0cf3469",
+    "created_at_utc": "2026-10-05T17:56:56.101653+00:00",
+    "seed": 408,
+    "name": "Aeon",
+    "initial_revision": 0,
+    "initial_hash": "d91a85f678bcfa6acf18b0a2b199497e12aaf49d977cfffe494823645af133da",
+    "parent": null
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "21b71b56-a430-44bd-8b7d-18800ae8aa2d",
+    "created_at_utc": "2026-10-05T17:57:01.682455+00:00",
+    "seed": 408,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "4e34d368d23fc38f9de332a43c9c33f42af73bd1202799c1840d333209954ca1",
+    "parent": {
+      "life_id": "d0be22d9-7021-4c39-8410-48eeb0cf3469",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\408\\base",
+      "revision": 27,
+      "state_hash": "4e34d368d23fc38f9de332a43c9c33f42af73bd1202799c1840d333209954ca1",
+      "intervention": {},
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "0a5d7e39-0353-4d6c-98ea-200e96d7f001",
+    "created_at_utc": "2026-10-05T17:57:02.349892+00:00",
+    "seed": 408,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "ff9ccd26b5e5414c9a1df33853ebba8dfc16c8f5e4c4903ab5e9baf7e4c22667",
+    "parent": {
+      "life_id": "d0be22d9-7021-4c39-8410-48eeb0cf3469",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\408\\base",
+      "revision": 27,
+      "state_hash": "4e34d368d23fc38f9de332a43c9c33f42af73bd1202799c1840d333209954ca1",
+      "intervention": {
+        "learning_enabled": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "1936afe4-a8f8-4bb2-9df7-d75993dc93cc",
+    "created_at_utc": "2026-10-05T17:57:02.950629+00:00",
+    "seed": 408,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "ffc313784290258614c045ae9b37ee229d967df7b8087af14a8393995f476c0b",
+    "parent": {
+      "life_id": "d0be22d9-7021-4c39-8410-48eeb0cf3469",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\408\\base",
+      "revision": 27,
+      "state_hash": "4e34d368d23fc38f9de332a43c9c33f42af73bd1202799c1840d333209954ca1",
+      "intervention": {
+        "preferences_visible": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "bc76b138-1ae5-4b99-afe1-e200c5da8575",
+    "created_at_utc": "2026-10-05T17:57:03.467742+00:00",
+    "seed": 408,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "528dbe465f0660e4c8385a0cf71739b3ca93b362fba557fbae01283cb2d250dd",
+    "parent": {
+      "life_id": "d0be22d9-7021-4c39-8410-48eeb0cf3469",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\408\\base",
+      "revision": 27,
+      "state_hash": "4e34d368d23fc38f9de332a43c9c33f42af73bd1202799c1840d333209954ca1",
+      "intervention": {
+        "aversion_visible": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "b4ca1ab8-bed9-40f6-837b-14e9243e8d70",
+    "created_at_utc": "2026-10-05T17:57:04.151878+00:00",
+    "seed": 408,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "a008ee7057915c6884d5c649a598352b61094317808e5b0beb5a1f727be5ab8a",
+    "parent": {
+      "life_id": "d0be22d9-7021-4c39-8410-48eeb0cf3469",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\408\\base",
+      "revision": 27,
+      "state_hash": "4e34d368d23fc38f9de332a43c9c33f42af73bd1202799c1840d333209954ca1",
+      "intervention": {
+        "dream_enabled": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "b53f9e0d-5cd9-4324-9735-a022a38eb182",
+    "created_at_utc": "2026-10-05T17:57:04.755626+00:00",
+    "seed": 408,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "4e34d368d23fc38f9de332a43c9c33f42af73bd1202799c1840d333209954ca1",
+    "parent": {
+      "life_id": "d0be22d9-7021-4c39-8410-48eeb0cf3469",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\408\\base",
+      "revision": 27,
+      "state_hash": "4e34d368d23fc38f9de332a43c9c33f42af73bd1202799c1840d333209954ca1",
+      "intervention": {},
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "d23f8bcb-a4d0-4cde-89b7-461c6027f612",
+    "created_at_utc": "2026-10-05T17:57:34.115863+00:00",
+    "seed": 409,
+    "name": "Aeon",
+    "initial_revision": 0,
+    "initial_hash": "15b52cdec629916fc07f4492f78d28b06761a52a54c544455a05ab680df77190",
+    "parent": null
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "01efed04-0680-4d8f-b72c-e367f7e9951c",
+    "created_at_utc": "2026-10-05T17:57:39.538139+00:00",
+    "seed": 409,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "1c4065581ac75431e06a9196d881b90fd3d00dff3f51df6bbbacd2de31ace1b2",
+    "parent": {
+      "life_id": "d23f8bcb-a4d0-4cde-89b7-461c6027f612",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\409\\base",
+      "revision": 27,
+      "state_hash": "1c4065581ac75431e06a9196d881b90fd3d00dff3f51df6bbbacd2de31ace1b2",
+      "intervention": {},
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "59109406-80aa-4078-bb77-065d76c9b77d",
+    "created_at_utc": "2026-10-05T17:57:40.157068+00:00",
+    "seed": 409,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "7c97e9bcd0165d64b33f2e3b0b8b30fa1b55bdf7f043959b44c816a9f3c9cdf1",
+    "parent": {
+      "life_id": "d23f8bcb-a4d0-4cde-89b7-461c6027f612",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\409\\base",
+      "revision": 27,
+      "state_hash": "1c4065581ac75431e06a9196d881b90fd3d00dff3f51df6bbbacd2de31ace1b2",
+      "intervention": {
+        "learning_enabled": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "b4c328ea-03fc-45a1-a017-b39a03dccf8a",
+    "created_at_utc": "2026-10-05T17:57:40.810254+00:00",
+    "seed": 409,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "b8cd3d17d2795e3f221c293ccb1475892c9ad296c36e3ac7b05e700e28d9d7cd",
+    "parent": {
+      "life_id": "d23f8bcb-a4d0-4cde-89b7-461c6027f612",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\409\\base",
+      "revision": 27,
+      "state_hash": "1c4065581ac75431e06a9196d881b90fd3d00dff3f51df6bbbacd2de31ace1b2",
+      "intervention": {
+        "preferences_visible": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "2fd2393f-62b8-48bb-b238-c25166097005",
+    "created_at_utc": "2026-10-05T17:57:41.558500+00:00",
+    "seed": 409,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "42c5e0d38534bce15ba9f4ac84158a1aadb0b1b810004e07d096af483dfe7095",
+    "parent": {
+      "life_id": "d23f8bcb-a4d0-4cde-89b7-461c6027f612",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\409\\base",
+      "revision": 27,
+      "state_hash": "1c4065581ac75431e06a9196d881b90fd3d00dff3f51df6bbbacd2de31ace1b2",
+      "intervention": {
+        "aversion_visible": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "c981ef32-dd36-4572-8595-4a9b0b751dc3",
+    "created_at_utc": "2026-10-05T17:57:42.261975+00:00",
+    "seed": 409,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "ff86f9cbe5e83fb8291b3f85a82e96a77723093405666f3696ef933eafc065e6",
+    "parent": {
+      "life_id": "d23f8bcb-a4d0-4cde-89b7-461c6027f612",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\409\\base",
+      "revision": 27,
+      "state_hash": "1c4065581ac75431e06a9196d881b90fd3d00dff3f51df6bbbacd2de31ace1b2",
+      "intervention": {
+        "dream_enabled": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "b1ec4be1-0d12-4300-8b33-10a204f14a04",
+    "created_at_utc": "2026-10-05T17:57:43.048978+00:00",
+    "seed": 409,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "1c4065581ac75431e06a9196d881b90fd3d00dff3f51df6bbbacd2de31ace1b2",
+    "parent": {
+      "life_id": "d23f8bcb-a4d0-4cde-89b7-461c6027f612",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\409\\base",
+      "revision": 27,
+      "state_hash": "1c4065581ac75431e06a9196d881b90fd3d00dff3f51df6bbbacd2de31ace1b2",
+      "intervention": {},
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "6c3db25b-f925-4f17-8622-a615e1d39b52",
+    "created_at_utc": "2026-10-05T17:58:11.894180+00:00",
+    "seed": 410,
+    "name": "Aeon",
+    "initial_revision": 0,
+    "initial_hash": "be1387e56e46115400c117f5f6fbc1998f05e169afe4c7fff66b5d4586968ca2",
+    "parent": null
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "a2f715d3-081e-460a-a020-8791dbc2e57c",
+    "created_at_utc": "2026-10-05T17:58:16.864425+00:00",
+    "seed": 410,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "80f7a9e8b5a6627d13649c343cf12fae5ae36d9d22e924e6a65d6bf44990befb",
+    "parent": {
+      "life_id": "6c3db25b-f925-4f17-8622-a615e1d39b52",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\410\\base",
+      "revision": 27,
+      "state_hash": "80f7a9e8b5a6627d13649c343cf12fae5ae36d9d22e924e6a65d6bf44990befb",
+      "intervention": {},
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "48219ab2-2356-47c5-80fb-16ec55a64073",
+    "created_at_utc": "2026-10-05T17:58:17.477116+00:00",
+    "seed": 410,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "f29cf9d405c5fb8d648976b96698fcbfa4856d32d72dfae3b8ddfe059e21ebca",
+    "parent": {
+      "life_id": "6c3db25b-f925-4f17-8622-a615e1d39b52",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\410\\base",
+      "revision": 27,
+      "state_hash": "80f7a9e8b5a6627d13649c343cf12fae5ae36d9d22e924e6a65d6bf44990befb",
+      "intervention": {
+        "learning_enabled": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "ed6c88db-3b90-4967-94c6-6e03010559b3",
+    "created_at_utc": "2026-10-05T17:58:18.117912+00:00",
+    "seed": 410,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "2838e5c5a03540b4d365f95ed9b73a6e18a0303ad6351a2f4222095f12b36e35",
+    "parent": {
+      "life_id": "6c3db25b-f925-4f17-8622-a615e1d39b52",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\410\\base",
+      "revision": 27,
+      "state_hash": "80f7a9e8b5a6627d13649c343cf12fae5ae36d9d22e924e6a65d6bf44990befb",
+      "intervention": {
+        "preferences_visible": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "9b8b0d8c-3520-4b2f-84ae-385b6df1068e",
+    "created_at_utc": "2026-10-05T17:58:18.672277+00:00",
+    "seed": 410,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "034597c39470af3326bc8045593f95e8ef31ffcc62098b3ca107c7b4489e56d9",
+    "parent": {
+      "life_id": "6c3db25b-f925-4f17-8622-a615e1d39b52",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\410\\base",
+      "revision": 27,
+      "state_hash": "80f7a9e8b5a6627d13649c343cf12fae5ae36d9d22e924e6a65d6bf44990befb",
+      "intervention": {
+        "aversion_visible": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "d87b0955-97df-4432-8518-6e7fa79e3c9d",
+    "created_at_utc": "2026-10-05T17:58:19.198143+00:00",
+    "seed": 410,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "1a77de0a0e0d3fbc9da80c6d17fc9d40d6fee5692d2f3a406a5e65784ca520e1",
+    "parent": {
+      "life_id": "6c3db25b-f925-4f17-8622-a615e1d39b52",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\410\\base",
+      "revision": 27,
+      "state_hash": "80f7a9e8b5a6627d13649c343cf12fae5ae36d9d22e924e6a65d6bf44990befb",
+      "intervention": {
+        "dream_enabled": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "04f496f7-bc13-4943-902a-5c602d29a36a",
+    "created_at_utc": "2026-10-05T17:58:19.779515+00:00",
+    "seed": 410,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "80f7a9e8b5a6627d13649c343cf12fae5ae36d9d22e924e6a65d6bf44990befb",
+    "parent": {
+      "life_id": "6c3db25b-f925-4f17-8622-a615e1d39b52",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\410\\base",
+      "revision": 27,
+      "state_hash": "80f7a9e8b5a6627d13649c343cf12fae5ae36d9d22e924e6a65d6bf44990befb",
+      "intervention": {},
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "e7ddfc8f-a370-439b-b7ab-303e9dffcccf",
+    "created_at_utc": "2026-10-05T17:58:49.309749+00:00",
+    "seed": 411,
+    "name": "Aeon",
+    "initial_revision": 0,
+    "initial_hash": "2ec7347bb1693c6220f7e5b940058d79bea240a39bb1bf44d0ce530a0e7d5f43",
+    "parent": null
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "d80cef37-3414-4808-a546-8008de2a7d90",
+    "created_at_utc": "2026-10-05T17:58:54.571746+00:00",
+    "seed": 411,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "9fa8cd1891baf7a44ef82134acd9d6f400bb8972323adde3435ba14ceb6e2c6a",
+    "parent": {
+      "life_id": "e7ddfc8f-a370-439b-b7ab-303e9dffcccf",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\411\\base",
+      "revision": 27,
+      "state_hash": "9fa8cd1891baf7a44ef82134acd9d6f400bb8972323adde3435ba14ceb6e2c6a",
+      "intervention": {},
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "34ddd94f-971b-4247-bc5e-db0275c1b682",
+    "created_at_utc": "2026-10-05T17:58:55.115515+00:00",
+    "seed": 411,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "7b5ff0bcc70eb7ab8e2bdf3bf7db5cd30ee0905934740d108a44d3c827ece222",
+    "parent": {
+      "life_id": "e7ddfc8f-a370-439b-b7ab-303e9dffcccf",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\411\\base",
+      "revision": 27,
+      "state_hash": "9fa8cd1891baf7a44ef82134acd9d6f400bb8972323adde3435ba14ceb6e2c6a",
+      "intervention": {
+        "learning_enabled": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "42fdce9b-179f-4b13-8913-005c5a67b00d",
+    "created_at_utc": "2026-10-05T17:58:55.740737+00:00",
+    "seed": 411,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "d1f371a4665e6af03039fabde44c4dd9a44a72e9b2f40e1429e46d9b80807abb",
+    "parent": {
+      "life_id": "e7ddfc8f-a370-439b-b7ab-303e9dffcccf",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\411\\base",
+      "revision": 27,
+      "state_hash": "9fa8cd1891baf7a44ef82134acd9d6f400bb8972323adde3435ba14ceb6e2c6a",
+      "intervention": {
+        "preferences_visible": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "923dd5fb-e03c-405a-bdf8-35fb0e4feb9c",
+    "created_at_utc": "2026-10-05T17:58:56.417181+00:00",
+    "seed": 411,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "1c4ddf2dd1e0081d3429cb70db782daa02fb1e74270b58cd3213ba3178c6f209",
+    "parent": {
+      "life_id": "e7ddfc8f-a370-439b-b7ab-303e9dffcccf",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\411\\base",
+      "revision": 27,
+      "state_hash": "9fa8cd1891baf7a44ef82134acd9d6f400bb8972323adde3435ba14ceb6e2c6a",
+      "intervention": {
+        "aversion_visible": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "da2260de-d1dd-4495-8694-05eb08217583",
+    "created_at_utc": "2026-10-05T17:58:57.077050+00:00",
+    "seed": 411,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "850bee4c2589002849182d271a05c50f9dd62f4309e044f3e4135adbcf2ade44",
+    "parent": {
+      "life_id": "e7ddfc8f-a370-439b-b7ab-303e9dffcccf",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\411\\base",
+      "revision": 27,
+      "state_hash": "9fa8cd1891baf7a44ef82134acd9d6f400bb8972323adde3435ba14ceb6e2c6a",
+      "intervention": {
+        "dream_enabled": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "ea9ea102-e0b7-446a-82a8-7e2d4d6707b6",
+    "created_at_utc": "2026-10-05T17:58:57.822948+00:00",
+    "seed": 411,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "9fa8cd1891baf7a44ef82134acd9d6f400bb8972323adde3435ba14ceb6e2c6a",
+    "parent": {
+      "life_id": "e7ddfc8f-a370-439b-b7ab-303e9dffcccf",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\411\\base",
+      "revision": 27,
+      "state_hash": "9fa8cd1891baf7a44ef82134acd9d6f400bb8972323adde3435ba14ceb6e2c6a",
+      "intervention": {},
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "7f3ac358-2957-4c5d-b826-cc02ca8b521e",
+    "created_at_utc": "2026-10-05T17:59:26.842330+00:00",
+    "seed": 412,
+    "name": "Aeon",
+    "initial_revision": 0,
+    "initial_hash": "1ef16f8de86476f34173db4b1dad11b4be462bcd20446f322404f0c5f6e42272",
+    "parent": null
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "770c8d43-227f-484b-b292-9168661fd479",
+    "created_at_utc": "2026-10-05T17:59:32.636903+00:00",
+    "seed": 412,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "b0dd7f3c78ae0f104d231e102e2da6ca690dc34f5451d339926b5742972be5bc",
+    "parent": {
+      "life_id": "7f3ac358-2957-4c5d-b826-cc02ca8b521e",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\412\\base",
+      "revision": 27,
+      "state_hash": "b0dd7f3c78ae0f104d231e102e2da6ca690dc34f5451d339926b5742972be5bc",
+      "intervention": {},
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "3fb909d9-129c-4198-80f3-da9ef41eb668",
+    "created_at_utc": "2026-10-05T17:59:33.241631+00:00",
+    "seed": 412,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "b40c570aa9c8931755c9c3f9e7b114bd440d186deb46829cbe30aa796c482d41",
+    "parent": {
+      "life_id": "7f3ac358-2957-4c5d-b826-cc02ca8b521e",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\412\\base",
+      "revision": 27,
+      "state_hash": "b0dd7f3c78ae0f104d231e102e2da6ca690dc34f5451d339926b5742972be5bc",
+      "intervention": {
+        "learning_enabled": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "09c8ecdf-2061-4f39-9df0-6a568126f673",
+    "created_at_utc": "2026-10-05T17:59:33.962108+00:00",
+    "seed": 412,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "c35ece6e16f75c48ec989bf1a580e20abd0bb4cda0e719031c2a73b755e1fd34",
+    "parent": {
+      "life_id": "7f3ac358-2957-4c5d-b826-cc02ca8b521e",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\412\\base",
+      "revision": 27,
+      "state_hash": "b0dd7f3c78ae0f104d231e102e2da6ca690dc34f5451d339926b5742972be5bc",
+      "intervention": {
+        "preferences_visible": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "55a50536-af0c-4242-979b-fc35544e63c9",
+    "created_at_utc": "2026-10-05T17:59:34.889950+00:00",
+    "seed": 412,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "457cc0db5f6638e564cd175de59c58acc4077d69ad747052bb954010fb115599",
+    "parent": {
+      "life_id": "7f3ac358-2957-4c5d-b826-cc02ca8b521e",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\412\\base",
+      "revision": 27,
+      "state_hash": "b0dd7f3c78ae0f104d231e102e2da6ca690dc34f5451d339926b5742972be5bc",
+      "intervention": {
+        "aversion_visible": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "99b06dfd-752b-48a7-b57b-db480787cb92",
+    "created_at_utc": "2026-10-05T17:59:35.494987+00:00",
+    "seed": 412,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "dec67e6e2e44df84540d42fb894861d06abd157a30f934bbcef6351cad9ee204",
+    "parent": {
+      "life_id": "7f3ac358-2957-4c5d-b826-cc02ca8b521e",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\412\\base",
+      "revision": 27,
+      "state_hash": "b0dd7f3c78ae0f104d231e102e2da6ca690dc34f5451d339926b5742972be5bc",
+      "intervention": {
+        "dream_enabled": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "9564632a-1a41-4064-9431-7f1cf3caa563",
+    "created_at_utc": "2026-10-05T17:59:36.141196+00:00",
+    "seed": 412,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "b0dd7f3c78ae0f104d231e102e2da6ca690dc34f5451d339926b5742972be5bc",
+    "parent": {
+      "life_id": "7f3ac358-2957-4c5d-b826-cc02ca8b521e",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\412\\base",
+      "revision": 27,
+      "state_hash": "b0dd7f3c78ae0f104d231e102e2da6ca690dc34f5451d339926b5742972be5bc",
+      "intervention": {},
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "25e50bc6-9ba2-4060-bbbd-64fc98c53c6b",
+    "created_at_utc": "2026-10-05T18:00:06.529683+00:00",
+    "seed": 413,
+    "name": "Aeon",
+    "initial_revision": 0,
+    "initial_hash": "b14302fbcceebde16a4a0ab0cd7e850cdb02c355ea7d23f33edbbd5d2b7e0129",
+    "parent": null
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "69289196-0334-46ff-8fdb-e3985fa841f8",
+    "created_at_utc": "2026-10-05T18:00:12.111281+00:00",
+    "seed": 413,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "c1964c2c15c4607d16780d09ff261e045e9e3110d84b9fc436a415521cc1129b",
+    "parent": {
+      "life_id": "25e50bc6-9ba2-4060-bbbd-64fc98c53c6b",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\413\\base",
+      "revision": 27,
+      "state_hash": "c1964c2c15c4607d16780d09ff261e045e9e3110d84b9fc436a415521cc1129b",
+      "intervention": {},
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "9c9435d8-ae30-4662-aeff-11d92adf5327",
+    "created_at_utc": "2026-10-05T18:00:12.677091+00:00",
+    "seed": 413,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "b1e0437b7e50f90f919dae32bb4c971e2b16711bebc40dd57c563938df207862",
+    "parent": {
+      "life_id": "25e50bc6-9ba2-4060-bbbd-64fc98c53c6b",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\413\\base",
+      "revision": 27,
+      "state_hash": "c1964c2c15c4607d16780d09ff261e045e9e3110d84b9fc436a415521cc1129b",
+      "intervention": {
+        "learning_enabled": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "65da480c-4c38-4ab0-a13e-9bf82e9c8f16",
+    "created_at_utc": "2026-10-05T18:00:13.279173+00:00",
+    "seed": 413,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "adb65aaecec30c775c31a23e98d4e3d3a4df12b26997fa132bac46db30a37b9d",
+    "parent": {
+      "life_id": "25e50bc6-9ba2-4060-bbbd-64fc98c53c6b",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\413\\base",
+      "revision": 27,
+      "state_hash": "c1964c2c15c4607d16780d09ff261e045e9e3110d84b9fc436a415521cc1129b",
+      "intervention": {
+        "preferences_visible": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "e7d5893a-762e-416f-b7d9-49595f3ed082",
+    "created_at_utc": "2026-10-05T18:00:13.917937+00:00",
+    "seed": 413,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "b6c0a099f86e1df153f551bcae377d2dfb19da1dc732d12179438f27a8d44e63",
+    "parent": {
+      "life_id": "25e50bc6-9ba2-4060-bbbd-64fc98c53c6b",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\413\\base",
+      "revision": 27,
+      "state_hash": "c1964c2c15c4607d16780d09ff261e045e9e3110d84b9fc436a415521cc1129b",
+      "intervention": {
+        "aversion_visible": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "91357a7f-c0e5-4d0e-953c-248a022108f9",
+    "created_at_utc": "2026-10-05T18:00:14.580543+00:00",
+    "seed": 413,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "80c8ebd1949310c999bfe83542bc278d4b7462c0dba8d960e6168c184d4e66a7",
+    "parent": {
+      "life_id": "25e50bc6-9ba2-4060-bbbd-64fc98c53c6b",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\413\\base",
+      "revision": 27,
+      "state_hash": "c1964c2c15c4607d16780d09ff261e045e9e3110d84b9fc436a415521cc1129b",
+      "intervention": {
+        "dream_enabled": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "671226ed-4b86-4d62-ae4d-3e62a3e60372",
+    "created_at_utc": "2026-10-05T18:00:15.081177+00:00",
+    "seed": 413,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "c1964c2c15c4607d16780d09ff261e045e9e3110d84b9fc436a415521cc1129b",
+    "parent": {
+      "life_id": "25e50bc6-9ba2-4060-bbbd-64fc98c53c6b",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\413\\base",
+      "revision": 27,
+      "state_hash": "c1964c2c15c4607d16780d09ff261e045e9e3110d84b9fc436a415521cc1129b",
+      "intervention": {},
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "f98ca3f2-81cc-4fe7-a61b-bc32860d31e5",
+    "created_at_utc": "2026-10-05T18:00:44.499022+00:00",
+    "seed": 414,
+    "name": "Aeon",
+    "initial_revision": 0,
+    "initial_hash": "e0cfb964a7377c5739412b4185012b029a61c2b0a6f33d54de83753e60b27da7",
+    "parent": null
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "5550d25a-2d38-4944-bcb3-8512e2a990e7",
+    "created_at_utc": "2026-10-05T18:00:50.125802+00:00",
+    "seed": 414,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "5844c2cfdfe54b81cac344ce80e54520ab9adcbce771142a3d4aba1938950243",
+    "parent": {
+      "life_id": "f98ca3f2-81cc-4fe7-a61b-bc32860d31e5",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\414\\base",
+      "revision": 27,
+      "state_hash": "5844c2cfdfe54b81cac344ce80e54520ab9adcbce771142a3d4aba1938950243",
+      "intervention": {},
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "cf219dd7-e8f0-4c1b-9630-abd23430c6e9",
+    "created_at_utc": "2026-10-05T18:00:50.784454+00:00",
+    "seed": 414,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "061d0607a1e5a010b54bc3e0799e8ce727efb8ed61a3a152929f07ed2f682378",
+    "parent": {
+      "life_id": "f98ca3f2-81cc-4fe7-a61b-bc32860d31e5",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\414\\base",
+      "revision": 27,
+      "state_hash": "5844c2cfdfe54b81cac344ce80e54520ab9adcbce771142a3d4aba1938950243",
+      "intervention": {
+        "learning_enabled": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "f4c05fe1-5994-44ae-9f63-cc754c680aca",
+    "created_at_utc": "2026-10-05T18:00:51.351669+00:00",
+    "seed": 414,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "4a51a99002a97877c39b07fd356f1c0cb6cde50f328559665e1b62c48db98075",
+    "parent": {
+      "life_id": "f98ca3f2-81cc-4fe7-a61b-bc32860d31e5",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\414\\base",
+      "revision": 27,
+      "state_hash": "5844c2cfdfe54b81cac344ce80e54520ab9adcbce771142a3d4aba1938950243",
+      "intervention": {
+        "preferences_visible": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "e8650f7f-7e20-4dc4-a02f-ba336556af2f",
+    "created_at_utc": "2026-10-05T18:00:51.935026+00:00",
+    "seed": 414,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "410eec3a414da1cf6c02cbf76098ad99d1fbb87a0391567fb02af2002862e1f6",
+    "parent": {
+      "life_id": "f98ca3f2-81cc-4fe7-a61b-bc32860d31e5",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\414\\base",
+      "revision": 27,
+      "state_hash": "5844c2cfdfe54b81cac344ce80e54520ab9adcbce771142a3d4aba1938950243",
+      "intervention": {
+        "aversion_visible": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "391c95b7-642c-4db1-a860-4dd3822a8900",
+    "created_at_utc": "2026-10-05T18:00:52.519549+00:00",
+    "seed": 414,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "d089879fa1aa06f5ce39bb603c9ac521bbae63d145e097aafea8998b4729cd9b",
+    "parent": {
+      "life_id": "f98ca3f2-81cc-4fe7-a61b-bc32860d31e5",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\414\\base",
+      "revision": 27,
+      "state_hash": "5844c2cfdfe54b81cac344ce80e54520ab9adcbce771142a3d4aba1938950243",
+      "intervention": {
+        "dream_enabled": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "65925704-b11d-4f0e-9ade-1936d4a8856a",
+    "created_at_utc": "2026-10-05T18:00:53.044016+00:00",
+    "seed": 414,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "5844c2cfdfe54b81cac344ce80e54520ab9adcbce771142a3d4aba1938950243",
+    "parent": {
+      "life_id": "f98ca3f2-81cc-4fe7-a61b-bc32860d31e5",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\414\\base",
+      "revision": 27,
+      "state_hash": "5844c2cfdfe54b81cac344ce80e54520ab9adcbce771142a3d4aba1938950243",
+      "intervention": {},
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "b177a1ff-ff97-4857-91e8-9967d62f5191",
+    "created_at_utc": "2026-10-05T18:01:23.750984+00:00",
+    "seed": 415,
+    "name": "Aeon",
+    "initial_revision": 0,
+    "initial_hash": "05a30394e3aab66f895ce81251914783c9d6d815866c1d7e605cd9af1874756a",
+    "parent": null
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "0ae0d802-b4d5-40bb-a8fc-8df4032ac35d",
+    "created_at_utc": "2026-10-05T18:01:30.108184+00:00",
+    "seed": 415,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "11290375babf429c11ee91809a68de228c3984d051b6535721c3a98548ead7ea",
+    "parent": {
+      "life_id": "b177a1ff-ff97-4857-91e8-9967d62f5191",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\415\\base",
+      "revision": 27,
+      "state_hash": "11290375babf429c11ee91809a68de228c3984d051b6535721c3a98548ead7ea",
+      "intervention": {},
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "675b4dde-c3e3-4c0c-a41f-8fa1f0f1907d",
+    "created_at_utc": "2026-10-05T18:01:30.792238+00:00",
+    "seed": 415,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "5a56151f4a6ea70b319d2c361edb043ca738669f0a2ae5688c50f02edefc9d09",
+    "parent": {
+      "life_id": "b177a1ff-ff97-4857-91e8-9967d62f5191",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\415\\base",
+      "revision": 27,
+      "state_hash": "11290375babf429c11ee91809a68de228c3984d051b6535721c3a98548ead7ea",
+      "intervention": {
+        "learning_enabled": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "6a62dee3-3e63-490c-a0d3-ed6fc58e9866",
+    "created_at_utc": "2026-10-05T18:01:31.442854+00:00",
+    "seed": 415,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "fa96aa57986429820ba863dc4d73f20632bce235520b67e6b9fddf7b04c485af",
+    "parent": {
+      "life_id": "b177a1ff-ff97-4857-91e8-9967d62f5191",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\415\\base",
+      "revision": 27,
+      "state_hash": "11290375babf429c11ee91809a68de228c3984d051b6535721c3a98548ead7ea",
+      "intervention": {
+        "preferences_visible": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "b85c7367-5432-4f0b-8a35-8a1a0a374fd6",
+    "created_at_utc": "2026-10-05T18:01:32.037978+00:00",
+    "seed": 415,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "864b488bdc7a00425a00548bee3c836e80ecf20cbbe27c5a21589c89151ff6b3",
+    "parent": {
+      "life_id": "b177a1ff-ff97-4857-91e8-9967d62f5191",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\415\\base",
+      "revision": 27,
+      "state_hash": "11290375babf429c11ee91809a68de228c3984d051b6535721c3a98548ead7ea",
+      "intervention": {
+        "aversion_visible": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "f311d473-7603-471f-b126-c212106ffd75",
+    "created_at_utc": "2026-10-05T18:01:32.662661+00:00",
+    "seed": 415,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "6d923fc7d7173461723a2b592c0c60ae0026ed6359fdcecf2be14ea38a9b1409",
+    "parent": {
+      "life_id": "b177a1ff-ff97-4857-91e8-9967d62f5191",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\415\\base",
+      "revision": 27,
+      "state_hash": "11290375babf429c11ee91809a68de228c3984d051b6535721c3a98548ead7ea",
+      "intervention": {
+        "dream_enabled": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "b57f73f8-8da0-4991-968f-7b1b5fa088bc",
+    "created_at_utc": "2026-10-05T18:01:33.493518+00:00",
+    "seed": 415,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "11290375babf429c11ee91809a68de228c3984d051b6535721c3a98548ead7ea",
+    "parent": {
+      "life_id": "b177a1ff-ff97-4857-91e8-9967d62f5191",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\415\\base",
+      "revision": 27,
+      "state_hash": "11290375babf429c11ee91809a68de228c3984d051b6535721c3a98548ead7ea",
+      "intervention": {},
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "7054bd24-3344-4a87-b344-1a981b892a23",
+    "created_at_utc": "2026-10-05T18:02:03.179616+00:00",
+    "seed": 416,
+    "name": "Aeon",
+    "initial_revision": 0,
+    "initial_hash": "54e39483cad3bbd96113c89f53b20d8ab70cd46312d8b4d44800b747ee292063",
+    "parent": null
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "fe75029d-4323-4ff5-a5e3-55dd20360c8d",
+    "created_at_utc": "2026-10-05T18:02:08.798581+00:00",
+    "seed": 416,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "e93d3561d9e82b4b6f56bd79f73ba317d89b041c7cc549955d523b89358b1d47",
+    "parent": {
+      "life_id": "7054bd24-3344-4a87-b344-1a981b892a23",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\416\\base",
+      "revision": 27,
+      "state_hash": "e93d3561d9e82b4b6f56bd79f73ba317d89b041c7cc549955d523b89358b1d47",
+      "intervention": {},
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "29725855-61c4-4cd9-b06d-c622fd351525",
+    "created_at_utc": "2026-10-05T18:02:09.349358+00:00",
+    "seed": 416,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "1575bd99117610dd0b85d744c7bbd361caa6e55029f704a649b7c9322e358259",
+    "parent": {
+      "life_id": "7054bd24-3344-4a87-b344-1a981b892a23",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\416\\base",
+      "revision": 27,
+      "state_hash": "e93d3561d9e82b4b6f56bd79f73ba317d89b041c7cc549955d523b89358b1d47",
+      "intervention": {
+        "learning_enabled": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "96d4b8dd-ecc7-456a-8992-657924a3d162",
+    "created_at_utc": "2026-10-05T18:02:09.971220+00:00",
+    "seed": 416,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "a16c16b1774a055bc9b2eb1275bf71cfc766099fc8190adb82f879b98078dd8d",
+    "parent": {
+      "life_id": "7054bd24-3344-4a87-b344-1a981b892a23",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\416\\base",
+      "revision": 27,
+      "state_hash": "e93d3561d9e82b4b6f56bd79f73ba317d89b041c7cc549955d523b89358b1d47",
+      "intervention": {
+        "preferences_visible": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "1fa873c6-26ae-4f55-9981-c175522fdfc9",
+    "created_at_utc": "2026-10-05T18:02:10.549735+00:00",
+    "seed": 416,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "bbb691461d42404b14ebc1e1ebd88d7c6e510f5fd59b133a7dd16aad580e39b4",
+    "parent": {
+      "life_id": "7054bd24-3344-4a87-b344-1a981b892a23",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\416\\base",
+      "revision": 27,
+      "state_hash": "e93d3561d9e82b4b6f56bd79f73ba317d89b041c7cc549955d523b89358b1d47",
+      "intervention": {
+        "aversion_visible": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "1ae84422-7645-441b-8668-683ebf60e951",
+    "created_at_utc": "2026-10-05T18:02:11.322048+00:00",
+    "seed": 416,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "d06d472aac9a1ffaff48b9ec5a7f661ea6f1a4518bdc16765ca2db634b1dcca9",
+    "parent": {
+      "life_id": "7054bd24-3344-4a87-b344-1a981b892a23",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\416\\base",
+      "revision": 27,
+      "state_hash": "e93d3561d9e82b4b6f56bd79f73ba317d89b041c7cc549955d523b89358b1d47",
+      "intervention": {
+        "dream_enabled": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "d1f6a955-8dc3-4c6a-8487-68776099e22b",
+    "created_at_utc": "2026-10-05T18:02:11.888981+00:00",
+    "seed": 416,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "e93d3561d9e82b4b6f56bd79f73ba317d89b041c7cc549955d523b89358b1d47",
+    "parent": {
+      "life_id": "7054bd24-3344-4a87-b344-1a981b892a23",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\416\\base",
+      "revision": 27,
+      "state_hash": "e93d3561d9e82b4b6f56bd79f73ba317d89b041c7cc549955d523b89358b1d47",
+      "intervention": {},
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "38140cf8-35a5-43c6-aa39-dade581dfd45",
+    "created_at_utc": "2026-10-05T18:02:40.940553+00:00",
+    "seed": 417,
+    "name": "Aeon",
+    "initial_revision": 0,
+    "initial_hash": "3551f07e1b87a3a94daf2ca2fee6d4f6d8afa8a41ca94d36680cbf5b6b2e25a4",
+    "parent": null
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "43b63694-6aae-4b0c-8bd2-90c2055b5261",
+    "created_at_utc": "2026-10-05T18:02:46.503593+00:00",
+    "seed": 417,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "446e790b40496f13da96ad0594b161f13cab6407fe45936a51982820d016a36e",
+    "parent": {
+      "life_id": "38140cf8-35a5-43c6-aa39-dade581dfd45",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\417\\base",
+      "revision": 27,
+      "state_hash": "446e790b40496f13da96ad0594b161f13cab6407fe45936a51982820d016a36e",
+      "intervention": {},
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "8b46855c-69e2-4f37-acbb-78b82b526b75",
+    "created_at_utc": "2026-10-05T18:02:47.070528+00:00",
+    "seed": 417,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "598f4969a2403620c640f599af8bba23787a1818fc877a3a2d8699dd86bf74af",
+    "parent": {
+      "life_id": "38140cf8-35a5-43c6-aa39-dade581dfd45",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\417\\base",
+      "revision": 27,
+      "state_hash": "446e790b40496f13da96ad0594b161f13cab6407fe45936a51982820d016a36e",
+      "intervention": {
+        "learning_enabled": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "1a5daef3-7ef3-41cd-8e9f-7a775133b7a4",
+    "created_at_utc": "2026-10-05T18:02:47.767186+00:00",
+    "seed": 417,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "5e05bc53f8c6eb44955de80dc7a3c5cba632ae9575836b874c548f089097ed4a",
+    "parent": {
+      "life_id": "38140cf8-35a5-43c6-aa39-dade581dfd45",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\417\\base",
+      "revision": 27,
+      "state_hash": "446e790b40496f13da96ad0594b161f13cab6407fe45936a51982820d016a36e",
+      "intervention": {
+        "preferences_visible": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "e416a6d2-13bf-49b8-832a-3d1babe8ecdb",
+    "created_at_utc": "2026-10-05T18:02:48.421495+00:00",
+    "seed": 417,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "280619b8a13bc36d800e9e1d5a883232a7fecfe7a07a87420824acbec700f8aa",
+    "parent": {
+      "life_id": "38140cf8-35a5-43c6-aa39-dade581dfd45",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\417\\base",
+      "revision": 27,
+      "state_hash": "446e790b40496f13da96ad0594b161f13cab6407fe45936a51982820d016a36e",
+      "intervention": {
+        "aversion_visible": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "619dfc18-f61c-4b15-af28-c800b084dc81",
+    "created_at_utc": "2026-10-05T18:02:49.102868+00:00",
+    "seed": 417,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "890cffb1feae37e72228f47c1a917e51c64ae6803e9d75657335b5ef231eb1da",
+    "parent": {
+      "life_id": "38140cf8-35a5-43c6-aa39-dade581dfd45",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\417\\base",
+      "revision": 27,
+      "state_hash": "446e790b40496f13da96ad0594b161f13cab6407fe45936a51982820d016a36e",
+      "intervention": {
+        "dream_enabled": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "580f6fc5-8b4a-4715-87e7-042d3bb899f5",
+    "created_at_utc": "2026-10-05T18:02:49.845678+00:00",
+    "seed": 417,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "446e790b40496f13da96ad0594b161f13cab6407fe45936a51982820d016a36e",
+    "parent": {
+      "life_id": "38140cf8-35a5-43c6-aa39-dade581dfd45",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\417\\base",
+      "revision": 27,
+      "state_hash": "446e790b40496f13da96ad0594b161f13cab6407fe45936a51982820d016a36e",
+      "intervention": {},
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "585111b5-127e-404b-aa1a-35141f98d562",
+    "created_at_utc": "2026-10-05T18:03:17.946096+00:00",
+    "seed": 418,
+    "name": "Aeon",
+    "initial_revision": 0,
+    "initial_hash": "efc417035d0786a2eaf3dbbed261b3b50bbea4a8b9cae8231dcfca7b3326d8f0",
+    "parent": null
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "f60d1b9b-2668-4df9-a2a7-482df96dfc45",
+    "created_at_utc": "2026-10-05T18:03:23.107432+00:00",
+    "seed": 418,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "4c2df1f3eeaa03d9863231289056c14d7f79ec1d6a4ce8a286c7b05e3c65e9d1",
+    "parent": {
+      "life_id": "585111b5-127e-404b-aa1a-35141f98d562",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\418\\base",
+      "revision": 27,
+      "state_hash": "4c2df1f3eeaa03d9863231289056c14d7f79ec1d6a4ce8a286c7b05e3c65e9d1",
+      "intervention": {},
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "ed8c13a5-006e-4b04-9a74-42be45583011",
+    "created_at_utc": "2026-10-05T18:03:24.107385+00:00",
+    "seed": 418,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "8c019804844a907e32c4bca1e3f3aac4963a09a10e9dd73c7bd311b613e4e693",
+    "parent": {
+      "life_id": "585111b5-127e-404b-aa1a-35141f98d562",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\418\\base",
+      "revision": 27,
+      "state_hash": "4c2df1f3eeaa03d9863231289056c14d7f79ec1d6a4ce8a286c7b05e3c65e9d1",
+      "intervention": {
+        "learning_enabled": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "8eb7f6b6-b329-44f5-852e-398f1635c790",
+    "created_at_utc": "2026-10-05T18:03:24.809089+00:00",
+    "seed": 418,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "5ca724c9400d3a8cda25054847c2a6a7c5cdb980075ea5c526e57dacff160744",
+    "parent": {
+      "life_id": "585111b5-127e-404b-aa1a-35141f98d562",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\418\\base",
+      "revision": 27,
+      "state_hash": "4c2df1f3eeaa03d9863231289056c14d7f79ec1d6a4ce8a286c7b05e3c65e9d1",
+      "intervention": {
+        "preferences_visible": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "165c93da-f2cf-41bb-8d58-d196987561a5",
+    "created_at_utc": "2026-10-05T18:03:25.492660+00:00",
+    "seed": 418,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "c86159c7ee3f776d9c163c3b6d0a0bcd61cb53bb29c7e0926bed087d6d9e08d1",
+    "parent": {
+      "life_id": "585111b5-127e-404b-aa1a-35141f98d562",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\418\\base",
+      "revision": 27,
+      "state_hash": "4c2df1f3eeaa03d9863231289056c14d7f79ec1d6a4ce8a286c7b05e3c65e9d1",
+      "intervention": {
+        "aversion_visible": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "cfebbf88-585c-4de4-9f56-13d70f0f3e8a",
+    "created_at_utc": "2026-10-05T18:03:26.073032+00:00",
+    "seed": 418,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "d6ad11c84b4176b3d67335a2b7b52fce349df3f158818bc0f2ca8286aaea67eb",
+    "parent": {
+      "life_id": "585111b5-127e-404b-aa1a-35141f98d562",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\418\\base",
+      "revision": 27,
+      "state_hash": "4c2df1f3eeaa03d9863231289056c14d7f79ec1d6a4ce8a286c7b05e3c65e9d1",
+      "intervention": {
+        "dream_enabled": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "eb6bf766-36a4-441a-bbae-cc62b56b9b37",
+    "created_at_utc": "2026-10-05T18:03:26.735504+00:00",
+    "seed": 418,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "4c2df1f3eeaa03d9863231289056c14d7f79ec1d6a4ce8a286c7b05e3c65e9d1",
+    "parent": {
+      "life_id": "585111b5-127e-404b-aa1a-35141f98d562",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\418\\base",
+      "revision": 27,
+      "state_hash": "4c2df1f3eeaa03d9863231289056c14d7f79ec1d6a4ce8a286c7b05e3c65e9d1",
+      "intervention": {},
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "a7af4c9f-6667-4632-8b74-dd9db72f99c5",
+    "created_at_utc": "2026-10-05T18:03:56.074552+00:00",
+    "seed": 419,
+    "name": "Aeon",
+    "initial_revision": 0,
+    "initial_hash": "ce5f6b0f4de990afa3466c9c19e960e87e86dc875aafc67b6686deef68216cc2",
+    "parent": null
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "2a8241ad-36b7-4092-ab94-8fe14f988865",
+    "created_at_utc": "2026-10-05T18:04:00.582587+00:00",
+    "seed": 419,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "cb85616965a220d8c9fe4b25e13dbe442bb38150e11fd73ec16e6e2669da48c3",
+    "parent": {
+      "life_id": "a7af4c9f-6667-4632-8b74-dd9db72f99c5",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\419\\base",
+      "revision": 27,
+      "state_hash": "cb85616965a220d8c9fe4b25e13dbe442bb38150e11fd73ec16e6e2669da48c3",
+      "intervention": {},
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "0a9c9544-d3d5-468c-b5a8-1c4e0c897f8d",
+    "created_at_utc": "2026-10-05T18:04:01.379924+00:00",
+    "seed": 419,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "cb6f3f953fdddad17f5ad156be2bd7251cca311a2813c08605a7888fbff6f172",
+    "parent": {
+      "life_id": "a7af4c9f-6667-4632-8b74-dd9db72f99c5",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\419\\base",
+      "revision": 27,
+      "state_hash": "cb85616965a220d8c9fe4b25e13dbe442bb38150e11fd73ec16e6e2669da48c3",
+      "intervention": {
+        "learning_enabled": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "9b11c410-728b-4b57-85ae-5a4652bed951",
+    "created_at_utc": "2026-10-05T18:04:02.113106+00:00",
+    "seed": 419,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "0773759e1687713c4a6218ae46a9fc8a2aba4a01d236d1b0645416b50227e113",
+    "parent": {
+      "life_id": "a7af4c9f-6667-4632-8b74-dd9db72f99c5",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\419\\base",
+      "revision": 27,
+      "state_hash": "cb85616965a220d8c9fe4b25e13dbe442bb38150e11fd73ec16e6e2669da48c3",
+      "intervention": {
+        "preferences_visible": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "49c86a48-7c08-4ed8-a1ea-1783b3ac7bd7",
+    "created_at_utc": "2026-10-05T18:04:02.781473+00:00",
+    "seed": 419,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "5d2b1bc0844394d862c94034c2d30f78710e604f553824b74b0cedc2e6d96667",
+    "parent": {
+      "life_id": "a7af4c9f-6667-4632-8b74-dd9db72f99c5",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\419\\base",
+      "revision": 27,
+      "state_hash": "cb85616965a220d8c9fe4b25e13dbe442bb38150e11fd73ec16e6e2669da48c3",
+      "intervention": {
+        "aversion_visible": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "3aa5e185-904c-4cef-8e92-06f6079eb168",
+    "created_at_utc": "2026-10-05T18:04:03.490199+00:00",
+    "seed": 419,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "c0cea2a9d489cd672704d5a81756e003aaeba4681997b17a594c60de227b6ef6",
+    "parent": {
+      "life_id": "a7af4c9f-6667-4632-8b74-dd9db72f99c5",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\419\\base",
+      "revision": 27,
+      "state_hash": "cb85616965a220d8c9fe4b25e13dbe442bb38150e11fd73ec16e6e2669da48c3",
+      "intervention": {
+        "dream_enabled": false
+      },
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  },
+  {
+    "schema_version": 1,
+    "package_version": "0.4.0",
+    "source_hash": "47d3cd19c8a023498536f478396db1cda079964af02bebf2c24211aa39b9ecf8",
+    "python": "3.12.12",
+    "sqlite": "3.51.1",
+    "life_id": "493d2cec-2417-41fe-a4bd-ad14d16cd676",
+    "created_at_utc": "2026-10-05T18:04:04.160102+00:00",
+    "seed": 419,
+    "name": "Aeon",
+    "initial_revision": 27,
+    "initial_hash": "cb85616965a220d8c9fe4b25e13dbe442bb38150e11fd73ec16e6e2669da48c3",
+    "parent": {
+      "life_id": "a7af4c9f-6667-4632-8b74-dd9db72f99c5",
+      "path": "F:\\PC\\runs\\i1-v04-20261005\\identities\\419\\base",
+      "revision": 27,
+      "state_hash": "cb85616965a220d8c9fe4b25e13dbe442bb38150e11fd73ec16e6e2669da48c3",
+      "intervention": {},
+      "prior_controls": {
+        "aversion_visible": true,
+        "dream_enabled": true,
+        "learning_enabled": true,
+        "paused": false,
+        "preferences_visible": true
+      }
+    }
+  }
+]
