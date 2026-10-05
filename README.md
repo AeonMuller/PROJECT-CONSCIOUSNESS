@@ -2,7 +2,7 @@
 
 Laboratorio experimental para investigar propiedades funcionales asociadas con la conciencia: continuidad autobiográfica, modelos de sí mismo, metacognición, regulación interna, agencia, predicción, imaginación y aprendizaje continuo.
 
-**Estado:** MVP v0.2 con persistencia, memoria causal y aprendizaje de asociaciones binarias. E0/E1 conservan la tarea de regla fija; L1 añade regla desconocida, inversión privada y controles de aprendizaje congelado. La arquitectura ampliada sigue documentada; self-model, afecto, imaginación y metacognición siguen pendientes. El objetivo es establecer qué mecanismos producen qué capacidades y bajo qué condiciones. La presencia de esas capacidades no se tratará como prueba de experiencia subjetiva.
+**Estado:** MVP v0.3 con persistencia, memoria causal, aprendizaje de asociaciones y un predictor operativo de capacidades. E2 estima la fiabilidad de dos herramientas, usa esas estimaciones para elegir y permite intervenir su lectura o actualización. Es un corte limitado del self-model propuesto; identidad, afecto, imaginación y metacognición siguen pendientes. El objetivo es establecer qué mecanismos producen qué capacidades y bajo qué condiciones. La presencia de esas capacidades no se tratará como prueba de experiencia subjetiva.
 
 ## Propuesta central
 
@@ -23,8 +23,10 @@ Ejemplo de pregunta experimental: con la misma observación y el mismo recurso d
 | [MVP propuesto](docs/mvp.md) | Mundo mínimo, implementación futura, comandos previstos y aceptación |
 | [Alcance ejecutable v0.1](docs/mvp-v0.1.md) | Tarea concreta, contratos y diferencias frente a la arquitectura ampliada |
 | [Alcance ejecutable v0.2](docs/mvp-v0.2.md) | Aprendizaje persistente, configuración privada, controles y protocolo L1 |
+| [Alcance ejecutable v0.3](docs/mvp-v0.3.md) | Estimación de capacidades, degradación privada, controles y sondas comunes E2 |
 | [Resultados de v0.1](reports/README.md) | E0/E1 ejecutados, controles, incertidumbre y archivos reproducibles |
 | [Informe de aprendizaje v0.2](reports/l1-v0.2/report.md) | Piloto L1 ejecutado, 20 semillas, 5.600 episodios y 340 comprobaciones |
+| [Informe de capacidades v0.3](reports/e2-v0.3/report.md) | Piloto E2 ejecutado, 20 semillas, 6.400 episodios y 32.000 ensayos de sonda |
 | [Decisión arquitectónica](docs/decisions/0001-functional-research-laboratory.md) | Elecciones, alternativas y consecuencias |
 
 Especificaciones por paquete: [runtime](SPEC-runtime.md), [memory](SPEC-memory.md), [cognition](SPEC-cognition.md), [experiment-lab](SPEC-experiment-lab.md) y [language-adapter](SPEC-language-adapter.md).
@@ -41,7 +43,37 @@ Especificaciones por paquete: [runtime](SPEC-runtime.md), [memory](SPEC-memory.m
 
 La arquitectura propuesta es **I**, aunque se inspire en **E/T**. Una prueba positiva podría establecer un hecho empírico sobre este artefacto; no eliminaría automáticamente las preguntas **F**. Un archivo desclasificado es una fuente documental, no un aval científico de sus afirmaciones.
 
-## Primera ejecución de v0.2 en VS Code
+## Primera ejecución de v0.3 en VS Code
+
+Abre `F:\PC` en VS Code y una terminal PowerShell. Se necesita Python >=3.12 con SQLite; el proyecto usa exclusivamente la biblioteca estándar. Desde la raíz:
+
+```powershell
+python -m unittest discover -s tests -v
+python -m project_consciousness experiment --protocol configs/e2-capabilities.toml --seeds 300:303 --out runs/mis-capacidades
+```
+
+Abre `runs/mis-capacidades/report.md` y pulsa `Ctrl+Shift+V`. Este piloto corto ejecuta 960 episodios en 21 bases y 4.800 ensayos de sonda. El protocolo completo usa 20 semillas: 6.400 episodios, 140 bases y 32.000 ensayos de sonda. Las sondas evalúan las dos predicciones almacenadas con los mismos resultados por semilla y fase, sin entrenar al agente.
+
+La herramienta `fast` cuesta 0,05 y pasa de una fiabilidad de 0,95 a 0,20 después de 40 episodios. `safe` cuesta 0,20 y mantiene una fiabilidad de 0,85. El agente conoce los costes; estima la fiabilidad a partir de sus resultados, sin recibir las tasas reales ni un aviso del cambio. La tarea informa por separado si eligió el lado correcto y si la herramienta ejecutó la intención. Ese feedback identificable es un supuesto del experimento.
+
+Para observar y congelar manualmente una historia:
+
+```powershell
+python -m project_consciousness run --config configs/mvp-v03.toml --seed 17 --ticks 120 --out runs/capacidad
+python -m project_consciousness status --run runs/capacidad
+python -m project_consciousness fork --run runs/capacidad --condition configs/capability-frozen.toml --out runs/capacidad-congelada
+python -m project_consciousness resume --run runs/capacidad --ticks 120
+python -m project_consciousness resume --run runs/capacidad-congelada --ticks 120
+python -m project_consciousness replay --run runs/capacidad --mode recompute --verify
+```
+
+120 ticks completan los 40 episodios iniciales. `status` muestra `capability.probabilities` y `updates`; la rama congelada conserva el modelo completo mientras sigue registrando experiencia. `configs/capability-blocked.toml` permite otra intervención: aprender pero ocultar las estimaciones al selector. Para comparar exclusivamente las fases usa E2: la salida manual del run original agrega adquisición y seguimiento, mientras el fork contiene solo seguimiento.
+
+El control `generic` tiene los mismos dos parámetros, información y algoritmo con una representación plana. Se espera igualdad funcional por construcción. E2 investiga el uso causal y la adaptación de un predictor; nombrarlo self-model no demuestra una capacidad adicional. Las carpetas de salida deben ser nuevas; cambia sus nombres para repetir.
+
+Entrega verificada: **121 pruebas aprobadas**, 140/140 bases, 6.400 episodios, 32.000 ensayos de sonda y 580/580 comprobaciones sin fallos. Tras degradar fast, updated obtuvo 71,125 % de éxitos frente a 22,25 % de frozen; la mejora de utilidad media fue 0,3793, IC bootstrap descriptivo 95 % [0,3319; 0,4298]. Generic y sham conservaron equivalencia funcional; los reinicios reprodujeron trazas exactas. [Resultados y límites](reports/README.md), [informe E2](reports/e2-v0.3/report.md).
+
+## Ejecución del aprendizaje de asociaciones (v0.2)
 
 Abre `F:\PC` en VS Code y abre una terminal PowerShell. Se necesita Python >=3.12 y su SQLite; no hay paquetes externos, API ni modelos que instalar. Ejecuta desde la raíz del repositorio:
 
@@ -98,7 +130,7 @@ La primera ejecución pasó 46 pruebas; E0 reprodujo todas las trazas y E1 compl
 
 `status --run <directorio>` muestra metadatos. `replay --mode reconstruct` comprueba hashes y reconstruye las fronteras guardadas sin recalcular decisiones; `recompute` también recalcula. Continuar/recomputar requiere las mismas fuentes Python y versiones registradas del intérprete y SQLite; editar el código obliga a crear una ejecución nueva. Los archivos `manifest.json` son exportaciones, el manifiesto autoritativo está en SQLite.
 
-Tras actualizar a v0.2, tus runs anteriores conservan sus datos pero `resume`/`recompute` con el motor nuevo devolverán `SOURCE_MISMATCH`. Puedes verificar su integridad con `replay --mode reconstruct`. Para continuarlos o recomputarlos con su motor original, extrae [el código v0.1 archivado](releases/project-consciousness-v0.1.zip) en otra carpeta y usa el mismo Python/SQLite; el [manifiesto del archivo](releases/project-consciousness-v0.1.json) conserva sus hashes. No se alteran ni migran historias anteriores.
+Tras actualizar el motor, tus runs anteriores conservan sus datos pero `resume`/`recompute` con fuentes distintas devolverán `SOURCE_MISMATCH`. Puedes verificar su integridad con `replay --mode reconstruct`. Para continuarlos o recomputarlos, extrae el motor registrado en otra carpeta y usa las mismas versiones de Python/SQLite: [archivo v0.1](releases/project-consciousness-v0.1.zip), [hashes v0.1](releases/project-consciousness-v0.1.json), [archivo v0.2](releases/project-consciousness-v0.2.zip), [hashes v0.2](releases/project-consciousness-v0.2.json), [archivo v0.3](releases/project-consciousness-v0.3.zip), [hashes v0.3](releases/project-consciousness-v0.3.json). No se alteran ni migran historias anteriores.
 
 El modelo de rutas, actuador y regulación de la [propuesta ampliada](docs/mvp.md) sigue siendo trabajo posterior. La procedencia y las vistas públicas son contratos dentro del proceso, no aislamiento contra un módulo malicioso con acceso al sistema de archivos.
 
@@ -109,7 +141,7 @@ El modelo de rutas, actuador y regulación de la [propuesta ampliada](docs/mvp.m
 | E0 | Implementado: persistencia, frontera de observación y reproducción |
 | E1 | Implementación acotada: memoria de episodios, máscaras y procedencia; otras variantes siguen propuestas |
 | L1 | Implementado en v0.2: adquisición y reversión de asociaciones binarias, controles y persistencia; subconjunto de E5/E8 |
-| E2 | Self-model de capacidades |
+| E2 | Implementación acotada v0.3: predictor de ejecución, degradación, lector/escritor intervenidos y comparador genérico |
 | E3 | Metacognición y metacontrol |
 | E4 | Afecto computacional como control recurrente |
 | E5 | Predicción y revisión del modelo del mundo |
@@ -122,4 +154,4 @@ Se distinguirá la corrección del banco, el uso causal de un estado y el benefi
 
 ## Desarrollo posterior
 
-La ampliación seguirá el mapa y las especificaciones. L1 permite aprender del feedback público en línea; el agente no ve el calendario de cambio ni resultados agregados del evaluador. L1 no evalúa generalización a otras familias ni retención A→B→A. Los cambios de hipótesis, protocolo o significado de un estado se documentarán antes de comparar resultados. Cada ejecución conserva versiones, semillas, configuración y trazas; las sondas retenidas futuras no se utilizarán para ajustar el agente.
+La ampliación seguirá el mapa y las especificaciones. L1 aprende asociaciones; E2 aprende fiabilidad de ejecución con la regla pista–lado suministrada. Todavía son políticas separadas, no un agente que aprenda simultáneamente el mundo y sus capacidades. Quedan por investigar contextos nuevos, retención A→B→A, incertidumbre sobre las estimaciones y metacontrol. Los cambios de hipótesis, protocolo o significado de un estado se documentarán antes de comparar resultados. Cada ejecución conserva versiones, semillas, configuración y trazas; las sondas de evaluación no entrenan al agente.

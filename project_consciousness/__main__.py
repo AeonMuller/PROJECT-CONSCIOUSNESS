@@ -43,14 +43,20 @@ def export_run(run):
     destination = run.path / "decisions.jsonl"
     destination.write_text("".join(canonical(trace) + "\n" for trace in traces), encoding="utf-8")
     terminal = [t for t in traces if t["outcome"]["terminal"]]
-    return {"run": str(run.path), "tick": run.snapshot()["tick"],
+    result = {"run": str(run.path), "tick": run.snapshot()["tick"],
             "completed_episodes": len(terminal),
             "success_rate": sum(t["outcome"]["success"] for t in terminal) / len(terminal) if terminal else None,
             "decisions": str(destination)}
+    if run.manifest["task"] == "capability-v1":
+        result.update(mean_utility=sum(t["outcome"]["reward"] for t in terminal) / len(terminal) if terminal else None,
+                      execution_success_rate=sum(t["outcome"]["execution_success"] for t in terminal) / len(terminal) if terminal else None,
+                      decision_accuracy=sum(t["outcome"]["decision_correct"] for t in terminal) / len(terminal) if terminal else None,
+                      tool_counts={tool: sum(t["decision"]["tool"] == tool for t in terminal) for tool in ("fast", "safe")})
+    return result
 
 
 def parser():
-    root = argparse.ArgumentParser(description="PROJECT CONSCIOUSNESS v0.2: persistent memory and learning laboratory")
+    root = argparse.ArgumentParser(description="PROJECT CONSCIOUSNESS v0.3: memory, learning and capability laboratory")
     commands = root.add_subparsers(dest="command", required=True)
     run = commands.add_parser("run", help="create a run; output must not exist")
     run.add_argument("--config", type=Path)
@@ -69,7 +75,7 @@ def parser():
     fork.add_argument("--tick", type=int, help="committed tick to branch; defaults to latest")
     fork.add_argument("--condition", type=Path, required=True)
     fork.add_argument("--out", type=Path, required=True)
-    experiment = commands.add_parser("experiment", help="execute E0, E1 or the L1 learning pilot")
+    experiment = commands.add_parser("experiment", help="execute E0, E1, L1 or E2")
     experiment.add_argument("--protocol", type=Path, required=True)
     experiment.add_argument("--seeds", help="half-open seed range, e.g. 100:120")
     experiment.add_argument("--out", type=Path, required=True)
@@ -106,6 +112,8 @@ def dispatch(args):
             result = {"manifest": run.manifest, "tick": state["tick"]}
             if "learner" in state["agent"]:
                 result["learner"] = state["agent"]["learner"]
+            if "capability" in state["agent"]:
+                result["capability"] = state["agent"]["capability"]
             return result
     # Importing the laboratory here keeps its privileges outside the agent API.
     from .experiments import run_e0, run_e1, write_report
@@ -120,7 +128,7 @@ def dispatch(args):
     config = Config.from_dict(data.get("agent", {}))
     protocol = options.get("protocol")
     if protocol in {"E0", "E1"} and "task" in data:
-        raise LabError("INVALID_INPUT", "[task] is only supported by L1; E0/E1 retain their original task")
+        raise LabError("INVALID_INPUT", "[task] is only supported by L1/E2; E0/E1 retain their original task")
     if protocol == "E0":
         if set(options) - {"protocol", "seed", "ticks"} or args.seeds:
             raise LabError("INVALID_INPUT", "E0 accepts protocol, seed and ticks; no --seeds")
@@ -141,7 +149,18 @@ def dispatch(args):
                       adaptation_episodes=options.get("adaptation_episodes", 40),
                       bootstrap_samples=options.get("bootstrap_samples", 2000),
                       config=config if "agent" in data else None, task=task)
-    raise LabError("INVALID_INPUT", "protocol must be E0, E1 or L1")
+    if protocol == "E2":
+        if set(options) - {"protocol", "seeds", "acquisition_episodes", "adaptation_episodes", "bootstrap_samples", "probe_trials"}:
+            raise LabError("INVALID_INPUT", "unknown E2 protocol setting")
+        from .capability_experiment import run_e2
+        task = TaskConfig.from_dict(data["task"]) if "task" in data else None
+        return run_e2(args.out, seeds=parse_seeds(args.seeds or options.get("seeds", "300:320")),
+                      acquisition_episodes=options.get("acquisition_episodes", 40),
+                      adaptation_episodes=options.get("adaptation_episodes", 40),
+                      bootstrap_samples=options.get("bootstrap_samples", 2000),
+                      probe_trials=options.get("probe_trials", 100),
+                      config=config if "agent" in data else None, task=task)
+    raise LabError("INVALID_INPUT", "protocol must be E0, E1, L1 or E2")
 
 
 def main(argv=None):

@@ -1,5 +1,19 @@
 # Plan de implementación
 
+## v0.3: estimación operativa de capacidades
+
+Alcance autorizado en [MVP v0.3](../docs/mvp-v0.3.md). Seguimiento en [v0.3](v0.3.md).
+
+1. Registrar v0.2 en Git local y fijar protocolo E2 antes de implementar.
+2. Separar feedback de decisión y ejecución; mantener privado el cambio de fiabilidad.
+3. Implementar estimador persistente, cortes de lectura/escritura y comparador genérico equivalente.
+4. Integrar snapshots, ramas, CLI, sondas comunes e informes con denominadores explícitos.
+5. Revisar de forma independiente y ejecutar pruebas de regresión, errores, reinicios y fallos.
+6. Congelar fuentes y ejecutar las 20 semillas predefinidas; conservar y verificar archivos completos.
+7. Documentar resultados, limitaciones y uso en VS Code; commit y etiqueta locales.
+
+Riesgos: atribuir fallos de ejecución a una regla equivocada, filtrar tasas privadas, filtrar el modelo bloqueado mediante otro campo, evaluar solo herramientas elegidas y confundir el nombre self-model con una ventaja frente al predictor genérico. El alcance no incluye aprendizaje conjunto mundo/capacidades ni metacognición.
+
 ## v0.2: aprendizaje persistente
 
 Alcance autorizado en [MVP v0.2](../docs/mvp-v0.2.md). Tareas y verificación detalladas en [v0.2](v0.2.md).

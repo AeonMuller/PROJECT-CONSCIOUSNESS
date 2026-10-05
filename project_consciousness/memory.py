@@ -77,7 +77,7 @@ def validate_record(record: dict, as_of_tick: int) -> None:
         if record["record_id"] != source_id:
             raise LabError("INVALID_PROVENANCE", "own observed record must retain its source ID")
     if record["kind"] == "outcome":
-        if (not isinstance(record["action"], str) or record["action"] not in {"wait", "left", "right"}
+        if (not isinstance(record["action"], str) or record["action"] not in {"wait", "left", "right", "left:fast", "left:safe", "right:fast", "right:safe"}
                 or not isinstance(record["result"], dict)):
             raise LabError("INVALID_INPUT", "outcome requires an action and result object")
         if record["value"] is not None:

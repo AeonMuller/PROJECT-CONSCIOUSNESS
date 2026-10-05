@@ -1,6 +1,25 @@
 # Contratos, estados persistentes y recuperación
 
-Versión conceptual 0.1 · 2026-10-03 · contratos de la arquitectura ampliada, clasificados **I**. Las firmas son el diseño objetivo; los contratos y diferencias del subconjunto implementado se documentan en [MVP v0.1](mvp-v0.1.md), [v0.2](mvp-v0.2.md), [ADR-0002](decisions/0002-delayed-cue-slice.md) y [ADR-0003](decisions/0003-persistent-association-learning.md).
+Versión conceptual 0.1 · estado de implementación actualizado 2026-10-05 · contratos de la arquitectura ampliada, clasificados **I**. Las firmas numeradas son el diseño objetivo; los contratos y diferencias del subconjunto implementado se documentan en [MVP v0.1](mvp-v0.1.md), [v0.2](mvp-v0.2.md), [v0.3](mvp-v0.3.md), [ADR-0002](decisions/0002-delayed-cue-slice.md), [ADR-0003](decisions/0003-persistent-association-learning.md) y [ADR-0004](decisions/0004-capability-predictor.md).
+
+## Contrato ejecutable de capacidades v0.3
+
+La política optativa `capability` conserva `{'records': [...], 'capability': model}`. El modelo contiene `backend`, `probabilities`, `updates` y `last_update`; esta última guarda tick, episodio y hash del feedback, sin pista en caché. Self representa probabilidades como `{fast: qf, safe: qs}` y generic como `[qf, qs]`. `model_estimates` devuelve una lista copiada; `update_model` devuelve otro modelo validado, actualiza solo la herramienta observada y rechaza feedback anterior o reutilizado. Los reintentos públicos pertenecen a `Runtime.step(expected_tick)`.
+
+| Interfaz v0.3 | Contrato efectivo |
+|---|---|
+| Config pública | Modo/backend, permisos de escritura/lectura, tasa 0.2, exploración 0.1 y costes 0.05/0.20 por defecto; sin calendario ni eficacia verdadera |
+| TaskConfig privada | Tarea `capability-v1`, episodio de degradación y eficacias generadoras; acceso exclusivo al mundo/evaluador |
+| Observación | Exactamente `episode`, `phase`, `value`; choice tiene value null |
+| Acción | `wait` o combinación `left:fast`, `left:safe`, `right:fast`, `right:safe` |
+| Outcome | `terminal`, `success`, `reward`, `episode`, `decision_correct`, `execution_success`, `tool`, `cost`; éxito requiere decisión y ejecución correctas |
+| Vista de capacidad | `[q_fast, q_safe]`, o `[0.5, 0.5]` al cortar lectura; el selector de herramienta no recibe modelo privado ni etiqueta de condición |
+| Predicción registrada | Lado, herramienta, distribuciones de selección, ejecución y éxito global previstos, vista y utilidades, fuentes, versión/hash/bytes del modelo anterior al resultado |
+| Estado posterior | `post_capability_hash`, `post_capability_version`, `post_capability_bytes` y `post_agent_bytes` en la traza, junto con snapshot/RNG completos |
+
+`predicted_execution_success` se refiere a la herramienta elegida; `predicted_success` y `confidence` se refieren al éxito global y multiplican esa probabilidad por la probabilidad de lado correcto. `probability_fast` describe exploración/selección, no eficacia. `capability_view` y `expected_utilities` usan orden fast/safe. En wait las elecciones, vistas y predicciones son null; hashes, versión, IDs y contadores siguen registrados.
+
+La decisión queda fijada antes de la transición; el feedback se valida y asimila dentro del mismo tick atómico, sin feedback pendiente entre ticks en este corte. Se comprueban enlace de episodio/herramienta/costes, consistencia de éxito/recompensa y correspondencia con el modelo previo; una pista válida de la regla fija no admite un resultado contradictorio sobre el lado correcto. `fork` puede cambiar permisos de aprendizaje o lectura de capacidad, preservando tarea, backend, tasas y costes. No se modifica el esquema SQL ni se reescriben las ejecuciones históricas. Contratos completos: [MVP v0.3](mvp-v0.3.md).
 
 ## 1. Tipos y límites comunes
 

@@ -1,0 +1,19 @@
+{
+  "experiment": "E2",
+  "status": "completed",
+  "valid": true,
+  "runs_planned": 140,
+  "runs_completed": 140,
+  "failed_runs": [],
+  "checks_planned": 580,
+  "checks_passed": 580,
+  "episodes_planned": 6400,
+  "episodes_completed": 6400,
+  "episodes_valid": 6400,
+  "probe_groups_planned": 160,
+  "probe_trials_planned": 32000,
+  "probe_trials_completed": 32000,
+  "probe_trials_valid": 32000,
+  "experiment_dir": "C:\\Users\\Sistemas\\AppData\\Local\\Temp\\project-consciousness-e2-v03-61n212e1\\e2-v03",
+  "report_path": "C:\\Users\\Sistemas\\AppData\\Local\\Temp\\project-consciousness-e2-v03-61n212e1\\e2-v03\\report.md"
+}

@@ -1,6 +1,6 @@
 # Especificación: memory
 
-Estado: contrato ampliado; v0.1 implementa episodios, procedencia y máscaras. Consolidación/semántica siguen propuestas. [Alcance real](docs/mvp-v0.1.md) · 2026-10-03 · ID: `memory` · depende de `runtime`.
+Estado: contrato ampliado; v0.1 implementa episodios, procedencia y máscaras. v0.3 conserva ese mecanismo y admite acciones compuestas lado/herramienta con feedback de ejecución. Consolidación/semántica siguen propuestas. [Alcance inicial](docs/mvp-v0.1.md), [contrato v0.3](docs/mvp-v0.3.md) · 2026-10-05 · ID: `memory` · depende de `runtime`.
 
 ## Objetivo
 

@@ -378,6 +378,9 @@ def write_report(experiment_dir: Path, out_file: Path | None = None) -> Path:
     if manifest.get("experiment") == "L1":
         from .learning_experiment import write_learning_report
         return write_learning_report(experiment_dir, out_file)
+    if manifest.get("experiment") == "E2":
+        from .capability_experiment import write_capability_report
+        return write_capability_report(experiment_dir, out_file)
     summary = json.loads((experiment_dir / "summary.json").read_text(encoding="utf-8"))
     rows = _read_csv(experiment_dir / "metrics.csv")
     comparisons = _read_csv(experiment_dir / "comparisons.csv")

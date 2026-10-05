@@ -10,6 +10,9 @@ from .memory import (
 
 def initial_agent(config: Config | None = None) -> dict:
     config = config or Config()
+    if config.policy_mode == "capability":
+        from .capability_agent import initial_agent as initial_capability_agent
+        return initial_capability_agent(config)
     state = {"records": []}
     if config.policy_mode == "learned":
         state["learner"] = initial_learner()
@@ -57,6 +60,9 @@ def _selection_probability(prediction: float) -> float:
 
 
 def advance_agent(state: dict, observation: dict, tick: int, config: Config, rng) -> tuple[dict, dict]:
+    if config.policy_mode == "capability":
+        from .capability_agent import advance_agent as advance_capability_agent
+        return advance_capability_agent(state, observation, tick, config, rng)
     validate_tick(tick)
     validate_observation(observation)
     next_state = _copy_state(state, tick, config)
@@ -99,6 +105,9 @@ def record_result(state: dict, observation: dict, decision: dict, outcome: dict,
     models whose evidence may be evicted by an already-recorded outcome. The
     learner additionally guards its most recent actual parameter update.
     """
+    if config.policy_mode == "capability":
+        from .capability_agent import record_result as record_capability_result
+        return record_capability_result(state, observation, decision, outcome, tick, config)
     validate_tick(tick)
     validate_observation(observation)
     next_state = _copy_state(state, tick, config)

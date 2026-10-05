@@ -1,0 +1,26 @@
+[experiment]
+protocol = "E2"
+seeds = "300:320"
+acquisition_episodes = 40
+adaptation_episodes = 40
+bootstrap_samples = 2000
+probe_trials = 100
+
+[agent]
+policy_mode = "capability"
+delay = 1
+capacity = 64
+capability_backend = "self"
+capability_learning_enabled = true
+capability_read_mode = "intact"
+capability_learning_rate = 0.2
+capability_exploration = 0.1
+fast_cost = 0.05
+safe_cost = 0.20
+
+[task]
+kind = "capability-v1"
+capability_change_episode = 40
+fast_success_before = 0.95
+fast_success_after = 0.20
+safe_success = 0.85

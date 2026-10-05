@@ -1,6 +1,6 @@
 # Protocolos experimentales de PROJECT CONSCIOUSNESS
 
-Estado: programa experimental general. E0 y una versión acotada de E1 ya tienen una implementación en [MVP v0.1](mvp-v0.1.md). [MVP v0.2](mvp-v0.2.md) implementa L1, un experimento acotado de aprendizaje/reversión relacionado con E5/E8, sin completar esos protocolos. E2–E9 y las variantes amplias de E1 siguen propuestas. Los informes de cada ejecución se generan aparte y distinguen qué ensayos se realizaron. El objeto de estudio son propiedades funcionales y sus mecanismos causales; ningún resultado aquí definido constituye una prueba de experiencia subjetiva o conciencia.
+Estado: programa experimental general, actualizado 2026-10-05. E0 y una versión acotada de E1 ya tienen una implementación en [MVP v0.1](mvp-v0.1.md). [MVP v0.2](mvp-v0.2.md) implementa L1, un experimento acotado de aprendizaje/reversión relacionado con E5/E8, sin completar esos protocolos. [MVP v0.3](mvp-v0.3.md) implementa un E2 operacional de eficacia de herramientas, sin completar el protocolo ampliado de self-model. E3–E9 y las variantes amplias de E1/E2 siguen propuestas. Los informes de cada ejecución se generan aparte y distinguen qué ensayos se realizaron. El objeto de estudio son propiedades funcionales y sus mecanismos causales; ningún resultado aquí definido constituye una prueba de experiencia subjetiva o conciencia.
 
 ## Alcance y etiquetas
 
@@ -102,6 +102,20 @@ Como control negativo, enmascarar eventos irrelevantes con igual tamaño y edad.
 **Aceptación de software:** aislamiento writer/reader y conservación de procedencia. **Resultado funcional:** efecto específico del episodio pertinente en acciones y desempeño; igualdad o superioridad frente al historial plano es una pregunta separada. **Falsación:** ningún cambio tras intervenir episodios relevantes, cambios equivalentes con episodios irrelevantes o aparente ventaja explicada por una ruta oculta. Si otro módulo contiene la información, el resultado indica redundancia y no ausencia de memoria en todo el sistema.
 
 ### E2 — Self-model de capacidades
+
+**Estado del protocolo ampliado:** propuesta de investigación. El siguiente corte operacional está implementado en v0.3; las pruebas de contextos retenidos, modelos sobre/subestimados y modelos de otros agentes descritas después siguen pendientes.
+
+**Corte operacional ejecutable v0.3:** dos herramientas fast/safe tienen costes 0.05/0.20; la relación pista→lado es fija y suministrada, pero recordar la pista exige memoria del episodio. El resultado público informa `decision_correct` y `execution_success` por separado: éxito global requiere ambos, y recompensa es éxito menos coste. El modelo aprende exclusivamente ejecución de la herramienta usada, con prior 0.5 y tasa exponencial 0.2. El selector usa probabilidad de decisión correcta por eficacia estimada menos coste, con exploración epsilon=0.1. Eficacias verdaderas, calendario de degradación y sorteos privados quedan fuera de su interfaz.
+
+El protocolo predefinido usa 20 semillas `300:320`, 40 episodios de adquisición y 40 de seguimiento, demora 1 y memoria de 64 registros. Fast cambia de 0.95 a 0.20 al comienzo del seguimiento; safe conserva 0.85. Desde el snapshot aprendido se crean `updated`, `frozen`, `reader_blocked`, `sham` y `resumed`. Frozen conserva el modelo completo; reader_blocked entrega `[0.5, 0.5]` al selector y sigue aprendiendo. Sham mantiene la vista funcional; resumed introduce reinicios y debe reproducir las trazas. Las ramas comparten mundo y RNG de origen; el orden de ejecución se declara fijo, sin atribuir aleatorización de condiciones a este piloto.
+
+El comparador `generic` recibe la misma información desde el inicio y conserva dos parámetros en una lista. Su algoritmo es matemáticamente equivalente al modelo con nombres de herramientas: la comparación verifica equivalencia de acciones, observaciones, resultados y predicciones, excluyendo diferencias de representación, hashes y bytes. No se presume una ventaja específica por denominar self-model al predictor.
+
+El estimando primario es la diferencia updated−frozen de utilidad media postcambio. Se registran además éxito, errores de decisión/ejecución separados, uso de safe, costes, Brier de ejecución antes del feedback, actualizaciones y bytes. Las curvas usan bloques de 10 episodios. El bootstrap pareado de 2.000 réplicas agrupa por semilla, con RNG estadístico 20261005; es un piloto descriptivo, sin potencia confirmatoria calculada ni umbral post hoc de recuperación.
+
+Para comparar predicciones sobre una distribución común, al final de adquisición y seguimiento el evaluador fija las dos estimaciones y genera 100 resultados Bernoulli por herramienta con RNG independiente y resultados compartidos entre condiciones de igual fase/semilla. Las sondas no entrenan; su Brier y calibración agrupada se informan aparte del Brier de actuación, que depende de las herramientas elegidas. El modelo almacenado del lector bloqueado puede cambiar aunque el forecast usado para elegir permanezca neutral. El probe de adquisición evalúa el régimen anterior, aun cuando el snapshot ya prepare el primer episodio degradado. Los detalles, denominadores previstos y comandos están en [MVP v0.3](mvp-v0.3.md). Esta sección define el ensayo y no anticipa sus resultados.
+
+**Diseño ampliado pendiente:**
 
 **Hipótesis I:** una estimación propia de `P(action succeeds | context)` predice fallos y modifica selección de acciones o solicitud de ayuda.
 

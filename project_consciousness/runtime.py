@@ -106,6 +106,10 @@ def _advance(before: dict) -> tuple[dict, dict]:
         trace.update(post_model_hash=digest(agent["learner"]), post_model_version=agent["learner"]["updates"],
                      post_model_bytes=len(canonical(agent["learner"]).encode("utf-8")),
                      post_agent_bytes=len(canonical(agent).encode("utf-8")))
+    if "capability" in agent:
+        trace.update(post_capability_hash=digest(agent["capability"]), post_capability_version=agent["capability"]["updates"],
+                     post_capability_bytes=len(canonical(agent["capability"]).encode("utf-8")),
+                     post_agent_bytes=len(canonical(agent).encode("utf-8")))
     return after, trace
 
 
@@ -132,6 +136,11 @@ class Runtime:
         config = Config() if config is None else config
         if not isinstance(config, Config):
             raise LabError("INVALID_INPUT", "agent configuration must be Config")
+        task = TaskConfig() if task is None else task
+        if not isinstance(task, TaskConfig):
+            raise LabError("INVALID_INPUT", "task configuration must be TaskConfig")
+        if (config.policy_mode == "capability") != (task.kind == "capability-v1"):
+            raise LabError("INVALID_INPUT", "capability policy and capability-v1 task must be selected together")
         world = seeded_rng(seed, "world")
         policy = seeded_rng(seed, "policy")
         initial = clone({"tick": 0, "agent": initial_agent(config),
@@ -154,7 +163,8 @@ class Runtime:
             "created_at_utc": datetime.now(timezone.utc).isoformat(),
             "seed": seed, "config": initial["config"], "config_hash": digest(initial["config"]),
             "initial_tick": initial["tick"], "initial_hash": digest(initial),
-            "parent": parent, "task": "reversal-v1" if "cue" in initial["environment"] else "delayed-cue-v1",
+            "parent": parent, "task": ("capability-v1" if "capability_task" in initial["environment"]
+                                       else "reversal-v1" if "cue" in initial["environment"] else "delayed-cue-v1"),
         }
         db = sqlite3.connect(path / "run.sqlite", isolation_level=None, timeout=3)
         try:
@@ -312,10 +322,12 @@ class Runtime:
             raise LabError("STATE_INCONSISTENT", "cannot fork a corrupt run")
         state = self.snapshot(tick)
         overrides = {} if overrides is None else overrides
-        if not isinstance(overrides, dict) or set(overrides) - {"read_mode", "write_enabled", "agent_mode", "learning_enabled"}:
-            raise LabError("INVALID_INPUT", "forks only change reader, writer, agent mode or learning_enabled")
+        if not isinstance(overrides, dict) or set(overrides) - {"read_mode", "write_enabled", "agent_mode", "learning_enabled", "capability_learning_enabled", "capability_read_mode"}:
+            raise LabError("INVALID_INPUT", "forks only change declared memory/learning reader or writer controls")
         if "learning_enabled" in overrides and state["config"].get("policy_mode", "fixed") != "learned":
             raise LabError("INVALID_INPUT", "learning intervention requires a learned policy")
+        if {"capability_learning_enabled", "capability_read_mode"} & set(overrides) and state["config"].get("policy_mode", "fixed") != "capability":
+            raise LabError("INVALID_INPUT", "capability intervention requires a capability policy")
         parent = {"run_id": self.manifest["run_id"], "path": str(self.path),
                   "tick": state["tick"], "state_hash": digest(state), "intervention": clone(overrides)}
         state["config"] = Config.from_dict({**state["config"], **overrides}).to_dict()

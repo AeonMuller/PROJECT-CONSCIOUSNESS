@@ -1,5 +1,44 @@
 # Resultados experimentales
 
+## v0.3: estimación de capacidades E2
+
+[Informe E2](e2-v0.3/report.md), [episodios](e2-v0.3/episodes.csv), [contrastes](e2-v0.3/comparisons.csv), [sondas comunes](e2-v0.3/probes.csv) y [calibración](e2-v0.3/calibration.csv). Protocolo fijado en [MVP v0.3](../docs/mvp-v0.3.md): 20 semillas 300:320, 40 episodios de adquisición y 40 de seguimiento, alpha 0,2 y exploración 0,1. Fast cambia de fiabilidad 0,95 a 0,20; safe conserva 0,85, con costes respectivos 0,05/0,20.
+
+Se completaron **140/140 bases, 6.400/6.400 episodios, 32.000/32.000 ensayos de sonda y 580/580 comprobaciones**. No hubo fallos ni exclusiones. Todas las bases se cerraron, reabrieron y verificaron por recomputación.
+
+| Condición y fase | Éxitos | Utilidad media | Uso safe | Brier de ejecución |
+|---|---:|---:|---:|---:|
+| Training, adquisición | 752/800 (94 %) | 0,8829 | 4,75 % | 0,0789 |
+| Updated, postcambio | 569/800 (71,125 %) | 0,5441 | 78,125 % | 0,1858 |
+| Frozen, postcambio | 178/800 (22,25 %) | 0,1648 | 5,125 % | 0,6802 |
+| Reader blocked, postcambio | 178/800 (22,25 %) | 0,1648 | 5,125 % | 0,2500 |
+| Generic, postcambio | 569/800 (71,125 %) | 0,5441 | 78,125 % | 0,1858 |
+
+Utilidad = éxito global − coste. El contraste primario updated−frozen fue **0,3793**, con IC bootstrap descriptivo del 95 % **[0,3319; 0,4298]**, remuestreando diferencias por semilla. La diferencia de éxitos fue 48,875 puntos porcentuales, IC [43,75; 53,88]. No se calculó potencia confirmatoria ni se corrigieron múltiples contrastes. El diseño identifica efectos en esta tarea; no prueba generalización.
+
+Updated pasó de elegir safe en 37,5 % de los primeros diez episodios postcambio a 96 % en los últimos diez; su éxito pasó de 45,5 % a 83,5 %. Los bloques están predefinidos y no se seleccionaron umbrales de recuperación después de observar datos. Todos los agentes eligieron correctamente el lado: los fallos registrados fueron de ejecución, bajo una regla pista→lado suministrada y feedback que permite distinguir las dos causas.
+
+Sham y generic reprodujeron las decisiones, observaciones, resultados y predicciones de updated, excluyendo diferencias de configuración/representación e identificadores derivados. Resumed reprodujo trazas exactas. La equivalencia genérica se esperaba por construcción: **no se demostró una ventaja funcional de organizar esos dos parámetros como self-model**.
+
+El lector bloqueado realizó 800 actualizaciones postcambio, pero su selector recibió siempre [0,5; 0,5]. Su modelo almacenado aprendió del nuevo régimen aunque no pudo usarlo para elegir. Frozen mantuvo todos sus parámetros y linaje sin cambios. Sus acciones coincidieron en estas semillas porque ambos siguieron favoreciendo fast; sus estimaciones y predicciones difieren. Esto separa actualización del estado y consumo de ese estado por el decisor.
+
+Las sondas comunes fijaron ambas predicciones antes de generar resultados con un RNG independiente, sin entrenar al agente. Para updated, el Brier final fue 0,1766 en fast y 0,1469 en safe; para frozen, 0,6979 y 0,2096. Reader blocked obtuvo 0,1773 y 0,1782 en su modelo almacenado, aunque el forecast usado al actuar permaneció neutral y su Brier interactivo fue 0,25. No deben confundirse estas dos evaluaciones. Los 32.000 ensayos no son 32.000 historias independientes: las comparaciones se agrupan por las 20 semillas.
+
+**Validación y archivo:** 121 pruebas automatizadas pasaron ([registro](e2-v0.3/tests.log)). Se verificaron por SHA-256 los 291 archivos copiados a `runs/e2-v03-20261005`: 246.493.850 bytes, aproximadamente 246,5 MB. El informe se regeneró byte por byte desde los CSV/JSON. [Certificado de copia y hashes](e2-v0.3/archive-validation.json).
+
+Código del piloto: `7d226d776474c81e817257022d018c7aa1f83d6cda57cb92a3b6e2ebd5f8279e`. Python 3.12.12; SQLite 3.51.1. Se ejecutó desde una copia temporal de fuentes idéntica byte por byte para evitar lecturas repetidas del disco del workspace; se conservó el mismo intérprete y todos los controles de integridad. Las fuentes permanecieron congeladas durante el piloto y no se ajustaron parámetros según sus resultados. Los manifiestos mantienen las rutas originales como procedencia; las rutas relativas de cada base se resuelven desde el archivo completo.
+
+El [motor v0.3 archivado](../releases/project-consciousness-v0.3.zip) conserva fuentes, pruebas y configuraciones; su [manifiesto](../releases/project-consciousness-v0.3.json) registra SHA-256 y fingerprint. Se verificó cada archivo del ZIP contra su origen. Las bases SQLite completas permanecen en `runs/`; el ZIP es el motor para reproducirlas, no contiene esas bases.
+
+Para repetir con la versión del motor correspondiente y una carpeta nueva:
+
+```powershell
+python -m project_consciousness experiment --protocol configs/e2-capabilities.toml --out runs/e2-new
+python -m project_consciousness report --experiment reports/e2-v0.3
+```
+
+E2 representa dos eficacias operativas y su uso causal. No incorpora aprendizaje simultáneo de asociaciones y capacidades, contextos nuevos, incertidumbre sobre parámetros, metacontrol o identidad. Los resultados son empíricos sobre este artefacto de ingeniería; no establecen introspección ni experiencia subjetiva. Los fallos manejados por el laboratorio conservan evidencia legible y denominadores; corrupción estructural arbitraria puede impedir la agregación.
+
 ## v0.2: aprendizaje y reversión L1
 
 [Informe L1](l1-v0.2/report.md), [datos por episodio](l1-v0.2/episodes.csv) y [contrastes](l1-v0.2/comparisons.csv). Protocolo congelado en [MVP v0.2](../docs/mvp-v0.2.md): 20 semillas 200:220, 40 episodios de adquisición y 40 después de invertir la regla, alpha 0,25. Se completaron 120/120 bases, 5.600/5.600 episodios válidos y 340/340 comprobaciones. Sin fallos ni semillas excluidas.

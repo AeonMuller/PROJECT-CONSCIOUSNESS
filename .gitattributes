@@ -1,4 +1,4 @@
 # Preserve exact executable/evidence bytes for recorded source fingerprints.
-project_consciousness/*.py -text
-releases/* -text
-reports/** -text
+project_consciousness/*.py -text whitespace=cr-at-eol
+releases/* -text whitespace=cr-at-eol
+reports/** -text whitespace=cr-at-eol

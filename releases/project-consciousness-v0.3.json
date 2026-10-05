@@ -1,0 +1,6 @@
+{
+  "source_fingerprint": "7d226d776474c81e817257022d018c7aa1f83d6cda57cb92a3b6e2ebd5f8279e",
+  "archive_sha256": "dd079422b4a23b6c219074af82ca75f5a45813555805c0de14f0d70a419bd9ae",
+  "files": 41,
+  "reason": "Executable v0.3 engine used for the E2 pilot; all archive bytes verified against the frozen sources"
+}

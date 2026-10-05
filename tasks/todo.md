@@ -1,6 +1,6 @@
 # Trabajo
 
-v0.2 en [lista de seguimiento](v0.2.md), con protocolo en [especificación](../docs/mvp-v0.2.md).
+v0.3 en [lista de seguimiento](v0.3.md), con protocolo en [especificación](../docs/mvp-v0.3.md). Historial de [v0.2](v0.2.md).
 
 ## v0.1 completado
 

@@ -1,0 +1,102 @@
+{
+  "experiment": "E2",
+  "protocol_version": "mvp-0.3-e2-1",
+  "package_version": "0.3.0",
+  "created_utc": "2026-10-05T16:43:00.863405+00:00",
+  "python": "3.12.12",
+  "sqlite": "3.51.1",
+  "source_files": {
+    "__init__.py": "3cea6b623ab4cc544b0b8433ad8fc37de1ce89e9b1ab64280ebc2449b4afc611",
+    "__main__.py": "c100d31d8aca7831ae0ce38290ab6280d202ad1c3a0825170dbcd73e313f664b",
+    "agent.py": "830cdf1ce8c7b76fce33af62c855459fa63c0efb5dadb91691db1ea32f93511c",
+    "capability.py": "b258a887b71086f427c2acc5adece97ab9ef384729a6b327bc371b05798ed5e1",
+    "capability_agent.py": "e02e907682843baca1ce827df7defd43f1b3705f65870332ab6cc040aa2e7248",
+    "capability_experiment.py": "c7342b8833a3440c2aaa539ef0c8ab0394b8933cbd25c0c08bde6a44b341f150",
+    "contracts.py": "da5441c5c66fb03f37ecaeb2aecca9e7eab35c03b3b9478cbc8f97fc8f18cfcd",
+    "environment.py": "2b2f308be760e1b760a5765ad0ca53dc8ec8cb51f823695f5d6efeca264b81d0",
+    "experiments.py": "d06e982617434ed5bbac724214b3793d13ee0e9e8f7d5b9993ff9164266b5774",
+    "learning.py": "211be764d52c1f01e14f136ea89484686314b34d689b353775fa0ba50aac17ef",
+    "learning_experiment.py": "17e4bbccae03daf56784d8a58fd897baabcf7ab6741efde53355108b8a0058ac",
+    "memory.py": "0ee6feceb09cd2765aa5b91bce91407ec802baab259267bab8e008dd92f46c8c",
+    "runtime.py": "2b4ceb5170dfd8e2997ed953dc965ce8d5c118416eb999a3dbae7be9c29fb468"
+  },
+  "source_fingerprint": "7d226d776474c81e817257022d018c7aa1f83d6cda57cb92a3b6e2ebd5f8279e",
+  "config": {
+    "delay": 1,
+    "capacity": 64,
+    "agent_mode": "episodic",
+    "read_mode": "intact",
+    "write_enabled": true,
+    "policy_mode": "capability",
+    "learning_enabled": true,
+    "learning_rate": 0.25,
+    "capability_backend": "self",
+    "capability_learning_enabled": true,
+    "capability_read_mode": "intact",
+    "capability_learning_rate": 0.2,
+    "capability_exploration": 0.1,
+    "fast_cost": 0.05,
+    "safe_cost": 0.2
+  },
+  "parameters": {
+    "seeds": [
+      300,
+      301,
+      302,
+      303,
+      304,
+      305,
+      306,
+      307,
+      308,
+      309,
+      310,
+      311,
+      312,
+      313,
+      314,
+      315,
+      316,
+      317,
+      318,
+      319
+    ],
+    "acquisition_episodes": 40,
+    "adaptation_episodes": 40,
+    "bootstrap_samples": 2000,
+    "probe_trials_per_tool": 100,
+    "statistical_seed": 20261005,
+    "task": {
+      "kind": "capability-v1",
+      "reversal_episode": 40,
+      "initial_mapping": null,
+      "capability_change_episode": 40,
+      "fast_success_before": 0.95,
+      "fast_success_after": 0.2,
+      "safe_success": 0.85
+    },
+    "conditions": [
+      "training",
+      "updated",
+      "frozen",
+      "reader_blocked",
+      "sham",
+      "resumed",
+      "generic"
+    ],
+    "resumed_checkpoints_relative": [
+      2,
+      60
+    ],
+    "curve_block_episodes": 10,
+    "estimand": "Primary: updated minus frozen postchange net mean utility, paired by seed",
+    "probe_streams": [
+      "e2-probe-acquisition",
+      "e2-probe-adaptation"
+    ],
+    "brier_definition": "Mean (execution forecast locked before feedback - execution_success)^2",
+    "inferential_limit": "Descriptive engineered task; generic predictor is functionally equivalent by construction"
+  },
+  "status": "completed",
+  "interpretation": "Ingeniería: uso causal de estimaciones operativas. No mide introspección ni conciencia."
+}

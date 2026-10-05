@@ -1,6 +1,6 @@
 # Arquitectura conceptual de PROJECT CONSCIOUSNESS
 
-Versión conceptual 0.1 · 2026-10-03 · arquitectura ampliada propuesta. La [entrega ejecutable v0.1](mvp-v0.1.md) implementa el primer corte de persistencia y memoria causal; [v0.2](mvp-v0.2.md) añade aprendizaje de asociaciones y reversión. El resto de esta arquitectura permanece propuesto.
+Versión conceptual 0.1 · estado de implementación actualizado 2026-10-05 · arquitectura ampliada propuesta. La [entrega ejecutable v0.1](mvp-v0.1.md) implementa el primer corte de persistencia y memoria causal; [v0.2](mvp-v0.2.md) añade aprendizaje de asociaciones y reversión; [v0.3](mvp-v0.3.md) añade un predictor operativo de eficacia de dos herramientas. El resto de esta arquitectura permanece propuesto.
 
 ## 1. Pregunta y alcance
 
@@ -95,6 +95,8 @@ Separar cuatro conceptos: recurso real, estimación del recurso, valoración del
 
 ## 6. Ciclo cognitivo activo
 
+Esta sección describe el ciclo objetivo ampliado. Los cortes ejecutables v0.1–v0.3 fijan la decisión, ejecutan la transición y asimilan el feedback dentro de un único tick transaccional; no dejan feedback pendiente entre ticks. v0.3 añade al último paso la actualización de la eficacia de la herramienta utilizada, sin modificar la predicción ya registrada.
+
 En `t=0` se entrega una observación inicial; no existe resultado de acción previa. Para cada tick posterior:
 
 1. **Recibir:** tomar `o_t`, resultado de `a_(t-1)` y señales internas disponibles; validar origen, secuencia y duplicados.
@@ -137,7 +139,11 @@ Olvido cognitivo: caducidad, reducción de accesibilidad o selección de un buff
 
 ## 9. Self-model, afecto y metacontrol
 
-El self-model mínimo aprende `P(éxito | acción, contexto, agente)` a partir de consecuencias observadas y del propio historial de intentos. Tiene estimación e incertidumbre; conserva también costes esperados, capacidades disponibles y autoría de acciones. En una extensión incorpora un esquema de atención: qué señales ha atendido, cuáles ha omitido y cómo eso afecta sus predicciones. El observador registra más de lo que el agente puede introspectar.
+El diseño objetivo del self-model aprende `P(éxito | acción, contexto, agente)` a partir de consecuencias observadas y del propio historial de intentos. Tiene estimación e incertidumbre; conserva también costes esperados, capacidades disponibles y autoría de acciones. En una extensión incorpora un esquema de atención: qué señales ha atendido, cuáles ha omitido y cómo eso afecta sus predicciones. El observador registra más de lo que el agente puede introspectar.
+
+El [corte v0.3](mvp-v0.3.md) implementa solo dos estimaciones de `P(ejecución correcta | herramienta)`. Sus parámetros se conservan al reiniciar y afectan selección de herramienta mediante utilidad esperada y exploración predefinida. La tarea informa por separado si el lado elegido era correcto y si la ejecución tuvo éxito, de modo que el predictor actualiza la capacidad con esa segunda señal. La observabilidad de ambas causas es un supuesto explícito del banco; no se infiere que sea posible separarlas en todo entorno real.
+
+Desde un snapshot aprendido, E2 compara actualización, modelo congelado, lectura sustituida por el prior neutral, sham y reinicios. Un predictor genérico con dos valores y las mismas reglas permite comprobar equivalencia funcional sin confundir representación nominal con un mecanismo distinto. Las sondas comunes miden Brier fuera de la trayectoria elegida, sin entrenar al agente. Este corte no añade estimación de incertidumbre sobre los propios parámetros, contextos nuevos, identidad narrativa, afecto ni metacontrol. [ADR-0004](decisions/0004-capability-predictor.md) registra esta delimitación.
 
 Se propone afecto de baja dimensión:
 

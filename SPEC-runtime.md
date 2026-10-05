@@ -1,6 +1,6 @@
 # Especificación: runtime
 
-Estado: contrato ampliado; subconjunto implementado en [v0.1](docs/mvp-v0.1.md), ampliado con snapshots de aprendizaje y tarea privada en [v0.2](docs/mvp-v0.2.md) · 2026-10-03 · ID del [mapa](CAPABILITY-MAP.md): `runtime`.
+Estado: contrato ampliado; subconjunto implementado en [v0.1](docs/mvp-v0.1.md), ampliado con snapshots de aprendizaje y tarea privada en [v0.2](docs/mvp-v0.2.md), modelo de capacidades y controles de lectura/actualización en [v0.3](docs/mvp-v0.3.md) · 2026-10-05 · ID del [mapa](CAPABILITY-MAP.md): `runtime`.
 
 ## Objetivo
 
